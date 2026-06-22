@@ -45,11 +45,11 @@ if HAS_UVLOOP:
 
 @dataclass
 class Config:
-    max_workers: int = 40
-    queue_size: int = 10000
-    batch_size: int = 300
+    max_workers: int = 80
+    queue_size: int = 20000
+    batch_size: int = 500
     tcp_timeout: float = 0.2
-    max_latency: int = 400
+    max_latency: int = 200
     min_latency: int = 50
     redis_url: str = "redis://localhost:6379"
     db_path: str = "proxies_hybrid.db"
@@ -63,14 +63,15 @@ class Config:
     max_geo_batch: int = 15
     max_ports_per_ip: int = 7
     enable_http_test: bool = True
-    http_test_timeout: float = 1.5
+    http_test_timeout: float = 1.0
     http_test_url: str = "http://httpbin.org/ip"
     enable_prometheus: bool = True
     prometheus_port: int = 9090
     enable_uvloop: bool = True
     runner_id: str = None
     ports: List[int] = None
-    http_parallel: int = 100
+    http_parallel: int = 200
+    quality_threshold: int = 200
 
     def __post_init__(self):
         if self.ports is None:
@@ -90,11 +91,11 @@ if HAS_PROMETHEUS:
     PROXY_COUNT = Gauge('proxy_count', 'Total proxies in database')
 
 class PortScheduler:
-    def __init__(self, max_concurrent: int = 150):
+    def __init__(self, max_concurrent: int = 300):
         self.semaphore = asyncio.Semaphore(max_concurrent)
         self.subnet_semaphores = {}
         self._lock = asyncio.Lock()
-        self.connection_window = 0.1
+        self.connection_window = 0.05
         self.last_connect = defaultdict(float)
     
     async def acquire(self, ip: str):
@@ -102,7 +103,7 @@ class PortScheduler:
             subnet = ip.rsplit('.', 1)[0]
             async with self._lock:
                 if subnet not in self.subnet_semaphores:
-                    self.subnet_semaphores[subnet] = asyncio.Semaphore(5)
+                    self.subnet_semaphores[subnet] = asyncio.Semaphore(10)
             async with self.subnet_semaphores[subnet]:
                 now = time.time()
                 if now - self.last_connect[ip] < self.connection_window:
@@ -135,11 +136,13 @@ class EventDrivenDialer:
         except:
             return port, None
     
-    async def scan_ip(self, ip: str, ports: List[int], timeout: float = 0.2, min_latency: int = 50) -> Tuple[Optional[int], Optional[float]]:
+    async def scan_ip(self, ip: str, ports: List[int], timeout: float = 0.2, min_latency: int = 50, max_latency: int = 200) -> Tuple[Optional[int], Optional[float]]:
         for port in ports:
             p, lat = await self.dial_port(ip, port, timeout)
             if lat is not None:
-                return p, lat
+                if lat <= max_latency:
+                    return p, lat
+                return None, None
         return None, None
 
 class HTTPProxyTester:
@@ -148,17 +151,17 @@ class HTTPProxyTester:
         self.session = None
         self._lock = asyncio.Lock()
         self.cache = {}
-        self.cache_size = 1000
+        self.cache_size = 2000
     
     async def get_session(self):
         if self.session is None:
             async with self._lock:
                 if self.session is None:
-                    connector = aiohttp.TCPConnector(limit=100, limit_per_host=20)
+                    connector = aiohttp.TCPConnector(limit=200, limit_per_host=50)
                     self.session = aiohttp.ClientSession(connector=connector)
         return self.session
     
-    async def test_proxy(self, ip: str, port: int, timeout: float = 1.5) -> bool:
+    async def test_proxy(self, ip: str, port: int, timeout: float = 1.0) -> bool:
         cache_key = f"{ip}:{port}"
         if cache_key in self.cache:
             return self.cache[cache_key]
@@ -211,18 +214,18 @@ class HTTPProxyTester:
             await self.session.close()
 
 class AsyncTCPBatchScanner:
-    def __init__(self, max_concurrent: int = 150):
+    def __init__(self, max_concurrent: int = 300):
         self.scheduler = PortScheduler(max_concurrent)
         self.dialer = EventDrivenDialer(self.scheduler)
         self._lock = asyncio.Lock()
         self.results = {}
     
-    async def scan_batch(self, ips: List[str], ports: List[int], timeout: float = 0.2, min_latency: int = 50) -> Dict[str, Tuple[int, float]]:
+    async def scan_batch(self, ips: List[str], ports: List[int], timeout: float = 0.2, min_latency: int = 50, max_latency: int = 200) -> Dict[str, Tuple[int, float]]:
         self.results = {}
         self.scheduler.reset()
         
         async def scan_one(ip: str):
-            best_port, best_latency = await self.dialer.scan_ip(ip, ports, timeout, min_latency)
+            best_port, best_latency = await self.dialer.scan_ip(ip, ports, timeout, min_latency, max_latency)
             if best_latency is not None:
                 async with self._lock:
                     self.results[ip] = (best_port, best_latency)
@@ -238,7 +241,7 @@ class AsyncStorage:
         self._lock = asyncio.Lock()
         self.batch_buffer = []
         self.buffer_lock = asyncio.Lock()
-        self.buffer_size = 100
+        self.buffer_size = 200
 
     async def init(self):
         self.pool = await aiosqlite.connect(
@@ -487,7 +490,7 @@ class RedisQueue:
     def __init__(self, url: str):
         self.url = url
         self.redis = None
-        self.local_queue = asyncio.Queue(maxsize=5000)
+        self.local_queue = asyncio.Queue(maxsize=10000)
         self.connected = False
         self._lock = asyncio.Lock()
 
@@ -514,7 +517,7 @@ class RedisQueue:
         except asyncio.QueueFull:
             await asyncio.sleep(0.01)
 
-    async def pull_events(self, count: int = 200, block: int = 500) -> List[Tuple[Dict, Optional[str]]]:
+    async def pull_events(self, count: int = 300, block: int = 300) -> List[Tuple[Dict, Optional[str]]]:
         events_with_ids = []
         
         if self.connected:
@@ -584,7 +587,7 @@ class ProgressTracker:
         self.total = total
 
 class AdaptiveBatcher:
-    def __init__(self, base_batch: int = 300):
+    def __init__(self, base_batch: int = 500):
         self.base_batch = base_batch
         self.current_batch = base_batch
         self.success_rates = []
@@ -602,7 +605,7 @@ class AdaptiveBatcher:
         avg_rate = sum(self.success_rates) / len(self.success_rates) if self.success_rates else 1.0
         
         if avg_rate > 0.5:
-            self.current_batch = min(500, int(self.base_batch * 1.3))
+            self.current_batch = min(800, int(self.base_batch * 1.3))
         elif avg_rate > 0.2:
             self.current_batch = self.base_batch
         else:
@@ -623,7 +626,7 @@ class HybridWorker:
         self.storage = AsyncStorage(config.db_path)
         self.geo = DistributedGeoEnricher(config.maxmind_path, config.use_online_fallback)
         self.batcher = AdaptiveBatcher(config.batch_size)
-        self.scanner = AsyncTCPBatchScanner(max_concurrent=150)
+        self.scanner = AsyncTCPBatchScanner(max_concurrent=300)
         self.http_tester = HTTPProxyTester(config) if config.enable_http_test else None
 
         self.running = True
@@ -658,7 +661,7 @@ class HybridWorker:
             try:
                 start_time = time.time()
                 tcp_results = await self.scanner.scan_batch(
-                    batch, self.config.ports, self.config.tcp_timeout, self.config.min_latency
+                    batch, self.config.ports, self.config.tcp_timeout, self.config.min_latency, self.config.quality_threshold
                 )
                 
                 if HAS_PROMETHEUS:
@@ -732,7 +735,7 @@ class HybridWorker:
 
         while self.running:
             try:
-                events_with_ids = await self.queue.pull_events(count=200, block=300)
+                events_with_ids = await self.queue.pull_events(count=300, block=300)
 
                 if not events_with_ids:
                     await asyncio.sleep(0.01)
@@ -780,7 +783,7 @@ class HybridPipeline:
         self.progress = ProgressTracker(interval=10)
 
         self.workers = []
-        self.num_workers = min(multiprocessing.cpu_count() * 2, 8)
+        self.num_workers = min(multiprocessing.cpu_count() * 2, 16)
 
         if self.config.enable_prometheus and HAS_PROMETHEUS:
             try:
@@ -887,6 +890,7 @@ class HybridPipeline:
         self.logger.info(f"HTTP Test: {self.config.enable_http_test}")
         self.logger.info(f"Prometheus: {self.config.enable_prometheus}")
         self.logger.info(f"UV Loop: {HAS_UVLOOP}")
+        self.logger.info(f"Quality threshold: {self.config.quality_threshold}ms")
 
         await self.queue.init()
         await self.storage.init()
@@ -950,8 +954,8 @@ class HybridPipeline:
 async def main():
     config = Config(
         ultra_mode=True,
-        max_workers=40,
-        batch_size=300,
+        max_workers=80,
+        batch_size=500,
         max_output_ips=4000,
         retention_days=7,
         maxmind_path="GeoLite2-Country.mmdb",
@@ -961,8 +965,9 @@ async def main():
         enable_prometheus=True,
         enable_uvloop=True,
         tcp_timeout=0.2,
-        http_test_timeout=1.5,
-        http_parallel=100,
+        http_test_timeout=1.0,
+        http_parallel=200,
+        quality_threshold=200,
         runner_id=f"runner-{os.getpid()}"
     )
     pipeline = HybridPipeline(config)
