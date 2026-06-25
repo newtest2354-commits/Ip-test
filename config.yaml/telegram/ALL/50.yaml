@@ -1,54 +1,9 @@
 # TELEGRAM - ALL - Tier 50
-# Updated: 2026-06-25 11:27:58
+# Updated: 2026-06-25 11:58:16
 # Count: 49
 
 proxies:
 - name: 'ARISTA #1'
-  type: trojan
-  server: 43.169.18.179
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.creationlong.org
-  client-fingerprint: chrome
-  ws-opts:
-    path: '%2Fassignment'
-    headers:
-      Host: www.creationlong.org
-- name: 'ARISTA #2'
-  type: trojan
-  server: 141.193.213.21
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.calmloud.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: '%2Fassignment'
-    headers:
-      Host: www.calmloud.com
-- name: 'ARISTA #3'
-  type: trojan
-  server: 45.131.4.118
-  port: 443
-  password: MiTiVPN
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: f6r.ir
-  client-fingerprint: chrome
-  ws-opts:
-    path: '%2Fusa%3Dmitivpn'
-    headers:
-      Host: f6r.ir
-- name: 'ARISTA #4'
   type: trojan
   server: srv1.khatibirepair.ir
   port: 443
@@ -63,54 +18,9 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: www.calmlunch.com
-- name: 'ARISTA #5'
+- name: 'ARISTA #2'
   type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.multiplydose.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: '%2F%2Fassignment'
-    headers:
-      Host: www.multiplydose.com
-- name: 'ARISTA #6'
-  type: trojan
-  server: 104.18.152.210
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: '%2Fassignment'
-    headers:
-      Host: www.ignitelimit.com
-- name: 'ARISTA #7'
-  type: trojan
-  server: 104.18.152.208
-  port: 443
-  password: humanity
-  network: ws
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.ignitelimit.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: '%2Fassignment'
-    headers:
-      Host: www.ignitelimit.com
-- name: 'ARISTA #8'
-  type: trojan
-  server: 104.19.229.21
+  server: 45.80.111.7
   port: 443
   password: humanity
   network: ws
@@ -123,39 +33,121 @@ proxies:
     path: '%2Fassignment'
     headers:
       Host: www.calmlunch.com
+- name: 'ARISTA #3'
+  type: trojan
+  server: 2.26.54.174
+  port: 8448
+  password: TrojanPass2026!
+  network: tcp
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: foolsland.ru
+  client-fingerprint: chrome
+- name: 'ARISTA #4'
+  type: trojan
+  server: 45.130.125.126
+  port: 443
+  password: 86957ec0-b213-433b-a43b-51f2175e0ec3
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: space.byu.id.yxls.eu.cc
+  client-fingerprint: chrome
+  ws-opts:
+    path: '%2Fau-do'
+    headers:
+      Host: space.byu.id.yxls.eu.cc
+- name: 'ARISTA #5'
+  type: trojan
+  server: 45.130.125.2
+  port: 443
+  password: 7002R3Gxo1
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sa.farxmode.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: '%2Fda'
+    headers:
+      Host: sa.farxmode.ir
+- name: 'ARISTA #6'
+  type: trojan
+  server: 45.130.125.2
+  port: 443
+  password: P6oS8vzFbu
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sb.farxmode.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: '%2Fdb'
+    headers:
+      Host: sb.farxmode.ir
+- name: 'ARISTA #7'
+  type: trojan
+  server: 45.130.125.2
+  port: 443
+  password: CHhHZoXQCp
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: se.farxmode.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: '%2Fda'
+    headers:
+      Host: se.farxmode.ir
+- name: 'ARISTA #8'
+  type: trojan
+  server: 45.130.125.2
+  port: 443
+  password: GavW8e3DN7
+  network: ws
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sf.farxmode.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: '%2Fdb'
+    headers:
+      Host: sf.farxmode.ir
 - name: 'ARISTA #9'
   type: trojan
-  server: 104.18.152.229
+  server: 92.119.35.119
   port: 443
-  password: humanity
-  network: ws
+  password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
+  network: tcp
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.ignitelimit.com
+  servername: 92.119.35.119
   client-fingerprint: chrome
-  ws-opts:
-    path: '%2Fassignment'
-    headers:
-      Host: www.ignitelimit.com
 - name: 'ARISTA #10'
   type: trojan
-  server: 104.19.229.21
+  server: 188.114.97.6
   port: 443
   password: humanity
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.gossipglove.com
+  servername: www.calmloud.com
   client-fingerprint: chrome
   ws-opts:
     path: '%2Fassignment'
     headers:
-      Host: www.gossipglove.com
+      Host: www.calmloud.com
 - name: 'ARISTA #11'
   type: trojan
-  server: 45.130.125.112
+  server: 104.16.71.213
   port: 443
   password: humanity
   network: ws
@@ -170,20 +162,31 @@ proxies:
       Host: www.calmlunch.com
 - name: 'ARISTA #12'
   type: trojan
-  server: 188.114.97.6
+  server: 104.17.108.1
   port: 443
-  password: MiTiVPN
+  password: iKmZWib7Mb
   network: ws
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: f6r.ir
+  servername: a2.aananas.ir
   client-fingerprint: chrome
   ws-opts:
-    path: '%2Fde%3Dmitivpn'
+    path: '%2F%3Fed%3D2048'
     headers:
-      Host: f6r.ir
+      Host: a2.aananas.ir
 - name: 'ARISTA #13'
+  type: hysteria2
+  server: 130.49.161.70
+  port: 443
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: 130.49.161.70
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 'ARISTA #14'
   type: hysteria2
   server: 185.250.41.245
   port: 443
@@ -194,7 +197,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: T.me%2FV2RayyNGvpn
-- name: 'ARISTA #14'
+- name: 'ARISTA #15'
   type: hysteria2
   server: 185.250.41.245
   port: 443
@@ -205,7 +208,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: T.me%2FV2RayyNGvpn
-- name: 'ARISTA #15'
+- name: 'ARISTA #16'
   type: hysteria2
   server: 185.250.41.245
   port: 443
@@ -216,7 +219,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: T.me%2FV2RayyNGvpn
-- name: 'ARISTA #16'
+- name: 'ARISTA #17'
   type: hysteria2
   server: 87.120.106.36
   port: 443
@@ -227,31 +230,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: T-me-V2RayyNGvpn-ioSniper
-- name: 'ARISTA #17'
-  type: ss
-  server: 82.38.31.210
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-  tcp-fast-open: true
 - name: 'ARISTA #18'
-  type: ss
-  server: 82.38.31.155
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-  tcp-fast-open: true
-- name: 'ARISTA #19'
-  type: ss
-  server: 82.38.31.7
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-  tcp-fast-open: true
-- name: 'ARISTA #20'
   type: ss
   server: 91.108.254.252
   port: 18982
@@ -259,63 +238,101 @@ proxies:
   password: IIMxFMyq3FwyPd21UGWgmNJCAiYN9m2vOo
   udp: true
   tcp-fast-open: true
-- name: 'ARISTA #21'
+- name: 'ARISTA #19'
   type: ss
-  server: 20.234.9.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: i6qj1Qi9bKvFfIM0
-  udp: true
-  tcp-fast-open: true
-- name: 'ARISTA #22'
-  type: ss
-  server: 103.120.178.193
-  port: 31348
-  cipher: chacha20-ietf-poly1305
-  password: EBDRo9THx4CqiFU7h5gfov76oNwzZURAh0ZwbWjBKddtUhvz
-  udp: true
-  tcp-fast-open: true
-- name: 'ARISTA #23'
-  type: ss
-  server: 36.224.131.173
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-  tcp-fast-open: true
-- name: 'ARISTA #24'
-  type: ss
-  server: 45.10.41.129
-  port: 51523
-  cipher: chacha20-ietf-poly1305
-  password: 7SEstdmLhf-aFK_G9eaYHKT_YpSov58B
-  udp: true
-  tcp-fast-open: true
-- name: 'ARISTA #25'
-  type: ss
-  server: 185.155.9.190
-  port: 56985
-  cipher: chacha20-ietf-poly1305
-  password: iUdDricB5yQeiNyWIDOxS48z6QbKmlktjqFyYNmbuwM=
-  udp: true
-  tcp-fast-open: true
-- name: 'ARISTA #26'
-  type: ss
-  server: 82.38.31.184
+  server: 82.38.31.210
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
   tcp-fast-open: true
+- name: 'ARISTA #20'
+  type: ss
+  server: 108.181.58.239
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: CJmTCCx7Ltud
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA #21'
+  type: ss
+  server: 82.38.31.214
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA #22'
+  type: ss
+  server: 193.29.139.162
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA #23'
+  type: ss
+  server: 193.29.139.179
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA #24'
+  type: ss
+  server: 193.29.139.233
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA #25'
+  type: ss
+  server: 192.142.18.127
+  port: 443
+  cipher: aes-256-gcm
+  password: c1fd0b29-6c18-4042-87a2-f5bd7878dc0a
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA #26'
+  type: ss
+  server: 103.240.147.113
+  port: 14605
+  cipher: chacha20-ietf-poly1305
+  password: Uk8lfmvhYnx5rJvXxKrRqGRynd9gIpJ.iY
+  udp: true
+  tcp-fast-open: true
 - name: 'ARISTA #27'
   type: ss
-  server: 96.9.211.183
-  port: 8881
-  cipher: aes-128-gcm
-  password: 2bc77a3a-1a6a-49bd-987f-5368cca0f930
+  server: 198.105.115.171
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: ktaE_kXdYsjA9ZefxXzQmg
   udp: true
   tcp-fast-open: true
 - name: 'ARISTA #28'
+  type: ss
+  server: 38.54.80.160
+  port: 16292
+  cipher: chacha20-ietf-poly1305
+  password: r_NRe-+WRq2zVqMpCnJtTESlT8WyffHyFy
+  udp: true
+  tcp-fast-open: true
+- name: 'ARISTA #29'
+  type: vmess
+  server: 78.141.215.62
+  port: 443
+  uuid: afd45419-cffa-4f1b-990a-511aab6ee9ab
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 78.141.215.62
+  client-fingerprint: chrome
+- name: 'ARISTA #30'
   type: vmess
   server: 2.26.231.87
   port: 110
@@ -328,34 +345,6 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: 2.26.231.87
-  client-fingerprint: chrome
-- name: 'ARISTA #29'
-  type: vmess
-  server: digi21.ez0535.com
-  port: 443
-  uuid: b5406cd3-1a11-4c78-b346-7763fcc9e476
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: digi21.ez0535.com
-  client-fingerprint: chrome
-- name: 'ARISTA #30'
-  type: vmess
-  server: alpha.jahanlink.sbs
-  port: 443
-  uuid: bcaf21c1-c5af-47b1-b42f-be04d5653714
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: alpha.jahanlink.sbs
   client-fingerprint: chrome
 - name: 'ARISTA #31'
   type: vmess
@@ -373,47 +362,40 @@ proxies:
   client-fingerprint: chrome
 - name: 'ARISTA #32'
   type: vmess
-  server: site.hooracoffee.ir
+  server: digi21.ez0535.com
   port: 443
-  uuid: ed954dba-5ad5-4688-8174-247944361c38
+  uuid: b5406cd3-1a11-4c78-b346-7763fcc9e476
   alterId: 0
   cipher: auto
-  network: ws
-  tls: true
+  network: tcp
+  tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: site.hooracoffee.ir
+  servername: digi21.ez0535.com
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /www
-    headers:
-      Host: site.hooracoffee.ir
 - name: 'ARISTA #33'
   type: vmess
-  server: www.speedtest.net
-  port: 443
-  uuid: 46d9820f-4585-4687-82b1-13ab23d9187e
+  server: ca.connfull.org
+  port: 2053
+  uuid: 4b433ddd-fb7d-41e7-b499-ce76af562512
   alterId: 0
   cipher: auto
-  network: xhttp
+  network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: gErtOw1.lOolOolOolOo.cOM
+  servername: ca.connfull.org
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
 - name: 'ARISTA #34'
   type: vmess
-  server: site.hooracoffee.ir
+  server: cf.scpnb.top
   port: 443
-  uuid: ed954dba-5ad5-4688-8174-247944361c38
+  uuid: d5c27b66-7d26-48ac-9fc1-2c0884406c18
   alterId: 0
   cipher: auto
   network: ws
@@ -421,34 +403,41 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: site.hooracoffee.ir
+  servername: suspected-deployment-studios-popular.trycloudflare.com
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
   ws-opts:
-    path: /www
+    path: /d5c27b66-7d26-48ac-9fc1-2c0884406c18-vm
     headers:
-      Host: site.hooracoffee.ir
+      Host: suspected-deployment-studios-popular.trycloudflare.com
 - name: 'ARISTA #35'
   type: vmess
-  server: vip3.sanaiehdasti.com
-  port: 1546
-  uuid: 6c5fcae3-16e8-4a93-b28e-05588d5d9342
+  server: cf.scpnb.top
+  port: 443
+  uuid: 6a4e7e55-9f07-4c54-abdd-72b9820f4cb3
   alterId: 0
   cipher: auto
-  network: tcp
-  tls: false
+  network: ws
+  tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: vip3.sanaiehdasti.com
+  servername: explicit-freeware-animation-greg.trycloudflare.com
   client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /6a4e7e55-9f07-4c54-abdd-72b9820f4cb3-vm
+    headers:
+      Host: explicit-freeware-animation-greg.trycloudflare.com
 - name: 'ARISTA #36'
   type: vmess
-  server: 104.17.121.43
+  server: cdn.31514926.xyz
   port: 443
-  uuid: e9947b42-27ed-401e-b75e-c9ebd357c0f3
+  uuid: 48d5eb0f-fd55-4357-baec-a68fa39a4b1b
   alterId: 0
   cipher: auto
   network: ws
@@ -456,20 +445,20 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: omkuzygiv.com
+  servername: admit-statute-live-undertaken.trycloudflare.com
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
   ws-opts:
-    path: /
+    path: /48d5eb0f-fd55-4357-baec-a68fa39a4b1b-vm
     headers:
-      Host: omkuzygiv.com
+      Host: admit-statute-live-undertaken.trycloudflare.com
 - name: 'ARISTA #37'
   type: vmess
-  server: 158.51.121.63
+  server: cf.scpnb.top
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 7fd8d1db-96ec-4e46-80a8-74ad9472384e
   alterId: 0
   cipher: auto
   network: ws
@@ -477,20 +466,20 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: seribus.org
+  servername: graph-keep-beds-catalog.trycloudflare.com
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
   ws-opts:
-    path: linkvws
+    path: /7fd8d1db-96ec-4e46-80a8-74ad9472384e-vm
     headers:
-      Host: 158.51.121.63
+      Host: graph-keep-beds-catalog.trycloudflare.com
 - name: 'ARISTA #38'
   type: vmess
-  server: 158.51.121.63
+  server: cf.scpnb.top
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 7c84ae69-f0b3-47dc-83c5-e7b5f00f5bed
   alterId: 0
   cipher: auto
   network: ws
@@ -498,193 +487,213 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: seribus.org
+  servername: vienna-bread-threats-amendment.trycloudflare.com
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
   ws-opts:
-    path: linkvws
+    path: /7c84ae69-f0b3-47dc-83c5-e7b5f00f5bed-vm
     headers:
-      Host: seribus.org
+      Host: vienna-bread-threats-amendment.trycloudflare.com
 - name: 'ARISTA #39'
-  type: vless
-  server: sca14.myfymain.com
-  port: 8880
-  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
-  network: grpc
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sca14.myfymain.com
-  client-fingerprint: chrome
-- name: 'ARISTA #40'
-  type: vless
-  server: 104.17.147.22
-  port: 2087
-  uuid: f12a5e31-05b8-4520-b3a4-e9da1f08ceb6
+  type: vmess
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  uuid: a2243c24-a82c-4098-bc4d-e85331a1e1d1
+  alterId: 0
+  cipher: auto
   network: ws
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: newq.newappdominfastlogin4.com
+  servername: associations-bryan-manchester-latino.trycloudflare.com
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
   ws-opts:
-    path: '%2F'
+    path: /a2243c24-a82c-4098-bc4d-e85331a1e1d1-vm
     headers:
-      Host: newq.newappdominfastlogin4.com
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
-- name: 'ARISTA #41'
+      Host: associations-bryan-manchester-latino.trycloudflare.com
+- name: 'ARISTA #40'
   type: vless
-  server: 5.199.170.105
+  server: 178.236.17.86
   port: 443
-  uuid: fd47216b-4217-4ec1-85b9-98304634a391
+  uuid: 6fdfdb73-51b0-4a14-89a5-c9355a0e0397
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: amd.com
+  servername: google.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: xFUmqmEPEKyv-5ReppEM1oTkc04HQcBUfySH-EwPBlE
-    short-id: 6ba85179e30d4fc2
+    public-key: vCxfuNNmogA1DlPkjvmKb7_hSgXqe4MboPfi2s1JZG0
+    short-id: b318242471ba4f5b
+- name: 'ARISTA #41'
+  type: vless
+  server: 155.117.137.160
+  port: 443
+  uuid: ccdce320-7eef-4815-8edb-c599987c2279
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cdn8-03.yahoo.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
+    short-id: c7e42004e5f024be
 - name: 'ARISTA #42'
   type: vless
-  server: vtodkcdisnc.fars-daxter.ir
-  port: 80
-  uuid: Te-HqV2rayNG-HqV2rayNG
+  server: fast.cd-tur4.ir
+  port: 443
+  uuid: d27a232b-de94-4204-9bae-b0c243c6b93c
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: default.ssl.fastly.net
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: '%2F'
+    headers:
+      Host: newip.global.ssl.fastly.neT.
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'ARISTA #43'
+  type: vless
+  server: 37.152.187.201
+  port: 443
+  uuid: 24f1f7cc-3cfd-48c1-af87-07a50e9db7de
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: algorithmmarket.ir
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+- name: 'ARISTA #44'
+  type: vless
+  server: 188.213.198.238
+  port: 4050
+  uuid: 673a10ba-99dd-4074-93bf-e78a06ad3c85
   network: tcp
   tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 188.213.198.238
+  client-fingerprint: chrome
+- name: 'ARISTA #45'
+  type: vless
+  server: 185.226.93.107
+  port: 443
+  uuid: b2f996bf-620e-47b8-8f75-5823467c552e
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cdn-apple.com
+  client-fingerprint: chrome
+- name: 'ARISTA #46'
+  type: vless
+  server: ipclf.bhralrqmy.com
+  port: 2053
+  uuid: 2f60be6f-be0c-48b4-9772-b56f42b51ba1
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: drr3dme6.twelvmmapps.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: '%2F'
+    headers:
+      Host: drr3dme6.twelvmmapps.com
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'ARISTA #47'
+  type: vless
+  server: erosan.appleseraj.ir
+  port: 443
+  uuid: 53feb5dd-9bb2-44ff-80ec-4d00debf1de4
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: falkinichlol.appleseraj.ir
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: '%3Fed%3D2048'
+    headers:
+      Host: falkinichlol.appleseraj.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'ARISTA #48'
+  type: vless
+  server: 13.63.126.48
+  port: 8444
+  uuid: 242f3b82-7c52-4b3c-a576-c3c8d775e3ed
+  network: tcp
+  tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
   servername: play.google.com
   client-fingerprint: chrome
-- name: 'ARISTA #43'
-  type: vless
-  server: 91.107.244.55
-  port: 8080
-  uuid: 92929b0d-a473-4ea2-bba5-f651ea263872
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 91.107.244.55
-  client-fingerprint: chrome
-- name: 'ARISTA #44'
-  type: vless
-  server: 217.195.200.153
-  port: 2099
-  uuid: 80e1220d-11a9-00d6-20cd-64d4f6039e1b
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: bm1X5R9OZK5AhcDhrn7j14rvTualxKopRR3lp065yWI
-    short-id: 5a8dba4b
-- name: 'ARISTA #45'
-  type: vless
-  server: 57.131.16.74
-  port: 2086
-  uuid: 80e1220d-11a9-00d6-20cd-64d4f6039e1b
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.rEfErSion.Com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: cdstSZCq7cbczrcuYGWnCLB2XTGc9m7yEAVV9yjbgj0
-    short-id: 66f6a12b
-- name: 'ARISTA #46'
-  type: vless
-  server: 185.243.51.109
-  port: 20768
-  uuid: cd9980b5-cc6f-4fb2-90eb-6e76d258073b
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: arvancloud.ir
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: j9C0ZrLgOgkrW75gMeigfN3_1-8rUeqZ-uI8UQia8D4
-    short-id: e3702f81273a
-- name: 'ARISTA #47'
-  type: vless
-  server: www.sourceforge.net
-  port: 2086
-  uuid: ab67fdd6-f86c-431b-b0ed-ceb2073a42a0
-  network: httpupgrade
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: test2.iranvatanam.com
-  client-fingerprint: chrome
-- name: 'ARISTA #48'
-  type: vless
-  server: 185.143.235.200
-  port: 80
-  uuid: 290a1fba-93a3-4004-bd56-0565a956a209
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: taraneh.pointspeed.ir
-  client-fingerprint: chrome
-  ws-opts:
-    path: '%2Farvancloud.ir'
-    headers:
-      Host: taraneh.pointspeed.ir
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
+    public-key: LINfckLkgXuI1-3SeeRrjtjymGEsus3vLypmcI8N6nY
+    short-id: e3e064f1196a7ba1
 - name: 'ARISTA #49'
   type: vless
-  server: 151.101.118.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
+  server: 45.206.0.37
+  port: 8443
+  uuid: 4d606920-62d7-4d28-a5c4-f8a70fe56aaa
+  network: tcp
+  tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: max-gb1.global.ssl.fastly.net
+  servername: storage.yandex.net
   client-fingerprint: chrome
-  ws-opts:
-    path: '%2F'
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8
+    short-id: 37772edff71b4167
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
