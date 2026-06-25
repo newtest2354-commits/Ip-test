@@ -1,5 +1,5 @@
 # TELEGRAM - ALL - HYSTERIA2
-# Updated: 2026-06-25 12:32:08
+# Updated: 2026-06-25 13:05:55
 # Count: 6
 
 hysteria2://p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR@130.49.161.70:443?security=tls&obfs=salamander&obfs-password=rG07s3COMIEvdnQipRyWzx_H_2xygNC3&insecure=1&sni=hy2.aspidnet.xyz#ARISTA
