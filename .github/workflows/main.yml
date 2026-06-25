@@ -49,6 +49,11 @@ jobs:
         rm -rf config.json/
         mkdir -p config.json
 
+    - name: Clean old best_ip files
+      run: |
+        rm -rf best_ip/
+        mkdir -p best_ip
+
     - name: Run Telegram Config Extractor
       run: python telegram_extractor.py
       timeout-minutes: 20
@@ -65,6 +70,10 @@ jobs:
 
     - name: Convert to JSON (Sing-Box)
       run: python convert_to_json.py
+
+    - name: Process Best IPs
+      run: python process_best_ips.py
+      timeout-minutes: 10
 
     - name: Create summary
       run: |
