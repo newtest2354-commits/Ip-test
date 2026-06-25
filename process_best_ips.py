@@ -15,9 +15,17 @@ class BestIPProcessor:
         
     def fetch_data(self):
         try:
+            print(f"Fetching data from: {self.source_url}")
             response = requests.get(self.source_url, timeout=30)
-            response.raise_for_status()
-            return response.text
+            print(f"Response status: {response.status_code}")
+            if response.status_code == 200:
+                content = response.text
+                print(f"Content length: {len(content)} characters")
+                print(f"First 200 chars: {content[:200]}")
+                return content
+            else:
+                print(f"Failed to fetch data: HTTP {response.status_code}")
+                return ""
         except Exception as e:
             print(f"Error fetching data: {e}")
             return ""
@@ -80,11 +88,14 @@ class BestIPProcessor:
         content = self.fetch_data()
         
         if not content:
-            print("No data received")
+            print("No data received - creating empty files")
+            self.create_empty_files()
             return
         
         lines = content.splitlines()
         parsed_data = []
+        
+        print(f"Processing {len(lines)} lines...")
         
         for line in lines:
             line = line.strip()
@@ -95,7 +106,8 @@ class BestIPProcessor:
                 parsed_data.append(data)
         
         if not parsed_data:
-            print("No valid data found")
+            print("No valid data found - creating empty files")
+            self.create_empty_files()
             return
         
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -155,10 +167,26 @@ class BestIPProcessor:
         print(f"  - ip_only.txt: {len(ip_only)} entries")
         print(f"  - ip_port.txt: {len(ip_port)} entries")
         print(f"  - ip_port_cdn_sni_country_type.txt: {len(ip_port_cdn_sni_country_type)} entries")
+    
+    def create_empty_files(self):
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        
+        files = ['ip_only.txt', 'ip_port.txt', 'ip_port_cdn_sni_country_type.txt']
+        for filename in files:
+            filepath = os.path.join(self.output_dir, filename)
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.write(f"# No data available - Updated: {timestamp}\n")
+                f.write("# Please check the source URL or try again later.\n")
+                f.write("# Count: 0\n")
+        
+        print(f"⚠️ Empty files created in '{self.output_dir}/'")
 
 def main():
-    processor = BestIPProcessor()
-    processor.process()
+    try:
+        processor = BestIPProcessor()
+        processor.process()
+    except Exception as e:
+        print(f"❌ Error: {e}")
 
 if __name__ == "__main__":
-    main()
+    main()5
