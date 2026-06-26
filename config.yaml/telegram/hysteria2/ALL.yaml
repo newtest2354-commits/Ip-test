@@ -1,64 +1,9 @@
 # TELEGRAM - HYSTERIA2 - Tier ALL
-# Updated: 2026-06-26 14:37:12
-# Count: 7
+# Updated: 2026-06-26 20:00:13
+# Count: 8
 
 proxies:
 - name: 'ARISTA #1'
-  type: hysteria2
-  server: 185.250.41.245
-  port: 443
-  password: Z7MFGgpuzh
-  sni: 185.250.41.245
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: T.me%2FV2RayyNGvpn
-- name: 'ARISTA #2'
-  type: hysteria2
-  server: 185.250.41.245
-  port: 443
-  password: S0Mq06tf1I
-  sni: 185.250.41.245
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: T.me%2FV2RayyNGvpn
-- name: 'ARISTA #3'
-  type: hysteria2
-  server: 87.120.106.36
-  port: 443
-  password: 5U7LBgpLNj
-  sni: 87.120.106.36
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: T-me-V2RayyNGvpn-ioSniper
-- name: 'ARISTA #4'
-  type: hysteria2
-  server: 185.250.41.245
-  port: 443
-  password: dJtElQSz4v
-  sni: 185.250.41.245
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: T.me%2FV2RayyNGvpn
-- name: 'ARISTA #5'
-  type: hysteria2
-  server: 185.250.41.245
-  port: 443
-  password: T-Me-V2RayyNGvpn
-  sni: 185.250.41.245
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: T.me%2FV2RayyNGvpn
-- name: 'ARISTA #6'
   type: hysteria2
   server: 80.66.81.78
   port: 9443
@@ -69,7 +14,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
-- name: 'ARISTA #7'
+- name: 'ARISTA #2'
   type: hysteria2
   server: 191.101.238.183
   port: 54040
@@ -80,6 +25,72 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: '%40JynMarket'
+- name: 'ARISTA #4'
+  type: hysteria2
+  server: 185.250.41.245
+  port: 443
+  password: Z7MFGgpuzh
+  sni: 185.250.41.245
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: T.me%2FV2RayyNGvpn
+- name: 'ARISTA #5'
+  type: hysteria2
+  server: 185.250.41.245
+  port: 443
+  password: S0Mq06tf1I
+  sni: 185.250.41.245
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: T.me%2FV2RayyNGvpn
+- name: 'ARISTA #6'
+  type: hysteria2
+  server: 87.120.106.36
+  port: 443
+  password: 5U7LBgpLNj
+  sni: 87.120.106.36
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: T-me-V2RayyNGvpn-ioSniper
+- name: 'ARISTA #7'
+  type: hysteria2
+  server: 185.250.41.245
+  port: 443
+  password: dJtElQSz4v
+  sni: 185.250.41.245
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: T.me%2FV2RayyNGvpn
+- name: 'ARISTA #8'
+  type: hysteria2
+  server: 185.250.41.245
+  port: 443
+  password: T-Me-V2RayyNGvpn
+  sni: 185.250.41.245
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: T.me%2FV2RayyNGvpn
+- name: 'ARISTA #9'
+  type: hysteria2
+  server: 65.109.177.191
+  port: 443
+  password: t-me-V2RayyNGvpn
+  sni: 65.109.177.191
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: t-me-V2RayyNGvpn
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
@@ -91,11 +102,12 @@ proxy-groups:
   proxies: &id001
   - 'ARISTA #1'
   - 'ARISTA #2'
-  - 'ARISTA #3'
   - 'ARISTA #4'
   - 'ARISTA #5'
   - 'ARISTA #6'
   - 'ARISTA #7'
+  - 'ARISTA #8'
+  - 'ARISTA #9'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204
