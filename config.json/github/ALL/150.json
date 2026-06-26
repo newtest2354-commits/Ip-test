@@ -1,5 +1,5 @@
 // GITHUB - ALL - Tier 150
-// Updated: 2026-06-25 20:13:57
+// Updated: 2026-06-26 04:15:03
 // Count: 120
 
 {
@@ -380,54 +380,6 @@
     {
       "type": "trojan",
       "tag": "T.ME: @aristapnel #18",
-      "server": "51.75.86.196",
-      "server_port": 55646,
-      "password": "03mpolj39zyewzufal2r",
-      "tls": {
-        "enabled": true,
-        "server_name": "51.75.86.196",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "T.ME: @aristapnel #19",
-      "server": "51.75.86.196",
-      "server_port": 55646,
-      "password": "03mpolj39zyewzufal2r",
-      "tls": {
-        "enabled": true,
-        "server_name": "51.75.86.196",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "T.ME: @aristapnel #20",
-      "server": "51.75.86.196",
-      "server_port": 55646,
-      "password": "03mpolj39zyewzufal2r",
-      "tls": {
-        "enabled": true,
-        "server_name": "51.75.86.196",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "T.ME: @aristapnel #21",
       "server": "104.16.72.70",
       "server_port": 443,
       "password": "6c862415-30d2-4813-8e49-42e99a0bd415",
@@ -450,7 +402,7 @@
     },
     {
       "type": "trojan",
-      "tag": "T.ME: @aristapnel #22",
+      "tag": "T.ME: @aristapnel #19",
       "server": "45.130.125.126",
       "server_port": 443,
       "password": "86957ec0-b213-433b-a43b-51f2175e0ec3",
@@ -473,7 +425,7 @@
     },
     {
       "type": "trojan",
-      "tag": "T.ME: @aristapnel #23",
+      "tag": "T.ME: @aristapnel #20",
       "server": "213.176.113.98",
       "server_port": 2053,
       "password": "8r<[9'l6hAO#8ZQi",
@@ -496,7 +448,7 @@
     },
     {
       "type": "trojan",
-      "tag": "T.ME: @aristapnel #24",
+      "tag": "T.ME: @aristapnel #21",
       "server": "167.68.4.199",
       "server_port": 2053,
       "password": "Aimer",
@@ -513,13 +465,93 @@
     },
     {
       "type": "trojan",
-      "tag": "T.ME: @aristapnel #25",
-      "server": "185.126.236.44",
+      "tag": "T.ME: @aristapnel #22",
+      "server": "119.246.1.143",
       "server_port": 443,
-      "password": "BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL",
+      "password": "BxceQaOe",
       "tls": {
         "enabled": true,
-        "server_name": "www.mesaly.click",
+        "server_name": "t.me/ripaojiedian",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "T.ME: @aristapnel #23",
+      "server": "207.126.167.162",
+      "server_port": 443,
+      "password": "GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K",
+      "tls": {
+        "enabled": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "T.ME: @aristapnel #24",
+      "server": "38.60.168.129",
+      "server_port": 443,
+      "password": "Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD",
+      "tls": {
+        "enabled": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "T.ME: @aristapnel #25",
+      "server": "151.101.110.219",
+      "server_port": 443,
+      "password": "MITIVPN",
+      "tls": {
+        "enabled": true,
+        "server_name": "global.fastly.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ed=mitivpn",
+        "headers": {
+          "Host": "global.fastly.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "T.ME: @aristapnel #26",
+      "server": "masir_sefid",
+      "server_port": 443,
+      "password": "Masir_Sefid",
+      "tls": {
+        "enabled": true,
+        "server_name": "store.steampowered.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "w0XepGv1Hk0gBh1Apiw-nvn8SfzjWcDuxdxN1mpaF3g",
+          "short_id": "6ced01fc4aa417"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "T.ME: @aristapnel #27",
+      "server": "104.21.18.41",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "tls": {
+        "enabled": true,
+        "server_name": "linkkon-w.ir",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -528,85 +560,90 @@
         "alpn": [
           "http/1.1"
         ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "T.ME: @aristapnel #26",
-      "server": "185.126.236.44",
-      "server_port": 443,
-      "password": "BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.mesaly.click",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "T.ME: @aristapnel #27",
-      "server": "185.126.236.44",
-      "server_port": 443,
-      "password": "BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.mesaly.click",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn=mitivpn",
+        "headers": {
+          "Host": "linkkon-w.ir"
         }
       }
     },
     {
       "type": "trojan",
       "tag": "T.ME: @aristapnel #28",
-      "server": "185.126.236.44",
+      "server": "151.101.1.242",
       "server_port": 443,
-      "password": "BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL",
+      "password": "MiTiVPN",
       "tls": {
         "enabled": true,
-        "server_name": "www.mesaly.click",
+        "server_name": "www.f6r.ir",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/de=mitivpn",
+        "headers": {
+          "Host": "www.f6r.ir"
         }
       }
     },
     {
       "type": "trojan",
       "tag": "T.ME: @aristapnel #29",
-      "server": "185.126.236.44",
+      "server": "151.101.1.242",
       "server_port": 443,
-      "password": "BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL",
+      "password": "MiTiVPN",
       "tls": {
         "enabled": true,
-        "server_name": "www.mesaly.click",
+        "server_name": "www.f6r.ir",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/de=mitivpn",
+        "headers": {
+          "Host": "www.f6r.ir"
         }
       }
     },
     {
       "type": "trojan",
       "tag": "T.ME: @aristapnel #30",
-      "server": "185.126.236.44",
+      "server": "151.101.110.219",
       "server_port": 443,
-      "password": "BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL",
+      "password": "MiTiVPN",
       "tls": {
         "enabled": true,
-        "server_name": "www.mesaly.click",
+        "server_name": "ssl.fastly.com",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/de=mitivpn",
+        "headers": {
+          "Host": "ssl.fastly.com"
         }
       }
     },
@@ -677,30 +714,6 @@
     {
       "type": "hysteria2",
       "tag": "T.ME: @aristapnel #36",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "103.115.109.49",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #37",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "202.146.222.174",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #38",
       "server": "157.230.222.46",
       "server_port": 8443,
       "password": "MySecurePassword123",
@@ -712,7 +725,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #39",
+      "tag": "T.ME: @aristapnel #37",
       "server": "wuhantravel.duckdns.org",
       "server_port": 8443,
       "password": "MySecurePassword123",
@@ -724,7 +737,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #40",
+      "tag": "T.ME: @aristapnel #38",
       "server": "files.fantoff.online",
       "server_port": 10808,
       "password": "b95dd8e5-2758-408f-be99-9362eecee609",
@@ -736,7 +749,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #41",
+      "tag": "T.ME: @aristapnel #39",
       "server": "62.210.124.146",
       "server_port": 22000,
       "password": "dongtaiwang.com",
@@ -748,23 +761,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #42",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "130.49.161.70",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #43",
+      "tag": "T.ME: @aristapnel #40",
       "server": "3.66.236.81",
       "server_port": 443,
       "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
@@ -776,7 +773,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #44",
+      "tag": "T.ME: @aristapnel #41",
       "server": "3.79.47.137",
       "server_port": 443,
       "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
@@ -788,7 +785,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #45",
+      "tag": "T.ME: @aristapnel #42",
       "server": "vpn-sg-001.fastervpn.world",
       "server_port": 443,
       "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
@@ -800,23 +797,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #46",
-      "server": "80.66.81.78",
-      "server_port": 9443,
-      "password": "rs2mR3g9bZiMloftx6lZQ59Um1Ld",
-      "tls": {
-        "enabled": true,
-        "server_name": "80.66.81.78",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "oMgvuBy5Lj5kYM57sGsnjpjNcSEQ"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #47",
+      "tag": "T.ME: @aristapnel #43",
       "server": "mumbai-3.nezhasu.com",
       "server_port": 443,
       "password": "2b195c17-5ff5-4b0d-a809-210b92212394",
@@ -828,7 +809,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #48",
+      "tag": "T.ME: @aristapnel #44",
       "server": "lsdg1.lansecs.top",
       "server_port": 58338,
       "password": "e42a38c4-4bea-42d6-90f1-3076e12f8c51",
@@ -840,7 +821,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #49",
+      "tag": "T.ME: @aristapnel #45",
       "server": "70.34.215.221",
       "server_port": 20335,
       "password": "80747420-96c4-4a2f-83e6-eea4e46beb09",
@@ -856,7 +837,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #50",
+      "tag": "T.ME: @aristapnel #46",
       "server": "dir.cybsecguru.com",
       "server_port": 35000,
       "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
@@ -872,7 +853,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #51",
+      "tag": "T.ME: @aristapnel #47",
       "server": "falankefu1.nezhasu.com",
       "server_port": 443,
       "password": "2b195c17-5ff5-4b0d-a809-210b92212394",
@@ -884,7 +865,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #52",
+      "tag": "T.ME: @aristapnel #48",
       "server": "lsus3.lansecs.top",
       "server_port": 58338,
       "password": "e42a38c4-4bea-42d6-90f1-3076e12f8c51",
@@ -896,7 +877,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #53",
+      "tag": "T.ME: @aristapnel #49",
       "server": "lundun1.nezhasu.com",
       "server_port": 443,
       "password": "2b195c17-5ff5-4b0d-a809-210b92212394",
@@ -908,7 +889,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #54",
+      "tag": "T.ME: @aristapnel #50",
       "server": "xg.xn--mes13n8pi8x2b.shop",
       "server_port": 21072,
       "password": "642dc0b9-6481-4d84-ad60-3586e870f263",
@@ -920,7 +901,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #55",
+      "tag": "T.ME: @aristapnel #51",
       "server": "xg.xn--mes13n8pi8x2b.shop",
       "server_port": 21494,
       "password": "642dc0b9-6481-4d84-ad60-3586e870f263",
@@ -932,7 +913,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #56",
+      "tag": "T.ME: @aristapnel #52",
       "server": "tw.xn--mes13n8pi8x2b.shop",
       "server_port": 21828,
       "password": "642dc0b9-6481-4d84-ad60-3586e870f263",
@@ -944,7 +925,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #57",
+      "tag": "T.ME: @aristapnel #53",
       "server": "tw.xn--mes13n8pi8x2b.shop",
       "server_port": 21860,
       "password": "642dc0b9-6481-4d84-ad60-3586e870f263",
@@ -956,7 +937,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #58",
+      "tag": "T.ME: @aristapnel #54",
       "server": "rb.xn--mes13n8pi8x2b.shop",
       "server_port": 21545,
       "password": "642dc0b9-6481-4d84-ad60-3586e870f263",
@@ -968,7 +949,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #59",
+      "tag": "T.ME: @aristapnel #55",
       "server": "rb.xn--mes13n8pi8x2b.shop",
       "server_port": 21842,
       "password": "642dc0b9-6481-4d84-ad60-3586e870f263",
@@ -980,13 +961,61 @@
     },
     {
       "type": "hysteria2",
-      "tag": "T.ME: @aristapnel #60",
+      "tag": "T.ME: @aristapnel #56",
       "server": "mg.xn--mes13n8pi8x2b.shop",
       "server_port": 21349,
       "password": "642dc0b9-6481-4d84-ad60-3586e870f263",
       "tls": {
         "enabled": true,
         "server_name": "mg.xn--mes13n8pi8x2b.shop",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "T.ME: @aristapnel #57",
+      "server": "mg.xn--mes13n8pi8x2b.shop",
+      "server_port": 21639,
+      "password": "642dc0b9-6481-4d84-ad60-3586e870f263",
+      "tls": {
+        "enabled": true,
+        "server_name": "mg.xn--mes13n8pi8x2b.shop",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "T.ME: @aristapnel #58",
+      "server": "trq.xn--mes13n8pi8x2b.shop",
+      "server_port": 21112,
+      "password": "642dc0b9-6481-4d84-ad60-3586e870f263",
+      "tls": {
+        "enabled": true,
+        "server_name": "trq.xn--mes13n8pi8x2b.shop",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "T.ME: @aristapnel #59",
+      "server": "trq.xn--mes13n8pi8x2b.shop",
+      "server_port": 21910,
+      "password": "642dc0b9-6481-4d84-ad60-3586e870f263",
+      "tls": {
+        "enabled": true,
+        "server_name": "trq.xn--mes13n8pi8x2b.shop",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "T.ME: @aristapnel #60",
+      "server": "agt.xn--mes13n8pi8x2b.shop",
+      "server_port": 21440,
+      "password": "642dc0b9-6481-4d84-ad60-3586e870f263",
+      "tls": {
+        "enabled": true,
+        "server_name": "agt.xn--mes13n8pi8x2b.shop",
         "insecure": true
       }
     },
