@@ -1,3 +1,5 @@
+# Arista/smart_combiner_v2.py
+
 import os
 import re
 import json
@@ -66,7 +68,7 @@ class SmartConfigCombinerV2:
         return dict(port_counts)
 
     def load_configs_by_protocol(self) -> Dict[str, List[str]]:
-        base_path = "configs.txt/combined/ALL"
+        base_path = "configs.txt/combined"
         configs_by_protocol = defaultdict(list)
 
         for protocol in self.protocols:
@@ -76,6 +78,9 @@ class SmartConfigCombinerV2:
                     for line in f:
                         if not line.startswith('#') and line.strip():
                             configs_by_protocol[protocol].append(line.strip())
+                print(f"  ✅ Loaded {len(configs_by_protocol[protocol])} configs from {protocol}.txt")
+            else:
+                print(f"  ❌ File not found: {file_path}")
 
         return dict(configs_by_protocol)
 
@@ -293,10 +298,12 @@ class SmartConfigCombinerV2:
         for port, count in sorted(port_distribution.items(), key=lambda x: int(x[0])):
             print(f"  Port {port}: {count} IPs")
 
-        print("\n📡 Loading configs from configs.txt/combined/ALL/...")
+        print("\n📡 Loading configs from configs.txt/combined/...")
         configs_by_protocol = self.load_configs_by_protocol()
-        for protocol, configs in configs_by_protocol.items():
-            print(f"  {protocol}: {len(configs)} configs")
+        
+        if not configs_by_protocol:
+            print("❌ No configs found!")
+            return
 
         print("\n🔄 Processing protocols based on port distribution...")
         results = {}
@@ -304,12 +311,16 @@ class SmartConfigCombinerV2:
 
         for protocol in self.protocols:
             configs = configs_by_protocol.get(protocol, [])
+            if not configs:
+                print(f"  ⚠️ {protocol}: No configs found")
+                continue
+                
             processed = self.process_protocol(protocol, configs, port_distribution)
 
             if processed:
                 combined = []
                 used_ips = set()
-                for i, config in enumerate(processed):
+                for config in processed:
                     config_port = self.get_config_port(config, protocol)
                     matching_ip = None
                     for ip in best_ips:
@@ -331,7 +342,10 @@ class SmartConfigCombinerV2:
             else:
                 print(f"  ⚠️ {protocol}: No configs processed")
 
-        self.save_results(results, all_configs)
+        if results:
+            self.save_results(results, all_configs)
+        else:
+            print("\n❌ No results to save!")
 
         print("\n" + "=" * 60)
         print("✅ SMART COMBINER COMPLETED!")
