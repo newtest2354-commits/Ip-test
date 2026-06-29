@@ -1,5 +1,3 @@
-# Arista/smart_combiner_v2.py
-
 import os
 import re
 import json
@@ -68,7 +66,7 @@ class SmartConfigCombinerV2:
         return dict(port_counts)
 
     def load_configs_by_protocol(self) -> Dict[str, List[str]]:
-        base_path = "configs.txt/combined"
+        base_path = "configs.txt/combined/ALL"
         configs_by_protocol = defaultdict(list)
 
         for protocol in self.protocols:
@@ -78,7 +76,7 @@ class SmartConfigCombinerV2:
                     for line in f:
                         if not line.startswith('#') and line.strip():
                             configs_by_protocol[protocol].append(line.strip())
-                print(f"  ✅ Loaded {len(configs_by_protocol[protocol])} configs from {protocol}.txt")
+                print(f"  ✅ Loaded {len(configs_by_protocol[protocol])} configs from ALL/{protocol}.txt")
             else:
                 print(f"  ❌ File not found: {file_path}")
 
@@ -298,7 +296,7 @@ class SmartConfigCombinerV2:
         for port, count in sorted(port_distribution.items(), key=lambda x: int(x[0])):
             print(f"  Port {port}: {count} IPs")
 
-        print("\n📡 Loading configs from configs.txt/combined/...")
+        print("\n📡 Loading configs from configs.txt/combined/ALL/...")
         configs_by_protocol = self.load_configs_by_protocol()
         
         if not configs_by_protocol:
