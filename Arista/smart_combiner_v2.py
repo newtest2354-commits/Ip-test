@@ -14,9 +14,9 @@ class SmartConfigCombinerV2:
         self.max_ips = 50
 
     def load_best_ips(self) -> List[Dict]:
-        ip_file = "best_ip/ip_port_cdn_sni_country_type.txt"
+        ip_file = "best_ip/full_details.txt"
         if not os.path.exists(ip_file):
-            print("❌ best_ip file not found!")
+            print(f"❌ {ip_file} not found!")
             return []
 
         ips = []
@@ -66,11 +66,11 @@ class SmartConfigCombinerV2:
         return dict(port_counts)
 
     def load_configs_by_protocol(self) -> Dict[str, List[str]]:
-        base_path = "configs.txt/combined"
+        base_path = "configs.txt/combined/ALL"
         configs_by_protocol = defaultdict(list)
 
         for protocol in self.protocols:
-            file_path = os.path.join(base_path, protocol, "ALL.txt")
+            file_path = os.path.join(base_path, f"{protocol}.txt")
             if os.path.exists(file_path):
                 with open(file_path, 'r', encoding='utf-8') as f:
                     for line in f:
@@ -280,7 +280,7 @@ class SmartConfigCombinerV2:
         print("SMART CONFIG COMBINER V2 - ARISTA ULTRA")
         print("=" * 60)
 
-        print("\n📡 Loading 50 best IPs...")
+        print("\n📡 Loading 50 best IPs from best_ip/full_details.txt...")
         best_ips = self.load_best_ips()
         print(f"✅ Loaded {len(best_ips)} best IPs")
 
@@ -293,7 +293,7 @@ class SmartConfigCombinerV2:
         for port, count in sorted(port_distribution.items(), key=lambda x: int(x[0])):
             print(f"  Port {port}: {count} IPs")
 
-        print("\n📡 Loading configs...")
+        print("\n📡 Loading configs from configs.txt/combined/ALL/...")
         configs_by_protocol = self.load_configs_by_protocol()
         for protocol, configs in configs_by_protocol.items():
             print(f"  {protocol}: {len(configs)} configs")
@@ -308,15 +308,17 @@ class SmartConfigCombinerV2:
 
             if processed:
                 combined = []
+                used_ips = set()
                 for i, config in enumerate(processed):
                     config_port = self.get_config_port(config, protocol)
                     matching_ip = None
                     for ip in best_ips:
-                        if ip.get('port') == config_port and ip not in combined:
+                        if ip.get('port') == config_port and ip.get('ip') not in used_ips:
                             matching_ip = ip
                             break
 
                     if matching_ip:
+                        used_ips.add(matching_ip.get('ip'))
                         config = self.replace_ip_and_port(config, protocol, matching_ip)
                         config = self.replace_sni(config, protocol, matching_ip)
                         config = self.add_arista_tag(config, protocol, matching_ip)
