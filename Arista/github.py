@@ -1,9 +1,13 @@
+# github.py
+
 import requests
 import re
 import json
 import hashlib
 import base64
 import uuid
+import time
+import concurrent.futures
 from datetime import datetime
 from urllib.parse import urlparse
 import os
@@ -20,13 +24,65 @@ SOURCES = [
     "https://gitverse.ru/api/repos/flaafix/AetrisVPN_Black_list/raw/branch/master/configs.txt",
     "https://raw.githubusercontent.com/zieng2/wl/main/vless_universal.txt"
 ]
+
+TEST_URLS = [
+    "http://captive.apple.com/hotspot-detect.html",
+    "http://www.gstatic.com/generate_204",
+    "http://connectivitycheck.gstatic.com/generate_204",
+    "http://cloudflare.com/cdn-cgi/trace"
+]
+
 class GitHubConfigExtractor:
     def __init__(self):
         self.session = requests.Session()
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
         })
-    
+        self.max_workers = 100
+        self.test_timeout = 3
+
+    def test_config(self, config):
+        try:
+            if config.startswith('vmess://'):
+                decoded = self.decode_vmess(config)
+                if decoded:
+                    server = decoded.get('add', '')
+                    port = decoded.get('port', 443)
+            elif config.startswith('vless://') or config.startswith('trojan://'):
+                parsed = urlparse(config)
+                server = parsed.hostname
+                port = parsed.port or 443
+            elif config.startswith('ss://'):
+                if '@' in config:
+                    parts = config.split('@')
+                    if len(parts) == 2:
+                        server_port = parts[1].split('#')[0]
+                        if ':' in server_port:
+                            server, port = server_port.split(':', 1)
+                            port = int(port)
+                        else:
+                            return False
+                else:
+                    return False
+            else:
+                return False
+
+            if not server:
+                return False
+
+            for url in TEST_URLS:
+                try:
+                    test_url = f"http://{server}:{port}/"
+                    response = requests.get(test_url, timeout=self.test_timeout, allow_redirects=True)
+                    if response.status_code in [200, 204, 301, 302, 303, 307, 308]:
+                        return True
+                except:
+                    continue
+
+            return False
+        except:
+            return False
+
     def fetch_content(self, url):
         try:
             response = self.session.get(url, timeout=15)
@@ -34,7 +90,7 @@ class GitHubConfigExtractor:
             return response.text
         except:
             return ""
-    
+
     def extract_configs(self, content):
         patterns = [
             r'(vmess://[A-Za-z0-9+/=]+)',
@@ -51,23 +107,23 @@ class GitHubConfigExtractor:
         for pattern in patterns:
             configs.extend(re.findall(pattern, content, re.IGNORECASE))
         return [c for c in configs if not c.strip().startswith('ss://{')]
-    
+
     def standardize_ss(self, config_str):
         try:
             if not config_str.startswith('ss://'):
                 return config_str
-            
+
             config_str = config_str.strip()
-            
+
             if '@' in config_str and '#' not in config_str:
                 return config_str
-            
+
             parts = config_str.split('#', 1)
             base_part = parts[0][5:]
-            
+
             if len(base_part) % 4 != 0:
                 base_part += '=' * (4 - len(base_part) % 4)
-            
+
             try:
                 decoded = base64.b64decode(base_part).decode('utf-8')
                 if '@' in decoded:
@@ -79,11 +135,11 @@ class GitHubConfigExtractor:
                     return result
             except:
                 pass
-            
+
             return config_str
         except:
             return config_str
-    
+
     def decode_vmess(self, config_str):
         try:
             base64_part = config_str[8:]
@@ -92,7 +148,7 @@ class GitHubConfigExtractor:
             return json.loads(base64.b64decode(base64_part).decode('utf-8'))
         except:
             return None
-    
+
     def validate_vmess_dict(self, config_dict):
         required_keys = ['v', 'ps', 'add', 'port', 'id', 'aid']
         if not all(k in config_dict for k in required_keys):
@@ -105,47 +161,47 @@ class GitHubConfigExtractor:
         except:
             return False
         return True
-    
+
     def validate_ss(self, config_str):
         try:
             config_str = self.standardize_ss(config_str)
             if not config_str.startswith('ss://'):
                 return False
-            
+
             parts = config_str.split('#', 1)
             base_part = parts[0][5:]
-            
+
             if '@' not in base_part:
                 return False
-            
+
             encoded_method_pass, server_part = base_part.split('@', 1)
-            
+
             if len(encoded_method_pass) % 4 != 0:
                 encoded_method_pass += '=' * (4 - len(encoded_method_pass) % 4)
-            
+
             try:
                 decoded_mp = base64.b64decode(encoded_method_pass).decode('utf-8')
                 if ':' not in decoded_mp:
                     return False
             except:
                 return False
-            
+
             if ':' not in server_part:
                 return False
-            
+
             server, port_str = server_part.split(':', 1)
             port = int(port_str)
             if port < 1 or port > 65535:
                 return False
-            
+
             return True
         except:
             return False
-    
+
     def validate_config(self, config):
         if isinstance(config, dict):
             return self.validate_vmess_dict(config)
-        
+
         config_str = config
         if config_str.startswith('vmess://'):
             decoded = self.decode_vmess(config_str)
@@ -159,13 +215,13 @@ class GitHubConfigExtractor:
         elif any(config_str.startswith(proto) for proto in ['hysteria2://','hy2://','hysteria://','tuic://']):
             return True
         return False
-    
+
     def tag_config(self, config, tag="T.ME: @aristapnel"):
         if isinstance(config, dict):
             config['ps'] = tag
             json_str = json.dumps(config, separators=(',', ':'), ensure_ascii=False)
             return 'vmess://' + base64.b64encode(json_str.encode()).decode()
-        
+
         config_str = config
         if config_str.startswith('vmess://'):
             decoded = self.decode_vmess(config_str)
@@ -179,11 +235,11 @@ class GitHubConfigExtractor:
             return f"{base}#{tag}"
         else:
             return f"{config_str}#{tag}"
-    
+
     def deduplicate(self, configs):
         unique_configs = []
         seen_hashes = set()
-        
+
         for config in configs:
             normalized = config
             if isinstance(config, str) and config.startswith('vmess://'):
@@ -194,20 +250,20 @@ class GitHubConfigExtractor:
                     normalized = 'vmess://' + base64.b64encode(json.dumps(decoded_copy, separators=(',', ':'), ensure_ascii=False).encode()).decode()
             elif isinstance(config, str):
                 normalized = config.split('#',1)[0] if '#' in config else config
-            
+
             config_hash = hashlib.md5(normalized.encode()).hexdigest()
             if config_hash not in seen_hashes:
                 seen_hashes.add(config_hash)
                 unique_configs.append(config)
-        
+
         return unique_configs
-    
+
     def categorize(self, configs):
         categories = {
             'vmess': [], 'vless': [], 'trojan': [], 'ss': [],
             'hysteria2': [], 'hysteria': [], 'tuic': [], 'other': []
         }
-        
+
         for config in configs:
             if isinstance(config, str):
                 if config.startswith('vmess://'):
@@ -226,34 +282,34 @@ class GitHubConfigExtractor:
                     categories['tuic'].append(config)
                 else:
                     categories['other'].append(config)
-        
+
         return categories
-    
+
     def process_sources(self):
         all_configs = []
         failed_sources = []
-        
+
         print(f"Processing {len(SOURCES)} GitHub sources...")
-        
+
         for i, url in enumerate(SOURCES, 1):
             print(f"[{i}/{len(SOURCES)}] {url}")
-            
+
             content = self.fetch_content(url)
             if content:
                 configs = self.extract_configs(content)
                 all_configs.extend(configs)
             else:
                 failed_sources.append(url)
-        
+
         processed_configs = []
         failed_configs = 0
-        
+
         for config in all_configs:
             if config.startswith('ss://'):
                 try:
                     standard_ss = self.standardize_ss(config)
                     if self.validate_config(standard_ss):
-                        processed_configs.append(self.tag_config(standard_ss))
+                        processed_configs.append(standard_ss)
                     else:
                         failed_configs += 1
                 except:
@@ -261,24 +317,45 @@ class GitHubConfigExtractor:
             elif config.startswith('vmess://'):
                 decoded = self.decode_vmess(config)
                 if decoded and isinstance(decoded, dict) and self.validate_config(decoded):
-                    processed_configs.append(self.tag_config(decoded))
+                    processed_configs.append(config)
                 else:
                     failed_configs += 1
             else:
                 if self.validate_config(config):
-                    processed_configs.append(self.tag_config(config))
+                    processed_configs.append(config)
                 else:
                     failed_configs += 1
-        
+
         unique_configs = self.deduplicate(processed_configs)
-        categories = self.categorize(unique_configs)
-        
-        return categories, len(unique_configs), len(failed_sources), failed_configs
-    
+
+        print(f"\n📡 Testing {len(unique_configs)} configs with HTTP...")
+        alive_configs = []
+        dead_configs = 0
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=self.max_workers) as executor:
+            futures = {executor.submit(self.test_config, config): config for config in unique_configs}
+            for future in concurrent.futures.as_completed(futures):
+                config = futures[future]
+                try:
+                    if future.result():
+                        alive_configs.append(config)
+                    else:
+                        dead_configs += 1
+                except:
+                    dead_configs += 1
+
+        print(f"✅ Alive configs: {len(alive_configs)}")
+        print(f"❌ Dead configs: {dead_configs}")
+
+        tagged_configs = [self.tag_config(config) for config in alive_configs]
+        categories = self.categorize(tagged_configs)
+
+        return categories, len(alive_configs), len(failed_sources), failed_configs
+
     def save_results(self, categories, total_count):
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         os.makedirs('configs.txt/github', exist_ok=True)
-        
+
         for category, configs in categories.items():
             if configs:
                 filename = f"configs.txt/github/{category}.txt"
@@ -287,14 +364,14 @@ class GitHubConfigExtractor:
                 content += f"# Count: {len(configs)}\n"
                 content += "# Source: GitHub Repositories\n\n"
                 content += "\n".join(configs)
-                
+
                 with open(filename, 'w', encoding='utf-8') as f:
                     f.write(content)
-        
+
         all_configs = []
         for configs in categories.values():
             all_configs.extend(configs)
-        
+
         if all_configs:
             filename = "configs.txt/github/all.txt"
             content = f"# All GitHub Configurations\n"
@@ -302,30 +379,30 @@ class GitHubConfigExtractor:
             content += f"# Total Count: {len(all_configs)}\n"
             content += "# Source: GitHub Repositories\n\n"
             content += "\n".join(all_configs)
-            
+
             with open(filename, 'w', encoding='utf-8') as f:
                 f.write(content)
-        
+
         return len(all_configs)
 
 def main():
     print("=" * 60)
     print("ARISTA GITHUB CONFIG EXTRACTOR")
     print("=" * 60)
-    
+
     try:
         extractor = GitHubConfigExtractor()
         categories, total_count, failed_sources, failed_configs = extractor.process_sources()
         saved_count = extractor.save_results(categories, total_count)
-        
+
         print(f"\n✅ PROCESSING COMPLETE")
-        print(f"Total unique configs: {total_count}")
+        print(f"Total alive configs: {total_count}")
         print(f"Configs saved: {saved_count}")
         if failed_sources > 0:
             print(f"Failed sources: {failed_sources}")
         if failed_configs > 0:
             print(f"Failed configs: {failed_configs}")
-        
+
     except Exception as e:
         print(f"\n❌ ERROR: {e}")
 
