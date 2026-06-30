@@ -1,7 +1,47 @@
 # GITHUB - SS - Tier ALL
-# Updated: 2026-06-30 18:35:08
-# Count: 126
+# Updated: 2026-06-30 19:05:40
+# Count: 125
 
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+  - 1.1.1.1
+  - 8.8.8.8
+  nameserver:
+  - https://1.1.1.1/dns-query
+  - https://1.0.0.1/dns-query
+  - https://8.8.8.8/dns-query
+  - tls://1.1.1.1
+  - tls://8.8.8.8
+sniffer:
+  enable: true
+  parse-pure-ip: true
+  override-destination: true
+  sniff:
+    TLS:
+      ports:
+      - 443
+      - 8443
+    HTTP:
+      ports:
+      - 80
+      - 8080
+      - 8880
+    QUIC:
+      ports:
+      - 443
+      - 8443
+rules:
+- MATCH,🎯 ARISTA CORE
 proxies:
 - name: 'T.ME: @aristapnel #1'
   type: ss
@@ -501,7 +541,7 @@ proxies:
   tcp-fast-open: true
 - name: 'T.ME: @aristapnel #69'
   type: ss
-  server: 82.38.31.216
+  server: 82.38.31.217
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -565,13 +605,21 @@ proxies:
   tcp-fast-open: true
 - name: 'T.ME: @aristapnel #77'
   type: ss
+  server: 158.173.24.73
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+  tcp-fast-open: true
+- name: 'T.ME: @aristapnel #78'
+  type: ss
   server: 67.219.106.119
   port: 26286
   cipher: chacha20-ietf-poly1305
   password: xfscSDcb-SeEqqRb.omzVGgVgNpXh3bA1u
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #78'
+- name: 'T.ME: @aristapnel #79'
   type: ss
   server: 141.227.152.129
   port: 8388
@@ -579,7 +627,7 @@ proxies:
   password: VJeAjiJ40F2Il17Elv285W
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #79'
+- name: 'T.ME: @aristapnel #80'
   type: ss
   server: 140.174.184.5
   port: 8388
@@ -587,7 +635,7 @@ proxies:
   password: qItG8SueYQcP
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #80'
+- name: 'T.ME: @aristapnel #81'
   type: ss
   server: 61.171.92.202
   port: 1001
@@ -595,20 +643,12 @@ proxies:
   password: '123'
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #81'
+- name: 'T.ME: @aristapnel #82'
   type: ss
   server: ru.moktana.app
   port: 51523
   cipher: chacha20-ietf-poly1305
   password: 7SEstdmLhf-aFK_G9eaYHKT_YpSov58B
-  udp: true
-  tcp-fast-open: true
-- name: 'T.ME: @aristapnel #82'
-  type: ss
-  server: 82.38.31.17
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
   tcp-fast-open: true
 - name: 'T.ME: @aristapnel #83'
@@ -989,21 +1029,13 @@ proxies:
   tcp-fast-open: true
 - name: 'T.ME: @aristapnel #130'
   type: ss
-  server: 82.38.31.217
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-  tcp-fast-open: true
-- name: 'T.ME: @aristapnel #131'
-  type: ss
   server: 193.29.139.179
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: cvII85TrW6n0OGyfpHVS1u
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #132'
+- name: 'T.ME: @aristapnel #131'
   type: ss
   server: 82.38.31.190
   port: 8080
@@ -1145,7 +1177,6 @@ proxy-groups:
   - 'T.ME: @aristapnel #129'
   - 'T.ME: @aristapnel #130'
   - 'T.ME: @aristapnel #131'
-  - 'T.ME: @aristapnel #132'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204
