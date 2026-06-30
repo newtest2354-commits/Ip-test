@@ -519,24 +519,6 @@ class ConfigToJSONConverter:
                 "servers": [
                     {
                         "type": "https",
-                        "tag": "shecan",
-                        "server": "178.22.122.100",
-                        "path": "/dns-query"
-                    },
-                    {
-                        "type": "https",
-                        "tag": "403",
-                        "server": "185.51.200.2",
-                        "path": "/dns-query"
-                    },
-                    {
-                        "type": "https",
-                        "tag": "begzar",
-                        "server": "10.202.10.202",
-                        "path": "/dns-query"
-                    },
-                    {
-                        "type": "https",
                         "tag": "cloudflare",
                         "server": "1.1.1.1",
                         "path": "/dns-query"
@@ -561,7 +543,7 @@ class ConfigToJSONConverter:
                         "server": "local"
                     }
                 ],
-                "final": "shecan"
+                "final": "cloudflare"
             },
             "inbounds": [
                 {
@@ -599,7 +581,7 @@ class ConfigToJSONConverter:
             "route": {
                 "auto_detect_interface": True,
                 "default_domain_resolver": {
-                    "server": "shecan",
+                    "server": "cloudflare",
                     "strategy": "prefer_ipv4"
                 },
                 "final": "🚀 ARISTA AUTO BEST",
