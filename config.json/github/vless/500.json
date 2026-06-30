@@ -1,5 +1,5 @@
 // GITHUB - VLESS - Tier 500
-// Updated: 2026-06-30 09:55:27
+// Updated: 2026-06-30 14:35:14
 // Count: 492
 
 {
@@ -9823,66 +9823,84 @@
     {
       "type": "vless",
       "tag": "T.ME: @aristapnel #498",
-      "server": "151.101.69.219",
+      "server": "188.114.97.0",
       "server_port": 443,
-      "uuid": "0054d04a-2384-471e-b4f8-a52699c21ff8",
+      "uuid": "03896a37-db8f-44ed-8ce1-45a1577f6da6",
       "tls": {
         "enabled": true,
-        "server_name": "global.fastly.com",
+        "server_name": "stipulations.gelatin.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "randomized"
         },
         "alpn": [
+          "h3",
           "h2",
           "http/1.1"
         ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiZzIxRUF6V2JFOW5IRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560",
+        "headers": {
+          "Host": "stipulations.gelatin.workers.dev"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "T.ME: @aristapnel #499",
-      "server": "zeus-panel-6vj4ds.sajadasakereh0095.workers.dev",
+      "server": "172.67.215.168",
       "server_port": 443,
-      "uuid": "007327be-2e82-435d-90d6-3682282a434f",
+      "uuid": "03896a37-db8f-44ed-8ce1-45a1577f6da6",
       "tls": {
         "enabled": true,
-        "server_name": "zeus-panel-6vj4ds.sajadasakereh0095.workers.dev",
+        "server_name": "stipulations.gelatin.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
+          "fingerprint": "randomized"
+        },
+        "alpn": [
+          "h3",
+          "h2",
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/eyJqdW5rIjoiZzIxRUF6V2JFOW5IRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560",
         "headers": {
-          "Host": "zeus-panel-6vj4ds.sajadasakereh0095.workers.dev"
+          "Host": "stipulations.gelatin.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "T.ME: @aristapnel #500",
-      "server": "172.67.195.229",
+      "server": "104.21.5.28",
       "server_port": 443,
-      "uuid": "00e94078-bb1e-49aa-8567-e1b3b2843150",
+      "uuid": "03896a37-db8f-44ed-8ce1-45a1577f6da6",
       "tls": {
         "enabled": true,
-        "server_name": "rapid-hat-441d.platovpn.workers.dev",
+        "server_name": "stipulations.gelatin.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
+          "fingerprint": "randomized"
+        },
+        "alpn": [
+          "h3",
+          "h2",
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/eyJqdW5rIjoiZzIxRUF6V2JFOW5IRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560",
         "headers": {
-          "Host": "rapid-hat-441d.platovpn.workers.dev"
+          "Host": "stipulations.gelatin.workers.dev"
         }
       }
     },

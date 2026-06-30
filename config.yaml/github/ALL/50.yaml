@@ -1,5 +1,5 @@
 # GITHUB - ALL - Tier 50
-# Updated: 2026-06-30 09:52:00
+# Updated: 2026-06-30 14:33:11
 # Count: 50
 
 proxies:
@@ -150,86 +150,86 @@ proxies:
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 'T.ME: @aristapnel #12'
   type: hysteria2
-  server: 202.61.205.86
-  port: 4433
-  password: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
-  sni: 202.61.205.86
+  server: mumbai-3.nezhasu.com
+  port: 443
+  password: 2b195c17-5ff5-4b0d-a809-210b92212394
+  sni: mumbai-3.nezhasu.com
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #13'
   type: hysteria2
-  server: musicclips.videolinks.ru
-  port: 8443
-  password: 653m8mmiy7048p0f
-  sni: musicclips.videolinks.ru
+  server: lsdg1.lansecs.top
+  port: 58338
+  password: e42a38c4-4bea-42d6-90f1-3076e12f8c51
+  sni: lsdg1.lansecs.top
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: 8zzng75tz4tf82pj
 - name: 'T.ME: @aristapnel #14'
   type: hysteria2
-  server: social.klipp.su
-  port: 443
-  password: 653m8mmiy7048p0f
-  sni: social.klipp.su
+  server: 70.34.215.221
+  port: 20335
+  password: 80747420-96c4-4a2f-83e6-eea4e46beb09
+  sni: 70.34.215.221
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
   obfs: salamander
-  obfs-password: 3sv5vpdl9xr84lyb
+  obfs-password: U1wBrYQyFm
 - name: 'T.ME: @aristapnel #15'
   type: hysteria2
-  server: 140.245.27.220
-  port: 51000
-  password: 940f51d6-e0a4-4add-b96b-328e4a84b642
-  sni: 140.245.27.220
+  server: dir.cybsecguru.com
+  port: 35000
+  password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
+  sni: dir.cybsecguru.com
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: '%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
 - name: 'T.ME: @aristapnel #16'
   type: hysteria2
-  server: 103.115.109.49
+  server: falankefu1.nezhasu.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 103.115.109.49
+  password: 2b195c17-5ff5-4b0d-a809-210b92212394
+  sni: falankefu1.nezhasu.com
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #17'
   type: hysteria2
-  server: 103.115.109.49
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 103.115.109.49
+  server: lsus3.lansecs.top
+  port: 58338
+  password: e42a38c4-4bea-42d6-90f1-3076e12f8c51
+  sni: lsus3.lansecs.top
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #18'
   type: hysteria2
-  server: 13.231.108.76
+  server: lundun1.nezhasu.com
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 13.231.108.76
+  password: 2b195c17-5ff5-4b0d-a809-210b92212394
+  sni: lundun1.nezhasu.com
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #19'
   type: hysteria2
-  server: 202.146.222.174
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
+  server: xg.xn--mes13n8pi8x2b.shop
+  port: 21072
+  password: 642dc0b9-6481-4d84-ad60-3586e870f263
+  sni: xg.xn--mes13n8pi8x2b.shop
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #20'
   type: hysteria2
-  server: 202.146.222.174
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
+  server: xg.xn--mes13n8pi8x2b.shop
+  port: 21494
+  password: 642dc0b9-6481-4d84-ad60-3586e870f263
+  sni: xg.xn--mes13n8pi8x2b.shop
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome

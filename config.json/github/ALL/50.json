@@ -1,5 +1,5 @@
 // GITHUB - ALL - Tier 50
-// Updated: 2026-06-30 09:55:27
+// Updated: 2026-06-30 14:35:14
 // Count: 40
 
 {
@@ -238,116 +238,116 @@
     {
       "type": "hysteria2",
       "tag": "T.ME: @aristapnel #12",
-      "server": "202.61.205.86",
-      "server_port": 4433,
-      "password": "18cf8030-1ceb-4b7d-8c0c-c036413c144e",
+      "server": "mumbai-3.nezhasu.com",
+      "server_port": 443,
+      "password": "2b195c17-5ff5-4b0d-a809-210b92212394",
       "tls": {
         "enabled": true,
-        "server_name": "202.61.205.86",
+        "server_name": "mumbai-3.nezhasu.com",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "T.ME: @aristapnel #13",
-      "server": "musicclips.videolinks.ru",
-      "server_port": 8443,
-      "password": "653m8mmiy7048p0f",
+      "server": "lsdg1.lansecs.top",
+      "server_port": 58338,
+      "password": "e42a38c4-4bea-42d6-90f1-3076e12f8c51",
       "tls": {
         "enabled": true,
-        "server_name": "musicclips.videolinks.ru",
+        "server_name": "lsdg1.lansecs.top",
         "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "8zzng75tz4tf82pj"
       }
     },
     {
       "type": "hysteria2",
       "tag": "T.ME: @aristapnel #14",
-      "server": "social.klipp.su",
-      "server_port": 443,
-      "password": "653m8mmiy7048p0f",
+      "server": "70.34.215.221",
+      "server_port": 20335,
+      "password": "80747420-96c4-4a2f-83e6-eea4e46beb09",
       "tls": {
         "enabled": true,
-        "server_name": "social.klipp.su",
+        "server_name": "70.34.215.221",
         "insecure": true
       },
       "obfs": {
         "type": "salamander",
-        "password": "3sv5vpdl9xr84lyb"
+        "password": "U1wBrYQyFm"
       }
     },
     {
       "type": "hysteria2",
       "tag": "T.ME: @aristapnel #15",
-      "server": "140.245.27.220",
-      "server_port": 51000,
-      "password": "940f51d6-e0a4-4add-b96b-328e4a84b642",
+      "server": "dir.cybsecguru.com",
+      "server_port": 35000,
+      "password": "b4bd0613-ff7c-4f2f-954d-185915e6ddad",
       "tls": {
         "enabled": true,
-        "server_name": "140.245.27.220",
+        "server_name": "dir.cybsecguru.com",
         "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
       }
     },
     {
       "type": "hysteria2",
       "tag": "T.ME: @aristapnel #16",
-      "server": "103.115.109.49",
+      "server": "falankefu1.nezhasu.com",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "password": "2b195c17-5ff5-4b0d-a809-210b92212394",
       "tls": {
         "enabled": true,
-        "server_name": "103.115.109.49",
+        "server_name": "falankefu1.nezhasu.com",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "T.ME: @aristapnel #17",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "server": "lsus3.lansecs.top",
+      "server_port": 58338,
+      "password": "e42a38c4-4bea-42d6-90f1-3076e12f8c51",
       "tls": {
         "enabled": true,
-        "server_name": "103.115.109.49",
+        "server_name": "lsus3.lansecs.top",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "T.ME: @aristapnel #18",
-      "server": "13.231.108.76",
+      "server": "lundun1.nezhasu.com",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "password": "2b195c17-5ff5-4b0d-a809-210b92212394",
       "tls": {
         "enabled": true,
-        "server_name": "13.231.108.76",
+        "server_name": "lundun1.nezhasu.com",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "T.ME: @aristapnel #19",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "server": "xg.xn--mes13n8pi8x2b.shop",
+      "server_port": 21072,
+      "password": "642dc0b9-6481-4d84-ad60-3586e870f263",
       "tls": {
         "enabled": true,
-        "server_name": "202.146.222.174",
+        "server_name": "xg.xn--mes13n8pi8x2b.shop",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "T.ME: @aristapnel #20",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "server": "xg.xn--mes13n8pi8x2b.shop",
+      "server_port": 21494,
+      "password": "642dc0b9-6481-4d84-ad60-3586e870f263",
       "tls": {
         "enabled": true,
-        "server_name": "202.146.222.174",
+        "server_name": "xg.xn--mes13n8pi8x2b.shop",
         "insecure": true
       }
     },
