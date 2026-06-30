@@ -1,6 +1,6 @@
 # GITHUB - TROJAN - Tier ALL
-# Updated: 2026-06-30 21:53:37
-# Count: 279
+# Updated: 2026-06-30 22:13:18
+# Count: 277
 
 mixed-port: 7890
 allow-lan: false
@@ -3676,7 +3676,7 @@ proxies:
       Host: www.creationlong.org
 - name: 'T.ME: @aristapnel #257'
   type: trojan
-  server: 45.127.35.143
+  server: 23.156.153.57
   port: 443
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -3692,20 +3692,20 @@ proxies:
       Host: tjsp.hhxaf.cc.cd
 - name: 'T.ME: @aristapnel #258'
   type: trojan
-  server: 23.156.153.57
+  server: space.byu.id.yxls.eu.cc
   port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  password: 86957ec0-b213-433b-a43b-51f2175e0ec3
   network: ws
   tls: true
   udp: true
   skip-cert-verify: true
   tcp-fast-open: true
-  servername: tjsp.hhxaf.cc.cd
+  servername: space.byu.id.yxls.eu.cc
   client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /au-do
     headers:
-      Host: tjsp.hhxaf.cc.cd
+      Host: space.byu.id.yxls.eu.cc
 - name: 'T.ME: @aristapnel #259'
   type: trojan
   server: 209.33.166.199
@@ -3724,21 +3724,6 @@ proxies:
       Host: tjsp.hhxaf.cc.cd
 - name: 'T.ME: @aristapnel #260'
   type: trojan
-  server: 2.144.21.112
-  port: 40443
-  password: humanity
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: www.creationlong.org
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
-- name: 'T.ME: @aristapnel #261'
-  type: trojan
   server: 151.241.129.141
   port: 443
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
@@ -3753,7 +3738,34 @@ proxies:
     path: /
     headers:
       Host: hhcm.hhxaf.cc.cd
+- name: 'T.ME: @aristapnel #261'
+  type: trojan
+  server: 103.208.85.4
+  port: 443
+  password: EbsKv_weudqnr7-Zfld6F06M8HzO671%2B9c
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 103.208.85.4
+  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #262'
+  type: trojan
+  server: 2.144.21.112
+  port: 40443
+  password: humanity
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: www.creationlong.org
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
+- name: 'T.ME: @aristapnel #263'
   type: trojan
   server: 207.180.29.179
   port: 443
@@ -3767,98 +3779,7 @@ proxies:
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: /12699/gYDyLb9UzS
-- name: 'T.ME: @aristapnel #263'
-  type: trojan
-  server: 64.112.43.251
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: hhcm.hhxaf.cc.cd
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: hhcm.hhxaf.cc.cd
 - name: 'T.ME: @aristapnel #264'
-  type: trojan
-  server: 167.88.172.82
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: hhcm.hhxaf.cc.cd
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: hhcm.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #265'
-  type: trojan
-  server: 199.255.96.11
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: hhcm.hhxaf.cc.cd
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: hhcm.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #266'
-  type: trojan
-  server: 119.246.1.143
-  port: 443
-  password: BxceQaOe
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: 119.246.1.143
-- name: 'T.ME: @aristapnel #267'
-  type: trojan
-  server: tjsp.hhxaf.cc.cd
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: tjsp.hhxaf.cc.cd
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: tjsp.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #268'
-  type: trojan
-  server: 146.235.16.191
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: tjsp.hhxaf.cc.cd
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: tjsp.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #269'
   type: trojan
   server: 62.3.15.203
   port: 443
@@ -3874,10 +3795,10 @@ proxies:
     path: /
     headers:
       Host: tjsp.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #270'
+- name: 'T.ME: @aristapnel #265'
   type: trojan
-  server: 146.56.187.1
-  port: 8443
+  server: 45.127.35.143
+  port: 443
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
   tls: true
@@ -3890,6 +3811,88 @@ proxies:
     path: /
     headers:
       Host: tjsp.hhxaf.cc.cd
+- name: 'T.ME: @aristapnel #266'
+  type: trojan
+  server: 198.62.62.162
+  port: 443
+  password: MiTiVPN
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 95r.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /MiTiVPN=NL
+    headers:
+      Host: 95r.ir
+- name: 'T.ME: @aristapnel #267'
+  type: trojan
+  server: 81.255.155.10
+  port: 443
+  password: humanity
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: www.creationlong.org
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
+- name: 'T.ME: @aristapnel #268'
+  type: trojan
+  server: 167.88.172.82
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: hhcm.hhxaf.cc.cd
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: hhcm.hhxaf.cc.cd
+- name: 'T.ME: @aristapnel #269'
+  type: trojan
+  server: cf.877774.xyz
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: tjsp.hhxaf.cc.cd
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+- name: 'T.ME: @aristapnel #270'
+  type: trojan
+  server: 199.181.197.176
+  port: 443
+  password: MiTiVPN
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 95r.ir
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /MiTiVPN=fL
+    headers:
+      Host: 95r.ir
 - name: 'T.ME: @aristapnel #271'
   type: trojan
   server: 94.140.0.100
@@ -3910,8 +3913,8 @@ proxies:
       Host: 95r.ir
 - name: 'T.ME: @aristapnel #272'
   type: trojan
-  server: 66.42.51.60
-  port: 8443
+  server: 199.255.96.11
+  port: 443
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
   tls: true
@@ -3926,24 +3929,23 @@ proxies:
       Host: hhcm.hhxaf.cc.cd
 - name: 'T.ME: @aristapnel #273'
   type: trojan
-  server: 199.181.197.176
+  server: 149.28.142.169
   port: 443
-  password: MiTiVPN
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
   tls: true
   udp: true
   skip-cert-verify: true
   tcp-fast-open: true
-  servername: 95r.ir
-  alpn:
-  - http/1.1
+  servername: tjsp.hhxaf.cc.cd
+  client-fingerprint: chrome
   ws-opts:
-    path: /MiTiVPN=fL
+    path: /
     headers:
-      Host: 95r.ir
+      Host: tjsp.hhxaf.cc.cd
 - name: 'T.ME: @aristapnel #274'
   type: trojan
-  server: cf.877774.xyz
+  server: tjsp.hhxaf.cc.cd
   port: 443
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -3959,7 +3961,18 @@ proxies:
       Host: tjsp.hhxaf.cc.cd
 - name: 'T.ME: @aristapnel #275'
   type: trojan
-  server: 161.118.213.45
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 119.246.1.143
+- name: 'T.ME: @aristapnel #276'
+  type: trojan
+  server: 64.112.43.251
   port: 443
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -3973,62 +3986,22 @@ proxies:
     path: /
     headers:
       Host: hhcm.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #276'
-  type: trojan
-  server: 81.255.155.10
-  port: 443
-  password: humanity
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: www.creationlong.org
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.creationlong.org
 - name: 'T.ME: @aristapnel #277'
   type: trojan
-  server: 198.62.62.162
+  server: 146.235.16.191
   port: 443
-  password: MiTiVPN
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
   tls: true
   udp: true
   skip-cert-verify: true
   tcp-fast-open: true
-  servername: 95r.ir
+  servername: tjsp.hhxaf.cc.cd
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
   ws-opts:
-    path: /MiTiVPN=NL
+    path: /
     headers:
-      Host: 95r.ir
-- name: 'T.ME: @aristapnel #278'
-  type: trojan
-  server: 23.149.28.8.sslip.io
-  port: 8443
-  password: 78c6cf8f30399bad3f63f15a9600a8ef
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: 23.149.28.8.sslip.io
-- name: 'T.ME: @aristapnel #279'
-  type: trojan
-  server: 103.208.85.4
-  port: 443
-  password: EbsKv_weudqnr7-Zfld6F06M8HzO671%2B9c
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: 103.208.85.4
-  client-fingerprint: chrome
+      Host: tjsp.hhxaf.cc.cd
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
@@ -4315,8 +4288,6 @@ proxy-groups:
   - 'T.ME: @aristapnel #275'
   - 'T.ME: @aristapnel #276'
   - 'T.ME: @aristapnel #277'
-  - 'T.ME: @aristapnel #278'
-  - 'T.ME: @aristapnel #279'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204

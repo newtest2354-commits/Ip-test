@@ -1,5 +1,5 @@
 // COMBINED - SS - Tier 150
-// Updated: 2026-06-30 21:56:43
+// Updated: 2026-06-30 22:16:21
 // Count: 2
 
 {
@@ -60,7 +60,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "ARISTA #42",
+      "tag": "ARISTA #41",
       "server": "20.234.9.106",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -79,7 +79,7 @@
       "tag": "🚀 ARISTA AUTO BEST",
       "outbounds": [
         "ARISTA #2",
-        "ARISTA #42"
+        "ARISTA #41"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "2m",
@@ -92,7 +92,7 @@
       "tag": "🎯 ARISTA MANUAL TESTED",
       "outbounds": [
         "ARISTA #2",
-        "ARISTA #42"
+        "ARISTA #41"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",

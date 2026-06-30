@@ -1,5 +1,5 @@
 // TELEGRAM - HYSTERIA2 - Tier ALL
-// Updated: 2026-06-30 21:56:44
+// Updated: 2026-06-30 22:16:22
 // Count: 7
 
 {
@@ -109,6 +109,26 @@
     {
       "type": "hysteria2",
       "tag": "ARISTA #4",
+      "server": "191.101.238.183",
+      "server_port": 54040,
+      "password": "q3tf4lsdoqpgpo4x",
+      "tls": {
+        "enabled": true,
+        "server_name": "191.101.238.183",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "@JynMarket"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "ARISTA #6",
       "server": "65.20.114.95",
       "server_port": 443,
       "password": "V2rayyNGvpn",
@@ -128,7 +148,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "ARISTA #5",
+      "tag": "ARISTA #7",
       "server": "143.14.59.229",
       "server_port": 443,
       "password": "t-me-V2RayyNGvpn",
@@ -148,7 +168,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "ARISTA #6",
+      "tag": "ARISTA #8",
       "server": "2.26.49.16",
       "server_port": 443,
       "password": "653m8mmiy7048p0f",
@@ -160,26 +180,6 @@
       "obfs": {
         "type": "salamander",
         "password": "3sv5vpdl9xr84lyb"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "ARISTA #7",
-      "server": "191.101.238.183",
-      "server_port": 54040,
-      "password": "q3tf4lsdoqpgpo4x",
-      "tls": {
-        "enabled": true,
-        "server_name": "191.101.238.183",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "@JynMarket"
       }
     },
     {
@@ -198,9 +198,9 @@
         "ARISTA #2",
         "ARISTA #3",
         "ARISTA #4",
-        "ARISTA #5",
         "ARISTA #6",
-        "ARISTA #7"
+        "ARISTA #7",
+        "ARISTA #8"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "2m",
@@ -216,9 +216,9 @@
         "ARISTA #2",
         "ARISTA #3",
         "ARISTA #4",
-        "ARISTA #5",
         "ARISTA #6",
-        "ARISTA #7"
+        "ARISTA #7",
+        "ARISTA #8"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
