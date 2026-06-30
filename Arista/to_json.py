@@ -508,25 +508,50 @@ class ConfigToJSONConverter:
                 "level": "info",
                 "timestamp": True
             },
-
             "dns": {
+                "strategy": "prefer_ipv4",
+                "independent_cache": True,
+                "cache_capacity": 8192,
+                "fakeip": {
+                    "enabled": True,
+                    "inet4_range": "198.18.0.0/15"
+                },
                 "servers": [
                     {
-                        "type": "udp",
-                        "tag": "google",
-                        "server": "8.8.8.8"
+                        "type": "https",
+                        "tag": "shecan",
+                        "server": "178.22.122.100",
+                        "path": "/dns-query"
                     },
                     {
-                        "type": "udp",
-                        "tag": "google2",
-                        "server": "8.8.4.4"
+                        "type": "https",
+                        "tag": "403",
+                        "server": "185.51.200.2",
+                        "path": "/dns-query"
+                    },
+                    {
+                        "type": "https",
+                        "tag": "begzar",
+                        "server": "10.202.10.202",
+                        "path": "/dns-query"
+                    },
+                    {
+                        "type": "https",
+                        "tag": "cloudflare",
+                        "server": "1.1.1.1",
+                        "path": "/dns-query"
+                    },
+                    {
+                        "type": "https",
+                        "tag": "google",
+                        "server": "8.8.8.8",
+                        "path": "/dns-query"
                     },
                     {
                         "type": "local",
                         "tag": "local"
                     }
                 ],
-
                 "rules": [
                     {
                         "domain": [
@@ -536,25 +561,27 @@ class ConfigToJSONConverter:
                         "server": "local"
                     }
                 ],
-
-                "final": "google"
+                "final": "shecan"
             },
-
             "inbounds": [
                 {
                     "type": "tun",
                     "tag": "tun-in",
                     "interface_name": "singbox-tun",
+                    "mtu": 9000,
                     "address": [
                         "172.19.0.1/30",
                         "fdfe:dcba:9876::1/126"
                     ],
                     "auto_route": True,
+                    "auto_redirect": True,
                     "strict_route": True,
-                    "stack": "mixed"
+                    "stack": "mixed",
+                    "endpoint_independent_nat": True,
+                    "sniff": True,
+                    "domain_strategy": "prefer_ipv4"
                 }
             ],
-
             "outbounds": (
                 cleaned_proxies
                 + [
@@ -569,18 +596,22 @@ class ConfigToJSONConverter:
                 ]
                 + proxy_groups
             ),
-
             "route": {
                 "auto_detect_interface": True,
-
                 "default_domain_resolver": {
-                    "server": "google",
+                    "server": "shecan",
                     "strategy": "prefer_ipv4"
                 },
-
                 "final": "🚀 ARISTA AUTO BEST",
-
                 "rules": [
+                    {
+                        "clash_mode": "Direct",
+                        "outbound": "direct"
+                    },
+                    {
+                        "clash_mode": "Global",
+                        "outbound": "🚀 ARISTA AUTO BEST"
+                    },
                     {
                         "action": "sniff"
                     },
