@@ -94,10 +94,10 @@ class ConfigToJSONConverter:
         values = qs.get(key, [])
         return values[0] if values else default
 
-    def build_tls(self, qs: Dict, host: str) -> Dict:
+    def build_tls(self, qs: Dict, host: str) -> Optional[Dict]:
         security = self.get_first(qs, "security", "none")
         if security not in ("tls", "reality"):
-            return {"enabled": False}
+            return None
         fp = self.get_first(qs, "fp", "chrome")
         if fp not in self.allowed_fp:
             fp = "chrome"
@@ -120,7 +120,7 @@ class ConfigToJSONConverter:
         if security == "reality":
             pbk = self.get_first(qs, "pbk")
             if not pbk:
-                return {"enabled": False}
+                return None
             reality = {
                 "enabled": True,
                 "public_key": pbk
@@ -134,10 +134,17 @@ class ConfigToJSONConverter:
     def build_transport_vless(self, qs: Dict, host: str) -> Optional[Dict]:
         network = self.get_first(qs, "type", "tcp")
         if network == "ws":
+            path = unquote(self.get_first(qs, "path", "/"))
+            if path and not path.startswith("/"):
+                path = "/" + path
+            headers = {}
+            host_header = self.clean_host(self.get_first(qs, "host", host))
+            if host_header:
+                headers["Host"] = host_header
             return {
                 "type": "ws",
-                "path": unquote(self.get_first(qs, "path", "/")),
-                "headers": {"Host": self.clean_host(self.get_first(qs, "host", host))}
+                "path": path,
+                "headers": headers
             }
         elif network == "grpc":
             return {
@@ -155,10 +162,17 @@ class ConfigToJSONConverter:
     def build_transport_vmess(self, c: Dict) -> Optional[Dict]:
         network = c.get("net", "tcp")
         if network == "ws":
+            path = unquote(c.get("path", "/"))
+            if path and not path.startswith("/"):
+                path = "/" + path
+            headers = {}
+            host_header = self.clean_host(c.get("host", c["add"]))
+            if host_header:
+                headers["Host"] = host_header
             return {
                 "type": "ws",
-                "path": unquote(c.get("path", "/")),
-                "headers": {"Host": self.clean_host(c.get("host", c["add"]))}
+                "path": path,
+                "headers": headers
             }
         elif network in ("h2", "http"):
             return {
@@ -176,10 +190,17 @@ class ConfigToJSONConverter:
     def build_transport_trojan(self, qs: Dict, host: str) -> Optional[Dict]:
         network = self.get_first(qs, "type", "tcp")
         if network == "ws":
+            path = unquote(self.get_first(qs, "path", "/"))
+            if path and not path.startswith("/"):
+                path = "/" + path
+            headers = {}
+            host_header = self.clean_host(self.get_first(qs, "sni", host))
+            if host_header:
+                headers["Host"] = host_header
             return {
                 "type": "ws",
-                "path": unquote(self.get_first(qs, "path", "/")),
-                "headers": {"Host": self.clean_host(self.get_first(qs, "sni", host))}
+                "path": path,
+                "headers": headers
             }
         elif network == "grpc":
             return {
@@ -269,16 +290,18 @@ class ConfigToJSONConverter:
                 return None
             if not self.uuid_re.match(parsed.username):
                 return None
-            name = f"{unquote(parsed.fragment or 'VLESS')} #{index + 1}"
+            name = f"ARISTA #{index + 1}"
             config = {
                 "type": "vless",
                 "tag": name,
                 "server": parsed.hostname,
                 "server_port": int(parsed.port),
                 "uuid": parsed.username,
-                "domain_resolver": "google",
-                "tls": self.build_tls(qs, parsed.hostname)
+                "domain_resolver": "google"
             }
+            tls = self.build_tls(qs, parsed.hostname)
+            if tls:
+                config["tls"] = tls
             flow = self.get_first(qs, "flow")
             if flow in ["xtls-rprx-vision", "xtls-rprx-udp443", "xtls-rprx"]:
                 config["flow"] = flow
@@ -317,7 +340,7 @@ class ConfigToJSONConverter:
 
             return {
                 "type": "shadowsocks",
-                "tag": f"{d.get('name') or 'SS'} #{index + 1}",
+                "tag": f"ARISTA #{index + 1}",
                 "server": server,
                 "server_port": int(port),
                 "method": method,
@@ -336,7 +359,7 @@ class ConfigToJSONConverter:
                 return None
             if not all(k in c for k in ("add", "port", "id")):
                 return None
-            name = f"{c.get('ps', 'VMess')} #{index + 1}"
+            name = f"ARISTA #{index + 1}"
             config = {
                 "type": "vmess",
                 "tag": name,
@@ -358,7 +381,9 @@ class ConfigToJSONConverter:
                     tls_qs["fp"] = [c["fp"]]
                 if c.get("alpn"):
                     tls_qs["alpn"] = [c["alpn"]]
-            config["tls"] = self.build_tls(tls_qs, c["add"])
+            tls = self.build_tls(tls_qs, c["add"])
+            if tls:
+                config["tls"] = tls
             transport = self.build_transport_vmess(c)
             if transport:
                 config["transport"] = transport
@@ -374,16 +399,18 @@ class ConfigToJSONConverter:
             q = parse_qs(p.query)
             if not all([p.hostname, p.port, p.username]):
                 return None
-            name = f"{unquote(p.fragment or 'Trojan')} #{index + 1}"
+            name = f"ARISTA #{index + 1}"
             config = {
                 "type": "trojan",
                 "tag": name,
                 "server": p.hostname,
                 "server_port": int(p.port),
                 "password": unquote(p.username),
-                "domain_resolver": "google",
-                "tls": self.build_tls(q, p.hostname)
+                "domain_resolver": "google"
             }
+            tls = self.build_tls(q, p.hostname)
+            if tls:
+                config["tls"] = tls
             transport = self.build_transport_trojan(q, p.hostname)
             if transport:
                 config["transport"] = transport
@@ -400,9 +427,9 @@ class ConfigToJSONConverter:
             q = parse_qs(p.query)
             if not all([p.hostname, p.port]):
                 return None
-            name = f"{unquote(p.fragment or 'Hysteria2')} #{index + 1}"
+            name = f"ARISTA #{index + 1}"
             tls_config = self.build_tls(q, p.hostname)
-            if not tls_config.get("enabled", False):
+            if not tls_config:
                 tls_config = {
                     "enabled": True,
                     "server_name": p.hostname,
@@ -439,13 +466,21 @@ class ConfigToJSONConverter:
 
     def validate_outbounds(self, proxies):
         valid = []
+        seen = set()
         for p in proxies:
             if not isinstance(p, dict):
                 continue
             if "type" not in p or "tag" not in p:
                 continue
             if p["type"] in ["vless", "vmess", "trojan", "shadowsocks", "hysteria2"]:
-                valid.append(p)
+                p_copy = p.copy()
+                if "tag" in p_copy:
+                    p_copy["tag"] = re.sub(r'\s*#\s*\d+$', '', p_copy["tag"]).strip()
+                p_copy.pop("domain_resolver", None)
+                key = json.dumps(p_copy, sort_keys=True)
+                if key not in seen:
+                    seen.add(key)
+                    valid.append(p)
         return valid
 
     def _safe_final(self, proxies: List[Dict]) -> str:
@@ -471,16 +506,6 @@ class ConfigToJSONConverter:
                 "url": "http://www.gstatic.com/generate_204",
                 "interval": "2m",
                 "tolerance": 30,
-                "idle_timeout": "20m",
-                "interrupt_exist_connections": True
-            },
-            {
-                "type": "urltest",
-                "tag": "\U0001f3af ARISTA MANUAL TESTED",
-                "outbounds": proxy_tags,
-                "url": "http://www.gstatic.com/generate_204",
-                "interval": "3m",
-                "tolerance": 50,
                 "idle_timeout": "20m",
                 "interrupt_exist_connections": True
             }
@@ -521,6 +546,10 @@ class ConfigToJSONConverter:
             }
 
         cleaned_proxies = self.validate_outbounds(proxies)
+
+        for idx, p in enumerate(cleaned_proxies):
+            if "tag" in p:
+                p["tag"] = f"ARISTA #{idx + 1}"
 
         proxy_groups = self.build_proxy_groups(cleaned_proxies)
 
@@ -580,7 +609,7 @@ class ConfigToJSONConverter:
             "route": {
                 "auto_detect_interface": True,
                 "default_domain_resolver": "google",
-                "final": self._safe_final(cleaned_proxies),
+                "final": "\U0001f680 ARISTA AUTO BEST" if proxy_groups else self._safe_final(cleaned_proxies),
                 "rules": [
                     {
                         "protocol": "dns",
