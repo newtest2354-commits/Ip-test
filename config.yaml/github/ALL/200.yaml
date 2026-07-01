@@ -1,5 +1,5 @@
 # GITHUB - ALL - Tier 200
-# Updated: 2026-06-30 22:13:21
+# Updated: 2026-07-01 04:21:15
 # Count: 198
 
 mixed-port: 7890
@@ -1515,9 +1515,9 @@ proxies:
       Host: jl2klj.teeoomboom.de
 - name: 'T.ME: @aristapnel #135'
   type: vmess
-  server: 138.252.100.85
-  port: 18746
-  uuid: e314349a-7e56-4a3e-9318-eda62b5d6bd3
+  server: 216.36.115.182
+  port: 48885
+  uuid: 929f4b3b-60ed-4c7d-e94e-243ee9bbc743
   alterId: 0
   cipher: auto
   network: ws
@@ -1525,10 +1525,40 @@ proxies:
   udp: true
   skip-cert-verify: true
   tcp-fast-open: true
-  servername: 138.252.100.85
+  servername: 216.36.115.182
   ws-opts:
     path: /
 - name: 'T.ME: @aristapnel #136'
+  type: vmess
+  server: spt.reata.ir
+  port: 1050
+  uuid: b5b183b6-a4f0-41ad-a015-ba9f000ad7ed
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: spt.reata.ir
+- name: 'T.ME: @aristapnel #137'
+  type: vmess
+  server: 69.84.182.49
+  port: 80
+  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 69.84.182.49
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
+- name: 'T.ME: @aristapnel #138'
   type: vmess
   server: 45.92.70.236
   port: 22324
@@ -1541,7 +1571,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 45.92.70.236
-- name: 'T.ME: @aristapnel #137'
+- name: 'T.ME: @aristapnel #139'
   type: vmess
   server: 85.90.217.42
   port: 22324
@@ -1554,7 +1584,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 85.90.217.42
-- name: 'T.ME: @aristapnel #138'
+- name: 'T.ME: @aristapnel #140'
   type: vmess
   server: 67.220.85.46
   port: 18000
@@ -1567,7 +1597,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 67.220.85.46
-- name: 'T.ME: @aristapnel #139'
+- name: 'T.ME: @aristapnel #141'
   type: vmess
   server: 38.110.1.246
   port: 18000
@@ -1580,7 +1610,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 38.110.1.246
-- name: 'T.ME: @aristapnel #140'
+- name: 'T.ME: @aristapnel #142'
   type: vmess
   server: 38.91.107.49
   port: 18000
@@ -1593,7 +1623,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 38.91.107.49
-- name: 'T.ME: @aristapnel #141'
+- name: 'T.ME: @aristapnel #143'
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -1606,7 +1636,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 134.195.196.211
-- name: 'T.ME: @aristapnel #142'
+- name: 'T.ME: @aristapnel #144'
   type: vmess
   server: 84.17.41.2
   port: 18000
@@ -1619,7 +1649,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 84.17.41.2
-- name: 'T.ME: @aristapnel #143'
+- name: 'T.ME: @aristapnel #145'
   type: vmess
   server: 23.226.135.232
   port: 55310
@@ -1632,7 +1662,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 23.226.135.232
-- name: 'T.ME: @aristapnel #144'
+- name: 'T.ME: @aristapnel #146'
   type: vmess
   server: 82.198.246.37
   port: 180
@@ -1645,7 +1675,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 82.198.246.37
-- name: 'T.ME: @aristapnel #145'
+- name: 'T.ME: @aristapnel #147'
   type: vmess
   server: 23.141.204.132
   port: 29633
@@ -1658,7 +1688,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 23.141.204.132
-- name: 'T.ME: @aristapnel #146'
+- name: 'T.ME: @aristapnel #148'
   type: vmess
   server: 38.114.123.42
   port: 18000
@@ -1671,7 +1701,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 38.114.123.42
-- name: 'T.ME: @aristapnel #147'
+- name: 'T.ME: @aristapnel #149'
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -1684,7 +1714,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 82.198.246.233
-- name: 'T.ME: @aristapnel #148'
+- name: 'T.ME: @aristapnel #150'
   type: vmess
   server: 82.198.246.250
   port: 180
@@ -1697,7 +1727,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 82.198.246.250
-- name: 'T.ME: @aristapnel #149'
+- name: 'T.ME: @aristapnel #151'
   type: vmess
   server: 47.250.135.244
   port: 10000
@@ -1710,7 +1740,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 47.250.135.244
-- name: 'T.ME: @aristapnel #150'
+- name: 'T.ME: @aristapnel #152'
   type: vmess
   server: 216.106.185.141
   port: 22324
@@ -1723,7 +1753,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 216.106.185.141
-- name: 'T.ME: @aristapnel #151'
+- name: 'T.ME: @aristapnel #153'
   type: vmess
   server: 213.156.141.52
   port: 22324
@@ -1736,7 +1766,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 213.156.141.52
-- name: 'T.ME: @aristapnel #152'
+- name: 'T.ME: @aristapnel #154'
   type: vmess
   server: 172.104.80.66
   port: 22324
@@ -1749,7 +1779,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 172.104.80.66
-- name: 'T.ME: @aristapnel #153'
+- name: 'T.ME: @aristapnel #155'
   type: vmess
   server: 67.220.72.237
   port: 22324
@@ -1762,7 +1792,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 67.220.72.237
-- name: 'T.ME: @aristapnel #154'
+- name: 'T.ME: @aristapnel #156'
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -1775,7 +1805,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 165.154.195.38
-- name: 'T.ME: @aristapnel #155'
+- name: 'T.ME: @aristapnel #157'
   type: vmess
   server: 104.21.89.181
   port: 80
@@ -1792,7 +1822,7 @@ proxies:
     path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
     headers:
       Host: accklsj.bufu.us.ci
-- name: 'T.ME: @aristapnel #156'
+- name: 'T.ME: @aristapnel #158'
   type: vmess
   server: 104.21.55.229
   port: 80
@@ -1809,7 +1839,7 @@ proxies:
     path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
     headers:
       Host: accklsj.bufu.us.ci
-- name: 'T.ME: @aristapnel #157'
+- name: 'T.ME: @aristapnel #159'
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -1824,7 +1854,7 @@ proxies:
   servername: 168.138.43.75
   ws-opts:
     path: /cctv13.m3u8
-- name: 'T.ME: @aristapnel #158'
+- name: 'T.ME: @aristapnel #160'
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -1841,36 +1871,6 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: kr02.a0a.xyz
-- name: 'T.ME: @aristapnel #159'
-  type: vmess
-  server: 155.254.126.249
-  port: 6001
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: 155.254.126.249
-- name: 'T.ME: @aristapnel #160'
-  type: vmess
-  server: skk.moe
-  port: 80
-  uuid: 65b17c0b-0a52-4b54-9bc9-60e31397b841
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: skk.moe
-  ws-opts:
-    path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
-    headers:
-      Host: accklsj.bufu.us.ci
 - name: 'T.ME: @aristapnel #161'
   type: vless
   server: 94.131.123.167

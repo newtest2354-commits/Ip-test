@@ -1,5 +1,5 @@
 // GITHUB - ALL - Tier 100
-// Updated: 2026-06-30 22:16:22
+// Updated: 2026-07-01 04:24:17
 // Count: 80
 
 {
@@ -955,9 +955,9 @@
     {
       "type": "vmess",
       "tag": "T.ME: @aristapnel #76",
-      "server": "138.252.100.85",
-      "server_port": 18746,
-      "uuid": "e314349a-7e56-4a3e-9318-eda62b5d6bd3",
+      "server": "216.36.115.182",
+      "server_port": 48885,
+      "uuid": "929f4b3b-60ed-4c7d-e94e-243ee9bbc743",
       "security": "auto",
       "tls": {
         "enabled": false
@@ -966,13 +966,42 @@
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "138.252.100.85"
+          "Host": ""
         }
       }
     },
     {
       "type": "vmess",
       "tag": "T.ME: @aristapnel #77",
+      "server": "spt.reata.ir",
+      "server_port": 1050,
+      "uuid": "b5b183b6-a4f0-41ad-a015-ba9f000ad7ed",
+      "security": "auto",
+      "tls": {
+        "enabled": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "T.ME: @aristapnel #78",
+      "server": "69.84.182.49",
+      "server_port": 80,
+      "uuid": "f8975871-a7a0-4906-8835-a23c1258ca1e",
+      "security": "auto",
+      "tls": {
+        "enabled": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir."
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "T.ME: @aristapnel #79",
       "server": "45.92.70.236",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -983,32 +1012,10 @@
     },
     {
       "type": "vmess",
-      "tag": "T.ME: @aristapnel #78",
+      "tag": "T.ME: @aristapnel #80",
       "server": "85.90.217.42",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto",
-      "tls": {
-        "enabled": false
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "T.ME: @aristapnel #79",
-      "server": "67.220.85.46",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "aes-128-gcm",
-      "tls": {
-        "enabled": false
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "T.ME: @aristapnel #80",
-      "server": "38.110.1.246",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
       "security": "auto",
       "tls": {
         "enabled": false

@@ -1,5 +1,5 @@
 # GITHUB - ALL - Tier 100
-# Updated: 2026-06-30 22:13:21
+# Updated: 2026-07-01 04:21:15
 # Count: 100
 
 mixed-port: 7890
@@ -894,9 +894,9 @@ proxies:
       Host: jl2klj.teeoomboom.de
 - name: 'T.ME: @aristapnel #76'
   type: vmess
-  server: 138.252.100.85
-  port: 18746
-  uuid: e314349a-7e56-4a3e-9318-eda62b5d6bd3
+  server: 216.36.115.182
+  port: 48885
+  uuid: 929f4b3b-60ed-4c7d-e94e-243ee9bbc743
   alterId: 0
   cipher: auto
   network: ws
@@ -904,10 +904,40 @@ proxies:
   udp: true
   skip-cert-verify: true
   tcp-fast-open: true
-  servername: 138.252.100.85
+  servername: 216.36.115.182
   ws-opts:
     path: /
 - name: 'T.ME: @aristapnel #77'
+  type: vmess
+  server: spt.reata.ir
+  port: 1050
+  uuid: b5b183b6-a4f0-41ad-a015-ba9f000ad7ed
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: spt.reata.ir
+- name: 'T.ME: @aristapnel #78'
+  type: vmess
+  server: 69.84.182.49
+  port: 80
+  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 69.84.182.49
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
+- name: 'T.ME: @aristapnel #79'
   type: vmess
   server: 45.92.70.236
   port: 22324
@@ -920,7 +950,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 45.92.70.236
-- name: 'T.ME: @aristapnel #78'
+- name: 'T.ME: @aristapnel #80'
   type: vmess
   server: 85.90.217.42
   port: 22324
@@ -933,32 +963,6 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 85.90.217.42
-- name: 'T.ME: @aristapnel #79'
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: aes-128-gcm
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: 67.220.85.46
-- name: 'T.ME: @aristapnel #80'
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: 38.110.1.246
 - name: 'T.ME: @aristapnel #81'
   type: vless
   server: 94.131.123.167
