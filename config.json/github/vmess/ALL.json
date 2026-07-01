@@ -1,5 +1,5 @@
 // GITHUB - VMESS - Tier ALL
-// Updated: 2026-07-01 04:24:17
+// Updated: 2026-07-01 05:55:30
 // Count: 45
 
 {
@@ -16,23 +16,11 @@
       },
       {
         "type": "udp",
-        "tag": "google2",
-        "server": "8.8.4.4"
-      },
-      {
-        "type": "local",
-        "tag": "local"
+        "tag": "cloudflare",
+        "server": "1.1.1.1"
       }
     ],
-    "rules": [
-      {
-        "domain": [
-          "geosite:private"
-        ],
-        "action": "route",
-        "server": "local"
-      }
-    ],
+    "rules": [],
     "final": "google"
   },
   "inbounds": [
@@ -41,12 +29,12 @@
       "tag": "tun-in",
       "interface_name": "singbox-tun",
       "address": [
-        "172.19.0.1/30",
-        "fdfe:dcba:9876::1/126"
+        "172.19.0.1/30"
       ],
       "auto_route": true,
       "strict_route": true,
-      "stack": "mixed"
+      "stack": "system",
+      "sniff": false
     }
   ],
   "outbounds": [
@@ -842,18 +830,11 @@
   ],
   "route": {
     "auto_detect_interface": true,
-    "default_domain_resolver": {
-      "server": "google",
-      "strategy": "prefer_ipv4"
-    },
-    "final": "🚀 ARISTA AUTO BEST",
+    "final": "T.ME: @aristapnel #1",
     "rules": [
       {
-        "action": "sniff"
-      },
-      {
         "protocol": "dns",
-        "action": "hijack-dns"
+        "outbound": "direct"
       }
     ]
   }
