@@ -1,6 +1,6 @@
 // GITHUB - VMESS - Tier ALL
-// Updated: 2026-07-02 09:24:34
-// Count: 41
+// Updated: 2026-07-02 14:15:42
+// Count: 42
 
 {
   "log": {
@@ -568,6 +568,20 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "ARISTA #42",
+      "server": "216.36.115.182",
+      "server_port": 48885,
+      "uuid": "929f4b3b-60ed-4c7d-e94e-243ee9bbc743",
+      "security": "auto",
+      "domain_resolver": "google",
+      "transport": {
+        "type": "ws",
+        "path": "",
+        "headers": {}
+      }
+    },
+    {
       "type": "direct",
       "tag": "direct"
     },
@@ -619,7 +633,8 @@
         "ARISTA #38",
         "ARISTA #39",
         "ARISTA #40",
-        "ARISTA #41"
+        "ARISTA #41",
+        "ARISTA #42"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "2m",

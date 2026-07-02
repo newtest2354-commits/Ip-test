@@ -1,6 +1,6 @@
 # TELEGRAM - HYSTERIA2 - Tier ALL
-# Updated: 2026-07-02 09:21:46
-# Count: 7
+# Updated: 2026-07-02 14:12:57
+# Count: 5
 
 mixed-port: 7890
 allow-lan: false
@@ -50,14 +50,12 @@ rules:
 proxies:
 - name: 'ARISTA #1'
   type: hysteria2
-  server: 191.101.238.183
-  port: 54040
-  password: q3tf4lsdoqpgpo4x
-  sni: 191.101.238.183
+  server: 130.61.50.75
+  port: 6443
+  password: zhangyang
+  sni: dash.cloudflare.com
   skip-cert-verify: true
   fast-open: true
-  obfs: salamander
-  obfs-password: '@JynMarket'
 - name: 'ARISTA #2'
   type: hysteria2
   server: 130.49.161.70
@@ -70,6 +68,16 @@ proxies:
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 'ARISTA #3'
   type: hysteria2
+  server: 191.101.238.183
+  port: 54040
+  password: q3tf4lsdoqpgpo4x
+  sni: 191.101.238.183
+  skip-cert-verify: true
+  fast-open: true
+  obfs: salamander
+  obfs-password: '@JynMarket'
+- name: 'ARISTA #4'
+  type: hysteria2
   server: nrealistic.nn-foto.ru
   port: 1935
   password: 653m8mmiy7048p0f
@@ -78,35 +86,7 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: lhfl2z9mjngb7csh
-- name: 'ARISTA #4'
-  type: hysteria2
-  server: 65.109.177.191
-  port: 443
-  password: V2RayyNgvpn
-  sni: www.oracle.com
-  skip-cert-verify: true
-  fast-open: true
-  obfs: salamander
-  obfs-password: t-me-V2RayyNGvpn
 - name: 'ARISTA #5'
-  type: hysteria2
-  server: 103.251.167.168
-  port: 443
-  password: gdubbi2zb6gdp0c8
-  sni: gettestin.xxee.ru
-  skip-cert-verify: true
-  fast-open: true
-  obfs: salamander
-  obfs-password: "2a7e8084206388f4"
-- name: 'ARISTA #6'
-  type: hysteria2
-  server: 130.61.50.75
-  port: 6443
-  password: zhangyang
-  sni: dash.cloudflare.com
-  skip-cert-verify: true
-  fast-open: true
-- name: 'ARISTA #7'
   type: hysteria2
   server: 80.66.81.78
   port: 9443
@@ -130,8 +110,6 @@ proxy-groups:
   - 'ARISTA #3'
   - 'ARISTA #4'
   - 'ARISTA #5'
-  - 'ARISTA #6'
-  - 'ARISTA #7'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204

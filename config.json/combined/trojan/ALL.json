@@ -1,6 +1,6 @@
 // COMBINED - TROJAN - Tier ALL
-// Updated: 2026-07-02 09:24:33
-// Count: 356
+// Updated: 2026-07-02 14:15:41
+// Count: 365
 
 {
   "log": {
@@ -41,17 +41,17 @@
     {
       "type": "trojan",
       "tag": "ARISTA #1",
-      "server": "151.101.110.219",
+      "server": "91.193.58.201",
       "server_port": 443,
       "password": "MiTiVPN",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
+        "server_name": "PioHosting.ir",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "alpn": [
           "http/1.1"
@@ -59,18 +59,64 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/de=mitivpn",
+        "path": "/MiTiVPN=fL",
         "headers": {
-          "Host": "ssl.fastly.com"
+          "Host": "PioHosting.ir"
         }
       }
     },
     {
       "type": "trojan",
       "tag": "ARISTA #2",
+      "server": "179.237.75.217",
+      "server_port": 14771,
+      "password": "---------BanV2ray---------",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "promotion.yahoo.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "KxROfjoX03DrY-S0chPO5LzYgSXFqt4-x4KWIRl4jl0",
+          "short_id": "ba"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #3",
+      "server": "45.130.125.2",
+      "server_port": 443,
+      "password": "kZSruDyvxP",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "sk.farxmode.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/da",
+        "headers": {
+          "Host": "sk.farxmode.ir"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #4",
       "server": "104.16.72.70",
       "server_port": 443,
-      "password": "86957ec0-b213-433b-a43b-51f2175e0ec3",
+      "password": "6c862415-30d2-4813-8e49-42e99a0bd415",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
@@ -83,7 +129,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/au-do",
+        "path": "/us-gllc",
         "headers": {
           "Host": "space.byu.id.yxls.eu.cc"
         }
@@ -91,41 +137,14 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #3",
-      "server": "151.101.193.242",
-      "server_port": 443,
-      "password": "MiTiVPN",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "f6r.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/usa=mitivpn",
-        "headers": {
-          "Host": "f6r.ir"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #4",
-      "server": "104.26.14.137",
+      "tag": "ARISTA #5",
+      "server": "141.193.213.21",
       "server_port": 443,
       "password": "humanity",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "www.ignitelimit.com",
+        "server_name": "www.calmloud.com",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -136,47 +155,20 @@
         "type": "ws",
         "path": "/assignment",
         "headers": {
-          "Host": "www.ignitelimit.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #5",
-      "server": "151.101.56.6",
-      "server_port": 443,
-      "password": "Mitivpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "h2"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/de=mitivpn",
-        "headers": {
-          "Host": "ssl.fastly.com"
+          "Host": "www.calmloud.com"
         }
       }
     },
     {
       "type": "trojan",
       "tag": "ARISTA #6",
-      "server": "159.112.235.52",
+      "server": "188.164.248.122",
       "server_port": 443,
-      "password": "humanity",
+      "password": "6c862415-30d2-4813-8e49-42e99a0bd415",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "www.multiplydose.com",
+        "server_name": "space.byu.id.yxls.eu.cc",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -185,122 +177,39 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/us-gllc",
         "headers": {
-          "Host": "www.multiplydose.com"
+          "Host": "space.byu.id.yxls.eu.cc"
         }
       }
     },
     {
       "type": "trojan",
       "tag": "ARISTA #7",
-      "server": "45.77.227.183",
+      "server": "172.64.152.23",
       "server_port": 443,
-      "password": "kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP",
+      "password": "20ba0c60-0133-11f1-95ef-1239d0255272",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "45.77.227.183",
+        "server_name": "uk1.test3.net",
         "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/howdy",
+        "headers": {
+          "Host": "uk1.test3.net"
         }
       }
     },
     {
       "type": "trojan",
       "tag": "ARISTA #8",
-      "server": "92.119.35.117",
-      "server_port": 443,
-      "password": "aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "92.119.35.117",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #9",
-      "server": "37.156.44.157",
-      "server_port": 8443,
-      "password": "SoftNetConnect",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "h0Lem3eyDGqkye4yAMuxixCMI2EqD1EKdH9Ky0Xetjg",
-          "short_id": "c7"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #10",
-      "server": "89.116.180.49",
-      "server_port": 443,
-      "password": "MiTiVPN",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "f6r.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/nl=mitivpn",
-        "headers": {
-          "Host": "f6r.ir"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #11",
-      "server": "0406.infinityconfig7.workers.dev",
-      "server_port": 2053,
-      "password": "d682c8f4-e719-577e-cbe9-2e5b00000001",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "0406.infinityconfig7.workers.dev",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "0406.infinityconfig7.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #12",
       "server": "45.130.125.2",
       "server_port": 443,
       "password": "7002R3Gxo1",
@@ -327,7 +236,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #13",
+      "tag": "ARISTA #9",
       "server": "45.130.125.2",
       "server_port": 443,
       "password": "P6oS8vzFbu",
@@ -354,7 +263,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #14",
+      "tag": "ARISTA #10",
       "server": "45.130.125.2",
       "server_port": 443,
       "password": "CHhHZoXQCp",
@@ -381,7 +290,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #15",
+      "tag": "ARISTA #11",
       "server": "45.130.125.2",
       "server_port": 443,
       "password": "GavW8e3DN7",
@@ -408,34 +317,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #16",
-      "server": "45.130.125.2",
-      "server_port": 443,
-      "password": "kZSruDyvxP",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "sk.farxmode.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "alpn": [
-          "-@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN---@SRCVPN"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/da",
-        "headers": {
-          "Host": "sk.farxmode.ir"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #17",
+      "tag": "ARISTA #12",
       "server": "45.130.125.2",
       "server_port": 443,
       "password": "jZKsbuRpEB",
@@ -462,7 +344,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #18",
+      "tag": "ARISTA #13",
       "server": "45.131.4.118",
       "server_port": 443,
       "password": "MiTiVPN",
@@ -489,7 +371,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #19",
+      "tag": "ARISTA #14",
       "server": "104.18.42.163",
       "server_port": 443,
       "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
@@ -513,7 +395,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #20",
+      "tag": "ARISTA #15",
       "server": "94.103.173.70",
       "server_port": 9443,
       "password": "LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu",
@@ -530,7 +412,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #21",
+      "tag": "ARISTA #16",
       "server": "104.16.72.41",
       "server_port": 443,
       "password": "humanity",
@@ -554,148 +436,9 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #22",
-      "server": "151.101.110.219",
+      "tag": "ARISTA #17",
+      "server": "108.160.132.132",
       "server_port": 443,
-      "password": "Mitivpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "global.fastly.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/de=mitivpn",
-        "headers": {
-          "Host": "global.fastly.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #23",
-      "server": "104.16.72.41",
-      "server_port": 443,
-      "password": "MITIVPN",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "PioHosting.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/MiTiVPN=De",
-        "headers": {
-          "Host": "PioHosting.ir"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #24",
-      "server": "172.67.180.92",
-      "server_port": 443,
-      "password": "humanity",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.multiplydose.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.multiplydose.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #25",
-      "server": "141.193.213.21",
-      "server_port": 443,
-      "password": "humanity",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmloud.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmloud.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #26",
-      "server": "185.137.157.59",
-      "server_port": 443,
-      "password": "fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.lateralio.click",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #27",
-      "server": "185.137.157.140",
-      "server_port": 443,
-      "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "185.137.157.140",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #28",
-      "server": "46.8.226.197",
-      "server_port": 8443,
       "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
       "domain_resolver": "google",
       "tls": {
@@ -717,15 +460,525 @@
     },
     {
       "type": "trojan",
+      "tag": "ARISTA #18",
+      "server": "191.40.5.169",
+      "server_port": 2087,
+      "password": "cc7ad2444ad9481b9d038924cc5916cd",
+      "domain_resolver": "google",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "191.40.5.169"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #19",
+      "server": "13.38.152.198",
+      "server_port": 22222,
+      "password": "telegram-id-privatevpns",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #20",
+      "server": "3.73.46.147",
+      "server_port": 22222,
+      "password": "telegram-id-privatevpns",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #21",
+      "server": "35.157.201.137",
+      "server_port": 22222,
+      "password": "telegram-id-privatevpns",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #22",
+      "server": "15.188.109.21",
+      "server_port": 22222,
+      "password": "telegram-id-privatevpns",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #23",
+      "server": "15.236.244.3",
+      "server_port": 22222,
+      "password": "telegram-id-privatevpns",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #24",
+      "server": "52.29.134.131",
+      "server_port": 22222,
+      "password": "telegram-id-privatevpns",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #25",
+      "server": "63.184.240.254",
+      "server_port": 22222,
+      "password": "telegram-id-privatevpns",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #26",
+      "server": "13.37.165.141",
+      "server_port": 22222,
+      "password": "telegram-id-privatevpns",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #27",
+      "server": "13.36.99.124",
+      "server_port": 22222,
+      "password": "telegram-id-privatevpns",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #28",
+      "server": "35.159.131.212",
+      "server_port": 22222,
+      "password": "telegram-id-privatevpns",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
       "tag": "ARISTA #29",
-      "server": "185.137.157.140",
-      "server_port": 443,
-      "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
-      "domain_resolver": "google"
+      "server": "18.197.104.44",
+      "server_port": 22222,
+      "password": "telegram-id-privatevpns",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
     },
     {
       "type": "trojan",
       "tag": "ARISTA #30",
+      "server": "51.45.25.17",
+      "server_port": 22222,
+      "password": "telegram-id-privatevpns",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #31",
+      "server": "104.18.152.225",
+      "server_port": 443,
+      "password": "humanity",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #32",
+      "server": "104.16.174.44",
+      "server_port": 443,
+      "password": "humanity",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #33",
+      "server": "104.16.174.71",
+      "server_port": 443,
+      "password": "humanity",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #34",
+      "server": "104.18.152.113",
+      "server_port": 443,
+      "password": "humanity",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #35",
+      "server": "95.40.125.63",
+      "server_port": 5701,
+      "password": "e0195c73018d597b1c2f0ea89d8676ae",
+      "domain_resolver": "google"
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #36",
+      "server": "16.163.107.220",
+      "server_port": 11035,
+      "password": "BxceQaOe",
+      "domain_resolver": "google"
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #37",
+      "server": "18.203.97.93",
+      "server_port": 22222,
+      "password": "telegram-id-privatevpns",
+      "domain_resolver": "google"
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #38",
+      "server": "43.198.107.157",
+      "server_port": 17005,
+      "password": "e0195c73018d597b1c2f0ea89d8676ae",
+      "domain_resolver": "google"
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #39",
+      "server": "162.159.152.138",
+      "server_port": 443,
+      "password": "tg-dns68",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "vip.putata.eu.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vip.putata.eu.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #40",
+      "server": "172.64.152.23",
+      "server_port": 443,
+      "password": "humanity",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.gossipglove.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.gossipglove.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #41",
+      "server": "92.119.35.85",
+      "server_port": 443,
+      "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "92.119.35.85",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #42",
+      "server": "185.137.157.250",
+      "server_port": 443,
+      "password": "n-S5Kuz58YgwljisuLEJltip2OWf1ourWz",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "fra250.clientfirewall.click",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #43",
+      "server": "83.228.230.226",
+      "server_port": 2087,
+      "password": "SoftNetConnect",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tDzuiaElyFXPtFP25CeCKWW5dsdC4055CnqzYcFyfB8",
+          "short_id": "96a17085678b"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #44",
+      "server": "151.101.110.219",
+      "server_port": 443,
+      "password": "Mitivpn",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/de",
+        "headers": {
+          "Host": "ssl.fastly.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #45",
       "server": "104.17.121.43",
       "server_port": 443,
       "password": "humanity",
@@ -740,7 +993,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #31",
+      "tag": "ARISTA #46",
       "server": "104.18.153.10",
       "server_port": 443,
       "password": "86957ec0-b213-433b-a43b-51f2175e0ec3",
@@ -755,7 +1008,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #32",
+      "tag": "ARISTA #47",
       "server": "172.66.47.69",
       "server_port": 443,
       "password": "humanity",
@@ -770,7 +1023,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #33",
+      "tag": "ARISTA #48",
       "server": "45.131.4.115",
       "server_port": 443,
       "password": "MITIVPN",
@@ -785,292 +1038,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #34",
-      "server": "104.16.71.213",
-      "server_port": 443,
-      "password": "humanity",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #35",
-      "server": "104.16.71.213",
-      "server_port": 443,
-      "password": "MiTiVPN",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "wwww.95r.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ed=mitivpn",
-        "headers": {
-          "Host": "wwww.95r.ir"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #36",
-      "server": "199.181.197.176",
-      "server_port": 443,
-      "password": "MiTiVPN",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "95r.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/MiTiVPN=fL",
-        "headers": {
-          "Host": "95r.ir"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #37",
-      "server": "91.193.58.201",
-      "server_port": 443,
-      "password": "MiTiVPN",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "95r.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/MiTiVPN=NL",
-        "headers": {
-          "Host": "95r.ir"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #38",
-      "server": "91.193.58.201",
-      "server_port": 443,
-      "password": "MiTiVPN",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "PioHosting.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/MiTiVPN=NL",
-        "headers": {
-          "Host": "PioHosting.ir"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #39",
-      "server": "151.101.56.6",
-      "server_port": 443,
-      "password": "Mitivpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fastly=mitivpn",
-        "headers": {
-          "Host": "ssl.fastly.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #40",
-      "server": "151.101.110.219",
-      "server_port": 443,
-      "password": "Mitivpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/boost",
-        "headers": {
-          "Host": "ssl.fastly.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #41",
-      "server": "104.16.72.70",
-      "server_port": 443,
-      "password": "6c862415-30d2-4813-8e49-42e99a0bd415",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "space.byu.id.yxls.eu.cc",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/us-gllc",
-        "headers": {
-          "Host": "space.byu.id.yxls.eu.cc"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #42",
-      "server": "45.130.125.75",
-      "server_port": 443,
-      "password": "x5cDfADabj",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "b.aananas.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "b.aananas.ir"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #43",
-      "server": "45.130.125.75",
-      "server_port": 8080,
-      "password": "N53GqFZAHv",
-      "domain_resolver": "google",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "45.130.125.75"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #44",
-      "server": "45.130.125.158",
-      "server_port": 8080,
-      "password": "7UdfQ85dsJ",
-      "domain_resolver": "google",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "45.130.125.158"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #45",
-      "server": "45.130.125.2",
-      "server_port": 443,
-      "password": "rdC7DTr5wK",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "si.farxmode.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/da",
-        "headers": {
-          "Host": "si.farxmode.ir"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #46",
+      "tag": "ARISTA #49",
       "server": "167.82.101.251",
       "server_port": 443,
       "password": "Mitivpn",
@@ -1097,414 +1065,14 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #47",
-      "server": "172.64.152.23",
-      "server_port": 443,
-      "password": "20ba0c60-0133-11f1-95ef-1239d0255272",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "uk1.test3.net",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/howdy",
-        "headers": {
-          "Host": "uk1.test3.net"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #48",
-      "server": "15.236.68.71",
-      "server_port": 22222,
-      "password": "telegram-id-privatevpns",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #49",
-      "server": "35.156.135.140",
-      "server_port": 22222,
-      "password": "telegram-id-privatevpns",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "ARISTA #50",
-      "server": "63.184.199.58",
-      "server_port": 22222,
-      "password": "telegram-id-privatevpns",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #51",
-      "server": "13.38.237.81",
-      "server_port": 22222,
-      "password": "telegram-id-privatevpns",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #52",
-      "server": "13.38.152.198",
-      "server_port": 22222,
-      "password": "telegram-id-privatevpns",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #53",
-      "server": "3.73.46.147",
-      "server_port": 22222,
-      "password": "telegram-id-privatevpns",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #54",
-      "server": "35.157.201.137",
-      "server_port": 22222,
-      "password": "telegram-id-privatevpns",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #55",
-      "server": "15.188.109.21",
-      "server_port": 22222,
-      "password": "telegram-id-privatevpns",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #56",
-      "server": "15.236.244.3",
-      "server_port": 22222,
-      "password": "telegram-id-privatevpns",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #57",
-      "server": "52.29.134.131",
-      "server_port": 22222,
-      "password": "telegram-id-privatevpns",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #58",
-      "server": "63.184.240.254",
-      "server_port": 22222,
-      "password": "telegram-id-privatevpns",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #59",
-      "server": "13.37.165.141",
-      "server_port": 22222,
-      "password": "telegram-id-privatevpns",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #60",
-      "server": "13.36.99.124",
-      "server_port": 22222,
-      "password": "telegram-id-privatevpns",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #61",
-      "server": "35.159.131.212",
-      "server_port": 22222,
-      "password": "telegram-id-privatevpns",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #62",
-      "server": "104.21.40.34",
-      "server_port": 443,
-      "password": "humanity",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.gossipglove.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.gossipglove.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #63",
-      "server": "172.64.152.23",
-      "server_port": 443,
-      "password": "humanity",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.gossipglove.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.gossipglove.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #64",
-      "server": "104.18.32.47",
-      "server_port": 443,
-      "password": "humanity",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #65",
-      "server": "104.18.153.10",
-      "server_port": 443,
-      "password": "86957ec0-b213-433b-a43b-51f2175e0ec3",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "space.byu.id.yxls.eu.cc",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/au-do",
-        "headers": {
-          "Host": "space.byu.id.yxls.eu.cc"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #66",
-      "server": "91.193.58.201",
+      "server": "199.181.197.176",
       "server_port": 443,
       "password": "MiTiVPN",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "PioHosting.ir",
+        "server_name": "95r.ir",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -1518,85 +1086,13 @@
         "type": "ws",
         "path": "/MiTiVPN=fL",
         "headers": {
-          "Host": "PioHosting.ir"
+          "Host": "95r.ir"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #67",
-      "server": "179.237.75.217",
-      "server_port": 14771,
-      "password": "---------BanV2ray---------",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "promotion.yahoo.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "KxROfjoX03DrY-S0chPO5LzYgSXFqt4-x4KWIRl4jl0",
-          "short_id": "ba"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #68",
-      "server": "de2.yariresanbot.ir",
-      "server_port": 26856,
-      "password": "gx5fx0q4buwh4g4n",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "de2.yariresanbot.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "Panel"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #69",
-      "server": "185.44.76.188",
-      "server_port": 443,
-      "password": "8697fe6b-1lWNFc1RmRBNk5NQU5KSnga3fa58ac5ab3ef0-b4ab-11eb-b65e-1239d0255272",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "185.44.76.188",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #70",
-      "server": "159.223.208.17",
-      "server_port": 33378,
-      "password": "pcmxcvbogke05dtj",
-      "domain_resolver": "google"
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #71",
+      "tag": "ARISTA #51",
       "server": "104.16.174.36",
       "server_port": 443,
       "password": "humanity",
@@ -1620,511 +1116,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #72",
-      "server": "83.228.228.243",
-      "server_port": 8443,
-      "password": "SoftNetConnect",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "h0Lem3eyDGqkye4yAMuxixCMI2EqD1EKdH9Ky0Xetjg",
-          "short_id": "c7"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #73",
-      "server": "83.228.230.226",
-      "server_port": 2087,
-      "password": "SoftNetConnect",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.yahoo.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tDzuiaElyFXPtFP25CeCKWW5dsdC4055CnqzYcFyfB8",
-          "short_id": "96a17085678b"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #74",
-      "server": "151.101.110.219",
-      "server_port": 443,
-      "password": "Mitivpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/de",
-        "headers": {
-          "Host": "ssl.fastly.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #75",
-      "server": "104.17.121.43",
-      "server_port": 443,
-      "password": "humanity",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #76",
-      "server": "151.101.56.6",
-      "server_port": 443,
-      "password": "Mitivpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/boost",
-        "headers": {
-          "Host": "ssl.fastly.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #77",
-      "server": "space.byu.id.yxls.eu.cc",
-      "server_port": 443,
-      "password": "f922fa0f-3311-4368-85ff-cf65e727c854",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "space.byu.id.yxls.eu.cc",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/br-orcl",
-        "headers": {
-          "Host": "space.byu.id.yxls.eu.cc"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #78",
-      "server": "piohosting.ir",
-      "server_port": 443,
-      "password": "MiTiVPN",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "PioHosting.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/MiTiVPN=fL",
-        "headers": {
-          "Host": "PioHosting.ir"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #79",
-      "server": "103.177.136.45",
-      "server_port": 41943,
-      "password": "4f4d1167-ef14-4304-9bce-0740472503ef",
-      "domain_resolver": "google"
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #80",
-      "server": "103.177.136.42",
-      "server_port": 45619,
-      "password": "4f4d1167-ef14-4304-9bce-0740472503ef",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "fr.01.naiun.bilibili.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #81",
-      "server": "103.177.136.45",
-      "server_port": 47909,
-      "password": "4f4d1167-ef14-4304-9bce-0740472503ef",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "is.01.naiun.bilibili.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #82",
-      "server": "146.70.90.195",
-      "server_port": 57452,
-      "password": "t1k169n5zmvvwn96r9ft",
-      "domain_resolver": "google"
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #83",
-      "server": "104.16.72.41",
-      "server_port": 443,
-      "password": "86957ec0-b213-433b-a43b-51f2175e0ec3",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "space.byu.id.yxls.eu.cc",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/au-do",
-        "headers": {
-          "Host": "space.byu.id.yxls.eu.cc"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #84",
-      "server": "151.101.56.6",
-      "server_port": 443,
-      "password": "Mitivpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/boost/bored_vpn---bored_vpn",
-        "headers": {
-          "Host": "ssl.fastly.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #85",
-      "server": "151.101.110.219",
-      "server_port": 443,
-      "password": "Mitivpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/boost/mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn---mtmvpn",
-        "headers": {
-          "Host": "ssl.fastly.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #86",
-      "server": "104.16.72.41",
-      "server_port": 443,
-      "password": "MiTiVPN",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "PioHosting.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/MiTiVPN=De",
-        "headers": {
-          "Host": "PioHosting.ir"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #87",
-      "server": "104.16.72.101",
-      "server_port": 443,
-      "password": "6c862415-30d2-4813-8e49-42e99a0bd415",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "space.byu.id.yxls.eu.cc",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/us-gllc",
-        "headers": {
-          "Host": "space.byu.id.yxls.eu.cc"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #88",
-      "server": "www.calmlunch.com",
-      "server_port": 443,
-      "password": "humanity",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #89",
-      "server": "191.40.5.169",
-      "server_port": 2087,
-      "password": "cc7ad2444ad9481b9d038924cc5916cd",
-      "domain_resolver": "google",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "191.40.5.169"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #90",
-      "server": "104.18.152.225",
-      "server_port": 443,
-      "password": "humanity",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #91",
-      "server": "104.16.174.44",
-      "server_port": 443,
-      "password": "humanity",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #92",
-      "server": "104.16.174.71",
-      "server_port": 443,
-      "password": "humanity",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #93",
-      "server": "104.18.152.113",
-      "server_port": 443,
-      "password": "humanity",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ignitelimit.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.ignitelimit.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #94",
-      "server": "179.237.75.181",
-      "server_port": 34521,
-      "password": "1COPE-----AZ------JKVPN-----",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "promotion.yahoo.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_GEGd2Dmkftju4_zfVaPGy2vDnEiobonHuO9aUcamFE",
-          "short_id": "75337431211f"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #95",
+      "tag": "ARISTA #52",
       "server": "18.163.56.230",
       "server_port": 3941,
       "password": "BxceQaOe",
@@ -2141,584 +1133,34 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #96",
-      "server": "37.156.44.157",
-      "server_port": 42549,
-      "password": "SoftNetConnect",
+      "tag": "ARISTA #53",
+      "server": "91.193.58.201",
+      "server_port": 443,
+      "password": "MiTiVPN",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "www.speedtest.net",
+        "server_name": "95r.ir",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/MiTiVPN=NL",
+        "headers": {
+          "Host": "95r.ir"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #97",
-      "server": "15.236.68.71",
-      "server_port": 22223,
-      "password": "telegram-id-v2rayvpnchannel",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #98",
-      "server": "35.156.135.140",
-      "server_port": 22223,
-      "password": "telegram-id-v2rayvpnchannel",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #99",
-      "server": "63.184.199.58",
-      "server_port": 22223,
-      "password": "telegram-id-v2rayvpnchannel",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #100",
-      "server": "13.38.237.81",
-      "server_port": 22223,
-      "password": "telegram-id-v2rayvpnchannel",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #101",
-      "server": "13.38.152.198",
-      "server_port": 22223,
-      "password": "telegram-id-v2rayvpnchannel",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #102",
-      "server": "3.73.46.147",
-      "server_port": 22223,
-      "password": "telegram-id-v2rayvpnchannel",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #103",
-      "server": "35.157.201.137",
-      "server_port": 22223,
-      "password": "telegram-id-v2rayvpnchannel",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #104",
-      "server": "15.188.109.21",
-      "server_port": 22223,
-      "password": "telegram-id-v2rayvpnchannel",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #105",
-      "server": "15.236.244.3",
-      "server_port": 22223,
-      "password": "telegram-id-v2rayvpnchannel",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #106",
-      "server": "52.29.134.131",
-      "server_port": 22223,
-      "password": "telegram-id-v2rayvpnchannel",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #107",
-      "server": "63.184.240.254",
-      "server_port": 22223,
-      "password": "telegram-id-v2rayvpnchannel",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #108",
-      "server": "13.37.165.141",
-      "server_port": 22223,
-      "password": "telegram-id-v2rayvpnchannel",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #109",
-      "server": "13.36.99.124",
-      "server_port": 22223,
-      "password": "telegram-id-v2rayvpnchannel",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #110",
-      "server": "35.159.131.212",
-      "server_port": 22223,
-      "password": "telegram-id-v2rayvpnchannel",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #111",
-      "server": "15.236.68.71",
-      "server_port": 22223,
-      "password": "telegram-id-directvpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #112",
-      "server": "35.156.135.140",
-      "server_port": 22223,
-      "password": "telegram-id-directvpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #113",
-      "server": "63.184.199.58",
-      "server_port": 22223,
-      "password": "telegram-id-directvpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #114",
-      "server": "13.38.237.81",
-      "server_port": 22223,
-      "password": "telegram-id-directvpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #115",
-      "server": "13.38.152.198",
-      "server_port": 22223,
-      "password": "telegram-id-directvpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #116",
-      "server": "3.73.46.147",
-      "server_port": 22223,
-      "password": "telegram-id-directvpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #117",
-      "server": "35.157.201.137",
-      "server_port": 22223,
-      "password": "telegram-id-directvpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #118",
-      "server": "15.188.109.21",
-      "server_port": 22223,
-      "password": "telegram-id-directvpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #119",
-      "server": "15.236.244.3",
-      "server_port": 22223,
-      "password": "telegram-id-directvpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #120",
-      "server": "52.29.134.131",
-      "server_port": 22223,
-      "password": "telegram-id-directvpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #121",
-      "server": "63.184.240.254",
-      "server_port": 22223,
-      "password": "telegram-id-directvpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #122",
-      "server": "13.37.165.141",
-      "server_port": 22223,
-      "password": "telegram-id-directvpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #123",
-      "server": "13.36.99.124",
-      "server_port": 22223,
-      "password": "telegram-id-directvpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #124",
-      "server": "35.159.131.212",
-      "server_port": 22223,
-      "password": "telegram-id-directvpn",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #125",
+      "tag": "ARISTA #54",
       "server": "45.130.125.96",
       "server_port": 443,
       "password": "humanity",
@@ -2745,7 +1187,108 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #126",
+      "tag": "ARISTA #55",
+      "server": "188.114.98.0",
+      "server_port": 443,
+      "password": "humanity",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.creationlong.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.creationlong.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #56",
+      "server": "104.16.73.243",
+      "server_port": 443,
+      "password": "humanity",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmloud.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmloud.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #57",
+      "server": "de2.yariresanbot.ir",
+      "server_port": 26856,
+      "password": "gx5fx0q4buwh4g4n",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "de2.yariresanbot.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "Panel"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #58",
+      "server": "185.44.76.188",
+      "server_port": 443,
+      "password": "8697fe6b-1lWNFc1RmRBNk5NQU5KSnga3fa58ac5ab3ef0-b4ab-11eb-b65e-1239d0255272",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "185.44.76.188",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #59",
+      "server": "159.223.208.17",
+      "server_port": 33378,
+      "password": "pcmxcvbogke05dtj",
+      "domain_resolver": "google"
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #60",
       "server": "700.andhasitstrafficproxiedthroughcloudflare.iranvatanam.com",
       "server_port": 700,
       "password": "9ece60e3fb334ad5",
@@ -2774,7 +1317,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #127",
+      "tag": "ARISTA #61",
       "server": "701.andhasitstrafficproxiedthroughcloudflare.iranvatanam.com",
       "server_port": 701,
       "password": "fd8c186bb59441b8",
@@ -2803,14 +1346,22 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #128",
-      "server": "92.119.35.85",
-      "server_port": 443,
-      "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
+      "tag": "ARISTA #62",
+      "server": "103.177.136.45",
+      "server_port": 41943,
+      "password": "4f4d1167-ef14-4304-9bce-0740472503ef",
+      "domain_resolver": "google"
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #63",
+      "server": "103.177.136.42",
+      "server_port": 45619,
+      "password": "4f4d1167-ef14-4304-9bce-0740472503ef",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "92.119.35.85",
+        "server_name": "fr.01.naiun.bilibili.com",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -2820,14 +1371,14 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #129",
-      "server": "185.137.157.250",
-      "server_port": 443,
-      "password": "n-S5Kuz58YgwljisuLEJltip2OWf1ourWz",
+      "tag": "ARISTA #64",
+      "server": "103.177.136.45",
+      "server_port": 47909,
+      "password": "4f4d1167-ef14-4304-9bce-0740472503ef",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "fra250.clientfirewall.click",
+        "server_name": "is.01.naiun.bilibili.com",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -2837,61 +1388,63 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #130",
-      "server": "www.hcaptcha.com",
+      "tag": "ARISTA #65",
+      "server": "146.70.90.195",
+      "server_port": 57452,
+      "password": "t1k169n5zmvvwn96r9ft",
+      "domain_resolver": "google"
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #66",
+      "server": "104.16.72.101",
       "server_port": 443,
-      "password": "MiTiVPN",
+      "password": "6c862415-30d2-4813-8e49-42e99a0bd415",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "PioHosting.ir",
+        "server_name": "space.byu.id.yxls.eu.cc",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/MiTiVPN=NL",
+        "path": "/us-gllc",
         "headers": {
-          "Host": "PioHosting.ir"
+          "Host": "space.byu.id.yxls.eu.cc"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #131",
-      "server": "104.16.73.243",
+      "tag": "ARISTA #67",
+      "server": "www.calmlunch.com",
       "server_port": 443,
       "password": "humanity",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmloud.com",
+        "server_name": "www.calmlunch.com",
         "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
+        }
       },
       "transport": {
         "type": "ws",
         "path": "/assignment",
         "headers": {
-          "Host": "www.calmloud.com"
+          "Host": "www.calmlunch.com"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #132",
+      "tag": "ARISTA #68",
       "server": "45.130.125.126",
       "server_port": 443,
       "password": "humanity",
@@ -2915,7 +1468,31 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #133",
+      "tag": "ARISTA #69",
+      "server": "151.101.110.219",
+      "server_port": 443,
+      "password": "Mitivpn",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/boost",
+        "headers": {
+          "Host": "ssl.fastly.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #70",
       "server": "151.101.56.6",
       "server_port": 443,
       "password": "Mitivpn",
@@ -2939,7 +1516,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #134",
+      "tag": "ARISTA #71",
       "server": "164.38.155.135",
       "server_port": 443,
       "password": "MITIVPN",
@@ -2966,14 +1543,14 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #135",
-      "server": "151.101.1.194",
+      "tag": "ARISTA #72",
+      "server": "151.101.193.242",
       "server_port": 443,
       "password": "MiTiVPN",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "global.fastly.com",
+        "server_name": "f6r.ir",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -2985,135 +1562,352 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/ed=mitivpn",
+        "path": "/usa=mitivpn",
         "headers": {
-          "Host": "global.fastly.com"
+          "Host": "f6r.ir"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #136",
+      "tag": "ARISTA #73",
+      "server": "151.101.56.6",
+      "server_port": 443,
+      "password": "Mitivpn",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fastly=mitivpn",
+        "headers": {
+          "Host": "ssl.fastly.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #74",
       "server": "104.16.72.70",
       "server_port": 443,
-      "password": "MiTiVPN",
+      "password": "86957ec0-b213-433b-a43b-51f2175e0ec3",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "linkkon-w.ir",
+        "server_name": "space.byu.id.yxls.eu.cc",
         "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/ed=mitivpn",
+        "path": "/au-do",
         "headers": {
-          "Host": "linkkon-w.ir"
+          "Host": "space.byu.id.yxls.eu.cc"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #137",
-      "server": "216.24.57.6",
+      "tag": "ARISTA #75",
+      "server": "104.26.14.137",
       "server_port": 443,
       "password": "humanity",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "www.creationlong.org",
+        "server_name": "www.ignitelimit.com",
         "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
+        }
       },
       "transport": {
         "type": "ws",
         "path": "/assignment",
         "headers": {
-          "Host": "www.creationlong.org"
+          "Host": "www.ignitelimit.com"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #138",
-      "server": "151.101.1.242",
+      "tag": "ARISTA #76",
+      "server": "151.101.56.6",
       "server_port": 443,
-      "password": "MiTiVPN",
+      "password": "Mitivpn",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "www.f6r.ir",
+        "server_name": "ssl.fastly.com",
         "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "alpn": [
-          "http/1.1"
+          "h2"
         ]
       },
       "transport": {
         "type": "ws",
         "path": "/de=mitivpn",
         "headers": {
-          "Host": "www.f6r.ir"
+          "Host": "ssl.fastly.com"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #139",
-      "server": "95.40.125.63",
-      "server_port": 5701,
-      "password": "e0195c73018d597b1c2f0ea89d8676ae",
-      "domain_resolver": "google"
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #140",
-      "server": "16.163.107.220",
-      "server_port": 11035,
-      "password": "BxceQaOe",
-      "domain_resolver": "google"
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #141",
-      "server": "18.203.97.93",
-      "server_port": 22222,
-      "password": "telegram-id-privatevpns",
-      "domain_resolver": "google"
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #142",
-      "server": "43.198.107.157",
-      "server_port": 17005,
-      "password": "e0195c73018d597b1c2f0ea89d8676ae",
-      "domain_resolver": "google"
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #143",
-      "server": "162.159.152.138",
+      "tag": "ARISTA #77",
+      "server": "151.101.56.6",
       "server_port": 443,
-      "password": "tg-dns68",
+      "password": "Mitivpn",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "vip.putata.eu.org",
+        "server_name": "ssl.fastly.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/boost/bored_vpn---bored_vpn",
+        "headers": {
+          "Host": "ssl.fastly.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #78",
+      "server": "104.21.40.34",
+      "server_port": 443,
+      "password": "humanity",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.gossipglove.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.gossipglove.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #79",
+      "server": "space.byu.id.yxls.eu.cc",
+      "server_port": 443,
+      "password": "f922fa0f-3311-4368-85ff-cf65e727c854",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "space.byu.id.yxls.eu.cc",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/br-orcl",
+        "headers": {
+          "Host": "space.byu.id.yxls.eu.cc"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #80",
+      "server": "piohosting.ir",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "PioHosting.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/MiTiVPN=fL",
+        "headers": {
+          "Host": "PioHosting.ir"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #81",
+      "server": "104.16.72.41",
+      "server_port": 443,
+      "password": "86957ec0-b213-433b-a43b-51f2175e0ec3",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "space.byu.id.yxls.eu.cc",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/au-do",
+        "headers": {
+          "Host": "space.byu.id.yxls.eu.cc"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #82",
+      "server": "104.16.72.41",
+      "server_port": 443,
+      "password": "MITIVPN",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "PioHosting.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/MiTiVPN=De",
+        "headers": {
+          "Host": "PioHosting.ir"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #83",
+      "server": "89.116.180.49",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "f6r.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/nl=mitivpn",
+        "headers": {
+          "Host": "f6r.ir"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #84",
+      "server": "0406.infinityconfig7.workers.dev",
+      "server_port": 2053,
+      "password": "d682c8f4-e719-577e-cbe9-2e5b00000001",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "0406.infinityconfig7.workers.dev",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sync",
+        "headers": {
+          "Host": "0406.infinityconfig7.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #85",
+      "server": "91.193.58.201",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "PioHosting.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/MiTiVPN=NL",
+        "headers": {
+          "Host": "PioHosting.ir"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #86",
+      "server": "saas.sin.fan",
+      "server_port": 443,
+      "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "hhcm.hhxaf.cc.cd",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -3124,13 +1918,357 @@
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "vip.putata.eu.org"
+          "Host": "hhcm.hhxaf.cc.cd"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #144",
+      "tag": "ARISTA #87",
+      "server": "185.137.157.138",
+      "server_port": 443,
+      "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "185.137.157.138",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #88",
+      "server": "159.112.235.52",
+      "server_port": 443,
+      "password": "humanity",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.multiplydose.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.multiplydose.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #89",
+      "server": "45.77.227.183",
+      "server_port": 443,
+      "password": "kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "45.77.227.183",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #90",
+      "server": "92.119.35.117",
+      "server_port": 443,
+      "password": "aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "92.119.35.117",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #91",
+      "server": "45.130.125.75",
+      "server_port": 443,
+      "password": "x5cDfADabj",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "b.aananas.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "b.aananas.ir"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #92",
+      "server": "45.130.125.75",
+      "server_port": 8080,
+      "password": "N53GqFZAHv",
+      "domain_resolver": "google",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "45.130.125.75"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #93",
+      "server": "45.130.125.158",
+      "server_port": 8080,
+      "password": "7UdfQ85dsJ",
+      "domain_resolver": "google",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "45.130.125.158"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #94",
+      "server": "45.130.125.2",
+      "server_port": 443,
+      "password": "rdC7DTr5wK",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "si.farxmode.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/da",
+        "headers": {
+          "Host": "si.farxmode.ir"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #95",
+      "server": "151.101.110.219",
+      "server_port": 443,
+      "password": "Mitivpn",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "global.fastly.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/de=mitivpn",
+        "headers": {
+          "Host": "global.fastly.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #96",
+      "server": "172.67.180.92",
+      "server_port": 443,
+      "password": "humanity",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.multiplydose.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.multiplydose.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #97",
+      "server": "185.137.157.142",
+      "server_port": 443,
+      "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "185.137.157.142",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #98",
+      "server": "104.16.71.213",
+      "server_port": 443,
+      "password": "humanity",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #99",
+      "server": "104.16.71.213",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "wwww.95r.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ed=mitivpn",
+        "headers": {
+          "Host": "wwww.95r.ir"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #100",
+      "server": "104.18.32.47",
+      "server_port": 443,
+      "password": "humanity",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #101",
+      "server": "104.18.153.10",
+      "server_port": 443,
+      "password": "86957ec0-b213-433b-a43b-51f2175e0ec3",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "space.byu.id.yxls.eu.cc",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/au-do",
+        "headers": {
+          "Host": "space.byu.id.yxls.eu.cc"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #102",
+      "server": "94.140.0.1",
+      "server_port": 443,
+      "password": "bpb-trojan",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "singbox.lu567890.us.kg",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr?ed=2560",
+        "headers": {
+          "Host": "singbox.lu567890.us.kg"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #103",
       "server": "104.21.100.168",
       "server_port": 443,
       "password": "pemyo67c0yjom5kv",
@@ -3157,14 +2295,31 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #145",
-      "server": "94.140.0.1",
+      "tag": "ARISTA #104",
+      "server": "185.137.157.140",
       "server_port": 443,
-      "password": "bpb-trojan",
+      "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "singbox.lu567890.us.kg",
+        "server_name": "185.137.157.140",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #105",
+      "server": "104.17.121.43",
+      "server_port": 443,
+      "password": "humanity",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -3173,15 +2328,755 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/tr?ed=2560",
+        "path": "/assignment",
         "headers": {
-          "Host": "singbox.lu567890.us.kg"
+          "Host": "www.calmlunch.com"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #146",
+      "tag": "ARISTA #106",
+      "server": "151.101.56.6",
+      "server_port": 443,
+      "password": "Mitivpn",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/boost",
+        "headers": {
+          "Host": "ssl.fastly.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #107",
+      "server": "63.184.199.58",
+      "server_port": 22223,
+      "password": "telegram-id-v2rayvpnchannel",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #108",
+      "server": "13.38.237.81",
+      "server_port": 22223,
+      "password": "telegram-id-v2rayvpnchannel",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #109",
+      "server": "13.38.152.198",
+      "server_port": 22223,
+      "password": "telegram-id-v2rayvpnchannel",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #110",
+      "server": "3.73.46.147",
+      "server_port": 22223,
+      "password": "telegram-id-v2rayvpnchannel",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #111",
+      "server": "35.157.201.137",
+      "server_port": 22223,
+      "password": "telegram-id-v2rayvpnchannel",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #112",
+      "server": "15.188.109.21",
+      "server_port": 22223,
+      "password": "telegram-id-v2rayvpnchannel",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #113",
+      "server": "15.236.244.3",
+      "server_port": 22223,
+      "password": "telegram-id-v2rayvpnchannel",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #114",
+      "server": "52.29.134.131",
+      "server_port": 22223,
+      "password": "telegram-id-v2rayvpnchannel",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #115",
+      "server": "63.184.240.254",
+      "server_port": 22223,
+      "password": "telegram-id-v2rayvpnchannel",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #116",
+      "server": "13.37.165.141",
+      "server_port": 22223,
+      "password": "telegram-id-v2rayvpnchannel",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #117",
+      "server": "13.36.99.124",
+      "server_port": 22223,
+      "password": "telegram-id-v2rayvpnchannel",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #118",
+      "server": "35.159.131.212",
+      "server_port": 22223,
+      "password": "telegram-id-v2rayvpnchannel",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #119",
+      "server": "18.197.104.44",
+      "server_port": 22223,
+      "password": "telegram-id-v2rayvpnchannel",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #120",
+      "server": "51.45.25.17",
+      "server_port": 22223,
+      "password": "telegram-id-v2rayvpnchannel",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #121",
+      "server": "151.101.1.194",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "global.fastly.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ed=mitivpn",
+        "headers": {
+          "Host": "global.fastly.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #122",
+      "server": "104.16.72.70",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "linkkon-w.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ed=mitivpn",
+        "headers": {
+          "Host": "linkkon-w.ir"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #123",
+      "server": "216.24.57.6",
+      "server_port": 443,
+      "password": "humanity",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.creationlong.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.creationlong.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #124",
+      "server": "151.101.1.242",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.f6r.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/de=mitivpn",
+        "headers": {
+          "Host": "www.f6r.ir"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #125",
+      "server": "179.237.75.181",
+      "server_port": 34521,
+      "password": "1COPE-----AZ------JKVPN-----",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "promotion.yahoo.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_GEGd2Dmkftju4_zfVaPGy2vDnEiobonHuO9aUcamFE",
+          "short_id": "75337431211f"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #126",
+      "server": "185.137.157.59",
+      "server_port": 443,
+      "password": "fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.lateralio.click",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #127",
+      "server": "83.228.228.243",
+      "server_port": 8443,
+      "password": "SoftNetConnect",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "h0Lem3eyDGqkye4yAMuxixCMI2EqD1EKdH9Ky0Xetjg",
+          "short_id": "c7"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #128",
+      "server": "www.hcaptcha.com",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "PioHosting.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/MiTiVPN=NL",
+        "headers": {
+          "Host": "PioHosting.ir"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #129",
+      "server": "13.38.152.198",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #130",
+      "server": "3.73.46.147",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #131",
+      "server": "35.157.201.137",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #132",
+      "server": "15.188.109.21",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #133",
+      "server": "15.236.244.3",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #134",
+      "server": "52.29.134.131",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #135",
+      "server": "63.184.240.254",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #136",
+      "server": "13.37.165.141",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #137",
+      "server": "13.36.99.124",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #138",
+      "server": "35.159.131.212",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #139",
+      "server": "18.197.104.44",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #140",
+      "server": "51.45.25.17",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #141",
       "server": "172.66.44.211",
       "server_port": 443,
       "password": "humanity",
@@ -3196,7 +3091,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #147",
+      "tag": "ARISTA #142",
       "server": "104.17.131.88",
       "server_port": 443,
       "password": "humanity",
@@ -3211,7 +3106,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #148",
+      "tag": "ARISTA #143",
       "server": "104.21.40.34",
       "server_port": 443,
       "password": "humanity",
@@ -3226,7 +3121,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #149",
+      "tag": "ARISTA #144",
       "server": "172.64.147.166",
       "server_port": 443,
       "password": "humanity",
@@ -3241,7 +3136,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #150",
+      "tag": "ARISTA #145",
       "server": "104.21.40.34",
       "server_port": 443,
       "password": "humanity",
@@ -3265,7 +3160,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #151",
+      "tag": "ARISTA #146",
       "server": "45.130.125.126",
       "server_port": 443,
       "password": "86957ec0-b213-433b-a43b-51f2175e0ec3",
@@ -3289,7 +3184,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #152",
+      "tag": "ARISTA #147",
       "server": "45.130.125.160",
       "server_port": 443,
       "password": "humanity",
@@ -3304,7 +3199,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #153",
+      "tag": "ARISTA #148",
       "server": "www.speedtest.net",
       "server_port": 443,
       "password": "0ab59a11983d4ce7862d156c164d927d",
@@ -3331,7 +3226,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #154",
+      "tag": "ARISTA #149",
       "server": "104.16.174.121",
       "server_port": 443,
       "password": "humanity",
@@ -3355,7 +3250,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #155",
+      "tag": "ARISTA #150",
       "server": "216.24.57.1",
       "server_port": 443,
       "password": "humanity",
@@ -3379,7 +3274,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #156",
+      "tag": "ARISTA #151",
       "server": "162.159.36.5",
       "server_port": 443,
       "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
@@ -3394,7 +3289,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #157",
+      "tag": "ARISTA #152",
       "server": "45.130.125.112",
       "server_port": 443,
       "password": "humanity",
@@ -3418,7 +3313,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #158",
+      "tag": "ARISTA #153",
       "server": "104.16.72.101",
       "server_port": 443,
       "password": "86957ec0-b213-433b-a43b-51f2175e0ec3",
@@ -3433,7 +3328,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #159",
+      "tag": "ARISTA #154",
       "server": "188.114.97.6",
       "server_port": 443,
       "password": "humanity",
@@ -3460,7 +3355,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #160",
+      "tag": "ARISTA #155",
       "server": "blog.webex.com",
       "server_port": 443,
       "password": "afbcd89a-5a90-4a44-a42a-be08f444aa3f",
@@ -3475,7 +3370,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #161",
+      "tag": "ARISTA #156",
       "server": "104.16.72.2",
       "server_port": 443,
       "password": "f922fa0f-3311-4368-85ff-cf65e727c854",
@@ -3499,7 +3394,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #162",
+      "tag": "ARISTA #157",
       "server": "104.16.72.2",
       "server_port": 443,
       "password": "86957ec0-b213-433b-a43b-51f2175e0ec3",
@@ -3523,7 +3418,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #163",
+      "tag": "ARISTA #158",
       "server": "45.130.125.75",
       "server_port": 443,
       "password": "humanity",
@@ -3547,7 +3442,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #164",
+      "tag": "ARISTA #159",
       "server": "assets.fiverr.com",
       "server_port": 443,
       "password": "MiTiVPN",
@@ -3574,7 +3469,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #165",
+      "tag": "ARISTA #160",
       "server": "assets.fiverr.com",
       "server_port": 443,
       "password": "MITIVPN",
@@ -3601,7 +3496,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #166",
+      "tag": "ARISTA #161",
       "server": "assets.fiverr.com",
       "server_port": 443,
       "password": "MiTiVPN",
@@ -3628,7 +3523,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #167",
+      "tag": "ARISTA #162",
       "server": "assets.fiverr.com",
       "server_port": 443,
       "password": "MiTiVPN",
@@ -3655,7 +3550,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #168",
+      "tag": "ARISTA #163",
       "server": "www.hcaptcha.com",
       "server_port": 443,
       "password": "MiTiVPN",
@@ -3682,7 +3577,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #169",
+      "tag": "ARISTA #164",
       "server": "92.119.35.130",
       "server_port": 443,
       "password": "aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR",
@@ -3699,7 +3594,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #170",
+      "tag": "ARISTA #165",
       "server": "104.19.2.175",
       "server_port": 443,
       "password": "humanity",
@@ -3726,7 +3621,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #171",
+      "tag": "ARISTA #166",
       "server": "104.16.72.41",
       "server_port": 443,
       "password": "MiTiVPN",
@@ -3753,7 +3648,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #172",
+      "tag": "ARISTA #167",
       "server": "104.18.12.149",
       "server_port": 443,
       "password": "humanity",
@@ -3777,7 +3672,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #173",
+      "tag": "ARISTA #168",
       "server": "198.202.211.1",
       "server_port": 443,
       "password": "humanity",
@@ -3801,7 +3696,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #174",
+      "tag": "ARISTA #169",
       "server": "51.75.86.196",
       "server_port": 55646,
       "password": "03mpolj39zyewzufal2r",
@@ -3818,14 +3713,14 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #175",
-      "server": "shazira.app",
+      "tag": "ARISTA #170",
+      "server": "space.byu.id.yxls.eu.cc",
       "server_port": 443,
-      "password": "8d19cac6-defb-46d1-a84a-a8100a86fd11",
+      "password": "86957ec0-b213-433b-a43b-51f2175e0ec3",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "shazira.app",
+        "server_name": "space.byu.id.yxls.eu.cc",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -3834,30 +3729,15 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/Novan-ID10",
+        "path": "/au-do",
         "headers": {
-          "Host": "shazira.app"
+          "Host": "space.byu.id.yxls.eu.cc"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #176",
-      "server": "shazira.app",
-      "server_port": 443,
-      "password": "8d19cac6-defb-46d1-a84a-a8100a86fd11",
-      "domain_resolver": "google",
-      "transport": {
-        "type": "ws",
-        "path": "/Novan-ID10",
-        "headers": {
-          "Host": "shazira.app"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #177",
+      "tag": "ARISTA #171",
       "server": "213.176.113.98",
       "server_port": 2053,
       "password": "8r<[9'l6hAO#8ZQi",
@@ -3881,7 +3761,52 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #178",
+      "tag": "ARISTA #172",
+      "server": "185.126.236.44",
+      "server_port": 443,
+      "password": "BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.mesaly.click",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #173",
+      "server": "185.126.236.44",
+      "server_port": 443,
+      "password": "BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.mesaly.click",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #174",
+      "server": "185.126.236.44",
+      "server_port": 443,
+      "password": "BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL",
+      "domain_resolver": "google"
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #175",
       "server": "119.246.1.143",
       "server_port": 443,
       "password": "BxceQaOe",
@@ -3898,24 +3823,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #179",
-      "server": "de-1.hysteria.ltd",
-      "server_port": 9443,
-      "password": "LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "de-1.hysteria.ltd",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #180",
+      "tag": "ARISTA #176",
       "server": "45.131.4.115",
       "server_port": 443,
       "password": "MITIVPN",
@@ -3942,7 +3850,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #181",
+      "tag": "ARISTA #177",
       "server": "masir_sefid",
       "server_port": 443,
       "password": "Masir_Sefid",
@@ -3964,7 +3872,24 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #182",
+      "tag": "ARISTA #178",
+      "server": "38.60.252.118",
+      "server_port": 443,
+      "password": "NAdtbpuyJXPH=CfKmdBqD2YVbzdvwAtuxw",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "38.60.252.118",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #179",
       "server": "nl-1.tr202604.com",
       "server_port": 443,
       "password": "RJbtIstwtcU5buDY3r",
@@ -3981,7 +3906,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #183",
+      "tag": "ARISTA #180",
       "server": "nl-4.tr202604.com",
       "server_port": 443,
       "password": "RJbtIstwtcU5buDY3r",
@@ -3998,7 +3923,24 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #184",
+      "tag": "ARISTA #181",
+      "server": "149.104.104.58",
+      "server_port": 443,
+      "password": "S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "149.104.104.58",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #182",
       "server": "149.104.104.58",
       "server_port": 443,
       "password": "S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix",
@@ -4006,7 +3948,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #185",
+      "tag": "ARISTA #183",
       "server": "103.125.216.18",
       "server_port": 443,
       "password": "T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf",
@@ -4023,24 +3965,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #186",
-      "server": "103.125.216.68",
-      "server_port": 443,
-      "password": "T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "103.125.216.68",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #187",
+      "tag": "ARISTA #184",
       "server": "38.60.202.163",
       "server_port": 443,
       "password": "ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed",
@@ -4057,7 +3982,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #188",
+      "tag": "ARISTA #185",
       "server": "92.119.35.120",
       "server_port": 443,
       "password": "aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR",
@@ -4074,7 +3999,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #189",
+      "tag": "ARISTA #186",
       "server": "92.119.35.123",
       "server_port": 443,
       "password": "aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR",
@@ -4091,7 +4016,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #190",
+      "tag": "ARISTA #187",
       "server": "92.119.35.127",
       "server_port": 443,
       "password": "aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR",
@@ -4108,7 +4033,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #191",
+      "tag": "ARISTA #188",
       "server": "92.119.35.125",
       "server_port": 443,
       "password": "aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR",
@@ -4116,7 +4041,24 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #192",
+      "tag": "ARISTA #189",
+      "server": "92.119.35.125",
+      "server_port": 443,
+      "password": "aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "92.119.35.125",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #190",
       "server": "92.119.35.130",
       "server_port": 443,
       "password": "aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR",
@@ -4124,7 +4066,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #193",
+      "tag": "ARISTA #191",
       "server": "127.0.0.1",
       "server_port": 1080,
       "password": "aacbacb-baac-caab-cdba-caccbabaabbc",
@@ -4141,7 +4083,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #194",
+      "tag": "ARISTA #192",
       "server": "127.0.0.1",
       "server_port": 8080,
       "password": "acacbab-baac-abac-dcab-aacabcbcabcb",
@@ -4158,14 +4100,14 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #195",
-      "server": "wing2452.nyc.mn",
+      "tag": "ARISTA #193",
+      "server": "vless.herogoing.top",
       "server_port": 443,
       "password": "bpb-trojan",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "wing2452.nyc.mn",
+        "server_name": "vless.herogoing.top",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -4174,16 +4116,16 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/tr",
+        "path": "/tr?ed=2560",
         "headers": {
-          "Host": "wing2452.nyc.mn"
+          "Host": "vless.herogoing.top"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #196",
-      "server": "wing2452.nyc.mn",
+      "tag": "ARISTA #194",
+      "server": "vless.herogoing.top",
       "server_port": 443,
       "password": "bpb-trojan",
       "domain_resolver": "google",
@@ -4191,30 +4133,13 @@
         "type": "ws",
         "path": "/tr?ed=2560",
         "headers": {
-          "Host": "wing2452.nyc.mn"
+          "Host": "vless.herogoing.top"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #197",
-      "server": "185.137.157.128",
-      "server_port": 443,
-      "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "185.137.157.128",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #198",
+      "tag": "ARISTA #195",
       "server": "185.137.157.135",
       "server_port": 443,
       "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
@@ -4231,57 +4156,31 @@
     },
     {
       "type": "trojan",
+      "tag": "ARISTA #196",
+      "server": "185.137.157.138",
+      "server_port": 443,
+      "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
+      "domain_resolver": "google"
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #197",
+      "server": "185.137.157.140",
+      "server_port": 443,
+      "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
+      "domain_resolver": "google"
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #198",
+      "server": "185.137.157.142",
+      "server_port": 443,
+      "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
+      "domain_resolver": "google"
+    },
+    {
+      "type": "trojan",
       "tag": "ARISTA #199",
-      "server": "185.137.157.138",
-      "server_port": 443,
-      "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
-      "domain_resolver": "google"
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #200",
-      "server": "185.137.157.138",
-      "server_port": 443,
-      "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "185.137.157.138",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #201",
-      "server": "185.137.157.142",
-      "server_port": 443,
-      "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
-      "domain_resolver": "google"
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #202",
-      "server": "185.137.157.142",
-      "server_port": 443,
-      "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "185.137.157.142",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #203",
       "server": "185.137.157.145",
       "server_port": 443,
       "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
@@ -4289,7 +4188,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #204",
+      "tag": "ARISTA #200",
       "server": "185.137.157.145",
       "server_port": 443,
       "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
@@ -4306,7 +4205,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #205",
+      "tag": "ARISTA #201",
       "server": "185.137.157.149",
       "server_port": 443,
       "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
@@ -4323,7 +4222,15 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #206",
+      "tag": "ARISTA #202",
+      "server": "185.137.157.149",
+      "server_port": 443,
+      "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
+      "domain_resolver": "google"
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #203",
       "server": "185.137.157.151",
       "server_port": 443,
       "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
@@ -4331,7 +4238,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #207",
+      "tag": "ARISTA #204",
       "server": "185.137.157.151",
       "server_port": 443,
       "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
@@ -4348,7 +4255,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #208",
+      "tag": "ARISTA #205",
       "server": "185.137.157.156",
       "server_port": 443,
       "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
@@ -4356,7 +4263,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #209",
+      "tag": "ARISTA #206",
       "server": "185.137.157.156",
       "server_port": 443,
       "password": "dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q",
@@ -4373,7 +4280,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #210",
+      "tag": "ARISTA #207",
       "server": "5.239.245.250",
       "server_port": 443,
       "password": "ecd5e68e-92a5-4f85-afe1-1775ec84bf54",
@@ -4390,7 +4297,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #211",
+      "tag": "ARISTA #208",
       "server": "104.18.42.163",
       "server_port": 443,
       "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
@@ -4405,7 +4312,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #212",
+      "tag": "ARISTA #209",
       "server": "108.160.132.132",
       "server_port": 443,
       "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
@@ -4420,145 +4327,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #213",
-      "server": "144.202.83.188",
-      "server_port": 443,
-      "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
-      "domain_resolver": "google",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hhcm.hhxaf.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #214",
-      "server": "154.64.235.157",
-      "server_port": 443,
-      "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "hhcm.hhxaf.cc.cd",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hhcm.hhxaf.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #215",
-      "server": "162.159.36.20",
-      "server_port": 443,
-      "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
-      "domain_resolver": "google",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hhcm.hhxaf.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #216",
-      "server": "172.66.46.250",
-      "server_port": 443,
-      "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
-      "domain_resolver": "google",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hhcm.hhxaf.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #217",
-      "server": "213.35.127.18",
-      "server_port": 443,
-      "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "hhcm.hhxaf.cc.cd",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hhcm.hhxaf.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #218",
-      "server": "66.245.218.247",
-      "server_port": 443,
-      "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
-      "domain_resolver": "google",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "tjsp.hhxaf.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #219",
-      "server": "saas.sin.fan",
-      "server_port": 443,
-      "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
-      "domain_resolver": "google",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hhcm.hhxaf.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #220",
-      "server": "store.ubi.com",
-      "server_port": 443,
-      "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
-      "domain_resolver": "google",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hhcm.hhxaf.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #221",
+      "tag": "ARISTA #210",
       "server": "store.ubi.com",
       "server_port": 443,
       "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
@@ -4582,7 +4351,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #222",
+      "tag": "ARISTA #211",
       "server": "tjsp.hhxaf.cc.cd",
       "server_port": 443,
       "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
@@ -4597,7 +4366,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #223",
+      "tag": "ARISTA #212",
       "server": "tjsp.hhxaf.cc.cd",
       "server_port": 443,
       "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
@@ -4621,7 +4390,22 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #224",
+      "tag": "ARISTA #213",
+      "server": "104.16.72.2",
+      "server_port": 443,
+      "password": "f922fa0f-3311-4368-85ff-cf65e727c854",
+      "domain_resolver": "google",
+      "transport": {
+        "type": "ws",
+        "path": "/br-orcl",
+        "headers": {
+          "Host": "space.byu.id.yxls.eu.cc"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #214",
       "server": "104.16.72.70",
       "server_port": 443,
       "password": "f922fa0f-3311-4368-85ff-cf65e727c854",
@@ -4636,7 +4420,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #225",
+      "tag": "ARISTA #215",
       "server": "104.17.121.43",
       "server_port": 443,
       "password": "f922fa0f-3311-4368-85ff-cf65e727c854",
@@ -4651,7 +4435,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #226",
+      "tag": "ARISTA #216",
       "server": "141.193.213.30",
       "server_port": 443,
       "password": "f922fa0f-3311-4368-85ff-cf65e727c854",
@@ -4666,7 +4450,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #227",
+      "tag": "ARISTA #217",
       "server": "space.byu.id.yxls.eu.cc",
       "server_port": 443,
       "password": "f922fa0f-3311-4368-85ff-cf65e727c854",
@@ -4681,7 +4465,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #228",
+      "tag": "ARISTA #218",
       "server": "104.16.174.117",
       "server_port": 443,
       "password": "humanity",
@@ -4696,7 +4480,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #229",
+      "tag": "ARISTA #219",
       "server": "104.16.174.121",
       "server_port": 443,
       "password": "humanity",
@@ -4711,7 +4495,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #230",
+      "tag": "ARISTA #220",
       "server": "104.16.174.12",
       "server_port": 443,
       "password": "humanity",
@@ -4735,7 +4519,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #231",
+      "tag": "ARISTA #221",
       "server": "104.16.174.37",
       "server_port": 443,
       "password": "humanity",
@@ -4750,7 +4534,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #232",
+      "tag": "ARISTA #222",
       "server": "104.16.174.71",
       "server_port": 443,
       "password": "humanity",
@@ -4765,7 +4549,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #233",
+      "tag": "ARISTA #223",
       "server": "104.17.121.71",
       "server_port": 443,
       "password": "humanity",
@@ -4780,7 +4564,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #234",
+      "tag": "ARISTA #224",
       "server": "104.17.121.9",
       "server_port": 443,
       "password": "humanity",
@@ -4807,7 +4591,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #235",
+      "tag": "ARISTA #225",
       "server": "104.18.12.149",
       "server_port": 443,
       "password": "humanity",
@@ -4822,7 +4606,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #236",
+      "tag": "ARISTA #226",
       "server": "104.18.13.149",
       "server_port": 443,
       "password": "humanity",
@@ -4849,7 +4633,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #237",
+      "tag": "ARISTA #227",
       "server": "104.18.152.219",
       "server_port": 443,
       "password": "humanity",
@@ -4873,7 +4657,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #238",
+      "tag": "ARISTA #228",
       "server": "104.18.152.225",
       "server_port": 443,
       "password": "humanity",
@@ -4888,7 +4672,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #239",
+      "tag": "ARISTA #229",
       "server": "104.18.152.229",
       "server_port": 443,
       "password": "humanity",
@@ -4915,7 +4699,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #240",
+      "tag": "ARISTA #230",
       "server": "104.18.152.246",
       "server_port": 443,
       "password": "humanity",
@@ -4942,7 +4726,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #241",
+      "tag": "ARISTA #231",
       "server": "104.18.152.97",
       "server_port": 443,
       "password": "humanity",
@@ -4957,7 +4741,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #242",
+      "tag": "ARISTA #232",
       "server": "104.18.32.37",
       "server_port": 443,
       "password": "humanity",
@@ -4981,7 +4765,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #243",
+      "tag": "ARISTA #233",
       "server": "104.18.32.47",
       "server_port": 443,
       "password": "humanity",
@@ -4996,7 +4780,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #244",
+      "tag": "ARISTA #234",
       "server": "104.18.7.147",
       "server_port": 443,
       "password": "humanity",
@@ -5011,7 +4795,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #245",
+      "tag": "ARISTA #235",
       "server": "104.18.8.83",
       "server_port": 443,
       "password": "humanity",
@@ -5035,7 +4819,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #246",
+      "tag": "ARISTA #236",
       "server": "104.19.208.184",
       "server_port": 443,
       "password": "humanity",
@@ -5050,7 +4834,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #247",
+      "tag": "ARISTA #237",
       "server": "104.19.229.21",
       "server_port": 443,
       "password": "humanity",
@@ -5065,7 +4849,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #248",
+      "tag": "ARISTA #238",
       "server": "104.19.230.21",
       "server_port": 443,
       "password": "humanity",
@@ -5080,7 +4864,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #249",
+      "tag": "ARISTA #239",
       "server": "104.20.42.250",
       "server_port": 443,
       "password": "humanity",
@@ -5107,7 +4891,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #250",
+      "tag": "ARISTA #240",
       "server": "104.20.6.134",
       "server_port": 443,
       "password": "humanity",
@@ -5122,7 +4906,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #251",
+      "tag": "ARISTA #241",
       "server": "104.26.14.137",
       "server_port": 443,
       "password": "humanity",
@@ -5137,7 +4921,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #252",
+      "tag": "ARISTA #242",
       "server": "141.101.90.101",
       "server_port": 443,
       "password": "humanity",
@@ -5161,7 +4945,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #253",
+      "tag": "ARISTA #243",
       "server": "141.193.213.11",
       "server_port": 443,
       "password": "humanity",
@@ -5188,7 +4972,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #254",
+      "tag": "ARISTA #244",
       "server": "141.193.213.21",
       "server_port": 443,
       "password": "humanity",
@@ -5203,7 +4987,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #255",
+      "tag": "ARISTA #245",
       "server": "162.159.17.189",
       "server_port": 443,
       "password": "humanity",
@@ -5218,7 +5002,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #256",
+      "tag": "ARISTA #246",
       "server": "165.215.250.14",
       "server_port": 443,
       "password": "humanity",
@@ -5233,7 +5017,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #257",
+      "tag": "ARISTA #247",
       "server": "172.64.147.24",
       "server_port": 443,
       "password": "humanity",
@@ -5248,7 +5032,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #258",
+      "tag": "ARISTA #248",
       "server": "172.64.152.23",
       "server_port": 443,
       "password": "humanity",
@@ -5272,7 +5056,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #259",
+      "tag": "ARISTA #249",
       "server": "172.64.155.209",
       "server_port": 443,
       "password": "humanity",
@@ -5287,7 +5071,22 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #260",
+      "tag": "ARISTA #250",
+      "server": "172.67.180.92",
+      "server_port": 443,
+      "password": "humanity",
+      "domain_resolver": "google",
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.multiplydose.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #251",
       "server": "185.18.250.245",
       "server_port": 443,
       "password": "humanity",
@@ -5311,7 +5110,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #261",
+      "tag": "ARISTA #252",
       "server": "185.18.250.252",
       "server_port": 443,
       "password": "humanity",
@@ -5326,7 +5125,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #262",
+      "tag": "ARISTA #253",
       "server": "185.231.112.217",
       "server_port": 40443,
       "password": "humanity",
@@ -5350,7 +5149,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #263",
+      "tag": "ARISTA #254",
       "server": "188.114.96.3",
       "server_port": 443,
       "password": "humanity",
@@ -5374,7 +5173,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #264",
+      "tag": "ARISTA #255",
       "server": "188.114.96.4",
       "server_port": 443,
       "password": "humanity",
@@ -5401,7 +5200,22 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #265",
+      "tag": "ARISTA #256",
+      "server": "188.114.97.57",
+      "server_port": 443,
+      "password": "humanity",
+      "domain_resolver": "google",
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmloud.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #257",
       "server": "188.114.97.6",
       "server_port": 443,
       "password": "humanity",
@@ -5428,7 +5242,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #266",
+      "tag": "ARISTA #258",
       "server": "188.114.98.0",
       "server_port": 443,
       "password": "humanity",
@@ -5443,7 +5257,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #267",
+      "tag": "ARISTA #259",
       "server": "198.62.62.23",
       "server_port": 443,
       "password": "humanity",
@@ -5467,7 +5281,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #268",
+      "tag": "ARISTA #260",
       "server": "199.181.197.111",
       "server_port": 443,
       "password": "humanity",
@@ -5494,7 +5308,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #269",
+      "tag": "ARISTA #261",
       "server": "199.181.197.143",
       "server_port": 443,
       "password": "humanity",
@@ -5521,7 +5335,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #270",
+      "tag": "ARISTA #262",
       "server": "199.181.197.169",
       "server_port": 443,
       "password": "humanity",
@@ -5548,7 +5362,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #271",
+      "tag": "ARISTA #263",
       "server": "199.181.197.176",
       "server_port": 443,
       "password": "humanity",
@@ -5575,7 +5389,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #272",
+      "tag": "ARISTA #264",
       "server": "199.181.197.212",
       "server_port": 443,
       "password": "humanity",
@@ -5590,7 +5404,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #273",
+      "tag": "ARISTA #265",
       "server": "199.181.197.228",
       "server_port": 443,
       "password": "humanity",
@@ -5617,7 +5431,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #274",
+      "tag": "ARISTA #266",
       "server": "199.181.197.36",
       "server_port": 443,
       "password": "humanity",
@@ -5644,7 +5458,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #275",
+      "tag": "ARISTA #267",
       "server": "2.144.15.223",
       "server_port": 40443,
       "password": "humanity",
@@ -5668,7 +5482,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #276",
+      "tag": "ARISTA #268",
       "server": "2.144.21.112",
       "server_port": 40443,
       "password": "humanity",
@@ -5692,7 +5506,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #277",
+      "tag": "ARISTA #269",
       "server": "2.144.22.10",
       "server_port": 40443,
       "password": "humanity",
@@ -5716,7 +5530,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #278",
+      "tag": "ARISTA #270",
       "server": "208.103.161.110",
       "server_port": 443,
       "password": "humanity",
@@ -5731,7 +5545,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #279",
+      "tag": "ARISTA #271",
       "server": "208.103.161.170",
       "server_port": 443,
       "password": "humanity",
@@ -5758,7 +5572,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #280",
+      "tag": "ARISTA #272",
       "server": "212.183.88.136",
       "server_port": 443,
       "password": "humanity",
@@ -5773,7 +5587,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #281",
+      "tag": "ARISTA #273",
       "server": "216.24.57.7",
       "server_port": 443,
       "password": "humanity",
@@ -5788,7 +5602,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #282",
+      "tag": "ARISTA #274",
       "server": "43.169.18.179",
       "server_port": 443,
       "password": "humanity",
@@ -5803,7 +5617,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #283",
+      "tag": "ARISTA #275",
       "server": "45.130.125.0",
       "server_port": 443,
       "password": "humanity",
@@ -5830,7 +5644,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #284",
+      "tag": "ARISTA #276",
       "server": "45.130.125.126",
       "server_port": 443,
       "password": "humanity",
@@ -5854,7 +5668,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #285",
+      "tag": "ARISTA #277",
       "server": "45.130.125.158",
       "server_port": 443,
       "password": "humanity",
@@ -5883,7 +5697,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #286",
+      "tag": "ARISTA #278",
       "server": "45.130.125.2",
       "server_port": 443,
       "password": "humanity",
@@ -5907,7 +5721,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #287",
+      "tag": "ARISTA #279",
       "server": "45.130.125.32",
       "server_port": 443,
       "password": "humanity",
@@ -5931,7 +5745,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #288",
+      "tag": "ARISTA #280",
       "server": "45.130.125.69",
       "server_port": 443,
       "password": "humanity",
@@ -5958,7 +5772,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #289",
+      "tag": "ARISTA #281",
       "server": "45.130.125.76",
       "server_port": 443,
       "password": "humanity",
@@ -5973,7 +5787,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #290",
+      "tag": "ARISTA #282",
       "server": "45.80.111.7",
       "server_port": 443,
       "password": "humanity",
@@ -5997,7 +5811,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #291",
+      "tag": "ARISTA #283",
       "server": "66.81.247.155",
       "server_port": 443,
       "password": "humanity",
@@ -6024,7 +5838,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #292",
+      "tag": "ARISTA #284",
       "server": "8.6.112.0",
       "server_port": 443,
       "password": "humanity",
@@ -6048,7 +5862,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #293",
+      "tag": "ARISTA #285",
       "server": "8.6.112.6",
       "server_port": 443,
       "password": "humanity",
@@ -6075,7 +5889,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #294",
+      "tag": "ARISTA #286",
       "server": "81.255.155.10",
       "server_port": 443,
       "password": "humanity",
@@ -6090,7 +5904,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #295",
+      "tag": "ARISTA #287",
       "server": "85.198.11.172",
       "server_port": 40443,
       "password": "humanity",
@@ -6114,7 +5928,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #296",
+      "tag": "ARISTA #288",
       "server": "chatgpt.com",
       "server_port": 443,
       "password": "humanity",
@@ -6138,7 +5952,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #297",
+      "tag": "ARISTA #289",
       "server": "sourceforge.net",
       "server_port": 443,
       "password": "humanity",
@@ -6153,7 +5967,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #298",
+      "tag": "ARISTA #290",
       "server": "www.creationlong.org",
       "server_port": 443,
       "password": "humanity",
@@ -6168,7 +5982,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #299",
+      "tag": "ARISTA #291",
       "server": "www.gossipglove.com",
       "server_port": 443,
       "password": "humanity",
@@ -6183,7 +5997,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #300",
+      "tag": "ARISTA #292",
       "server": "www.ignitelimit.com",
       "server_port": 443,
       "password": "humanity",
@@ -6198,7 +6012,31 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #301",
+      "tag": "ARISTA #293",
+      "server": "www.ignitelimit.com",
+      "server_port": 443,
+      "password": "humanity",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ignitelimit.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.ignitelimit.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #294",
       "server": "www.multiplydose.com",
       "server_port": 443,
       "password": "humanity",
@@ -6222,7 +6060,58 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #302",
+      "tag": "ARISTA #295",
+      "server": "38.54.64.247",
+      "server_port": 443,
+      "password": "ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "38.54.64.247",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #296",
+      "server": "37.235.49.118",
+      "server_port": 443,
+      "password": "p=Xuu4jK_lJ9rOKw5+7BsW798DZ-01cv4S",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "37.235.49.118",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #297",
+      "server": "146.70.90.197",
+      "server_port": 57452,
+      "password": "t1k169n5zmvvwn96r9ft",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "146.70.90.197",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #298",
       "server": "146.70.90.198",
       "server_port": 57452,
       "password": "t1k169n5zmvvwn96r9ft",
@@ -6239,7 +6128,30 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #303",
+      "tag": "ARISTA #299",
+      "server": "146.70.90.198",
+      "server_port": 57452,
+      "password": "t1k169n5zmvvwn96r9ft",
+      "domain_resolver": "google"
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #300",
+      "server": "138.252.100.85",
+      "server_port": 19643,
+      "password": "t3cmheqzfgmittar",
+      "domain_resolver": "google",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "138.252.100.85"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #301",
       "server": "38.60.220.65",
       "server_port": 443,
       "password": "t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak",
@@ -6247,7 +6159,82 @@
     },
     {
       "type": "trojan",
+      "tag": "ARISTA #302",
+      "server": "38.60.220.65",
+      "server_port": 443,
+      "password": "t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "38.60.220.65",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #303",
+      "server": "130.94.94.15",
+      "server_port": 443,
+      "password": "tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "130.94.94.15",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
       "tag": "ARISTA #304",
+      "server": "130.94.94.15",
+      "server_port": 443,
+      "password": "tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR",
+      "domain_resolver": "google"
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #305",
+      "server": "161.34.39.108",
+      "server_port": 443,
+      "password": "tsuchiya",
+      "domain_resolver": "google"
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #306",
+      "server": "aa.ccmusic.jp",
+      "server_port": 443,
+      "password": "tsuchiya",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "aa.ccmusic.jp",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #307",
+      "server": "aa.ccmusic.jp",
+      "server_port": 443,
+      "password": "tsuchiya",
+      "domain_resolver": "google"
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #308",
       "server": "92.119.35.105",
       "server_port": 443,
       "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
@@ -6255,7 +6242,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #305",
+      "tag": "ARISTA #309",
       "server": "92.119.35.119",
       "server_port": 443,
       "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
@@ -6263,7 +6250,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #306",
+      "tag": "ARISTA #310",
       "server": "92.119.35.131",
       "server_port": 443,
       "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
@@ -6271,7 +6258,24 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #307",
+      "tag": "ARISTA #311",
+      "server": "92.119.35.131",
+      "server_port": 443,
+      "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "92.119.35.131",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #312",
       "server": "92.119.35.71",
       "server_port": 443,
       "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
@@ -6279,7 +6283,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #308",
+      "tag": "ARISTA #313",
       "server": "92.119.35.85",
       "server_port": 443,
       "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
@@ -6287,7 +6291,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #309",
+      "tag": "ARISTA #314",
       "server": "92.119.35.87",
       "server_port": 443,
       "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
@@ -6295,7 +6299,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #310",
+      "tag": "ARISTA #315",
       "server": "92.119.35.93",
       "server_port": 443,
       "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
@@ -6303,7 +6307,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #311",
+      "tag": "ARISTA #316",
       "server": "92.119.35.97",
       "server_port": 443,
       "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
@@ -6311,7 +6315,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #312",
+      "tag": "ARISTA #317",
       "server": "66.245.193.152",
       "server_port": 17126,
       "password": "tpCznR-P5=jZUb#c",
@@ -6328,7 +6332,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #313",
+      "tag": "ARISTA #318",
       "server": "202.181.103.246",
       "server_port": 1334,
       "password": "dd2f25b4c70689de8bc0f7fa9d6591cb",
@@ -6345,7 +6349,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #314",
+      "tag": "ARISTA #319",
       "server": "63.184.240.254",
       "server_port": 22222,
       "password": "telegram-id-privatevpns",
@@ -6362,7 +6366,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #315",
+      "tag": "ARISTA #320",
       "server": "52.29.134.131",
       "server_port": 22222,
       "password": "telegram-id-privatevpns",
@@ -6379,7 +6383,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #316",
+      "tag": "ARISTA #321",
       "server": "18.162.144.111",
       "server_port": 29449,
       "password": "BxceQaOe",
@@ -6387,7 +6391,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #317",
+      "tag": "ARISTA #322",
       "server": "64.176.36.17",
       "server_port": 443,
       "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
@@ -6411,24 +6415,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #318",
-      "server": "38.60.252.118",
-      "server_port": 443,
-      "password": "NAdtbpuyJXPH=CfKmdBqD2YVbzdvwAtuxw",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "38.60.252.118",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #319",
+      "tag": "ARISTA #323",
       "server": "38.60.136.156",
       "server_port": 443,
       "password": "hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey",
@@ -6445,24 +6432,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #320",
-      "server": "38.60.220.65",
-      "server_port": 443,
-      "password": "t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "38.60.220.65",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #321",
+      "tag": "ARISTA #324",
       "server": "43.169.18.179",
       "server_port": 443,
       "password": "humanity",
@@ -6486,24 +6456,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #322",
-      "server": "149.104.104.58",
-      "server_port": 443,
-      "password": "S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "149.104.104.58",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #323",
+      "tag": "ARISTA #325",
       "server": "92.119.35.105",
       "server_port": 443,
       "password": "urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh",
@@ -6520,41 +6473,31 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #324",
-      "server": "38.54.64.247",
-      "server_port": 443,
-      "password": "ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "38.54.64.247",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #325",
-      "server": "130.94.94.15",
-      "server_port": 443,
-      "password": "tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "130.94.94.15",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "ARISTA #326",
+      "server": "213.35.127.18",
+      "server_port": 443,
+      "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "hhcm.hhxaf.cc.cd",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "hhcm.hhxaf.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #327",
       "server": "216.24.57.7",
       "server_port": 443,
       "password": "humanity",
@@ -6569,7 +6512,7 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #327",
+      "tag": "ARISTA #328",
       "server": "81.255.155.10",
       "server_port": 443,
       "password": "humanity",
@@ -6593,180 +6536,8 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #328",
-      "server": "94.140.0.100",
-      "server_port": 443,
-      "password": "MITIVPN",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "PioHosting.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/MiTiVPN=Usa",
-        "headers": {
-          "Host": "PioHosting.ir"
-        }
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "ARISTA #329",
-      "server": "193.123.232.91",
-      "server_port": 443,
-      "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "hhcm.hhxaf.cc.cd",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hhcm.hhxaf.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #330",
-      "server": "2.144.21.112",
-      "server_port": 40443,
-      "password": "humanity",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.creationlong.org",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.creationlong.org"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #331",
-      "server": "space.byu.id.yxls.eu.cc",
-      "server_port": 443,
-      "password": "86957ec0-b213-433b-a43b-51f2175e0ec3",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "space.byu.id.yxls.eu.cc",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/au-do",
-        "headers": {
-          "Host": "space.byu.id.yxls.eu.cc"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #332",
-      "server": "66.42.51.60",
-      "server_port": 8443,
-      "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "hhcm.hhxaf.cc.cd",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hhcm.hhxaf.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #333",
-      "server": "199.181.197.176",
-      "server_port": 443,
-      "password": "MiTiVPN",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "PioHosting.ir",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/MiTiVPN=fL",
-        "headers": {
-          "Host": "PioHosting.ir"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #334",
-      "server": "83.228.228.243",
-      "server_port": 443,
-      "password": "SoftNetConnect",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.yahoo.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lnP3zaTgKpFJpC8IYOJZUuAedJghDQPowXJp5diOzQA",
-          "short_id": "141b14d8"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #335",
-      "server": "cloudflare-ip.mofashi.ltd",
+      "server": "cf.877774.xyz",
       "server_port": 443,
       "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
       "domain_resolver": "google",
@@ -6789,24 +6560,72 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #336",
-      "server": "37.235.49.118",
-      "server_port": 443,
-      "password": "p=Xuu4jK_lJ9rOKw5+7BsW798DZ-01cv4S",
+      "tag": "ARISTA #330",
+      "server": "hu2.vpnjantit.com",
+      "server_port": 4443,
+      "password": "Greggg0-vpnjantit.com",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "37.235.49.118",
+        "server_name": "hu2.vpnjantit.com",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "android"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #337",
+      "tag": "ARISTA #331",
+      "server": "cdns.doon.eu.org",
+      "server_port": 443,
+      "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "tjsp.hhxaf.cc.cd",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "tjsp.hhxaf.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #332",
+      "server": "146.235.16.191",
+      "server_port": 443,
+      "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "tjsp.hhxaf.cc.cd",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "tjsp.hhxaf.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #333",
       "server": "149.28.142.169",
       "server_port": 443,
       "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
@@ -6830,31 +6649,14 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #338",
-      "server": "tttyder.wsone.icu",
+      "tag": "ARISTA #334",
+      "server": "193.123.232.91",
       "server_port": 443,
-      "password": "M7v%w11Se*",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "tttyder.wsone.icu",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #339",
-      "server": "45.136.14.61",
-      "server_port": 2053,
       "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "tjsp.hhxaf.cc.cd",
+        "server_name": "hhcm.hhxaf.cc.cd",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -6865,51 +6667,31 @@
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "tjsp.hhxaf.cc.cd"
+          "Host": "hhcm.hhxaf.cc.cd"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #340",
-      "server": "amanm.wsone.icu",
+      "tag": "ARISTA #335",
+      "server": "2.56.204.246",
       "server_port": 443,
-      "password": "M7v%w11Se*",
+      "password": "rYuChHcwQZskq9E0zdoR",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "amanm.wsone.icu",
+        "server_name": "vpn5.rnmcnm.com",
         "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #341",
-      "server": "81.255.155.10",
-      "server_port": 443,
-      "password": "#RO2PEf}<w'B",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "AhMfyq76HFG6Yl-759Lpj03f6luOEr2c.kELArdaSHtt.WoRKerS.Dev",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "alpn": [
-          "http/1.1"
-        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoiNzJHc0NRZUV6QkkiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560",
+        "path": "/ws-79dffb8106db",
         "headers": {
-          "Host": "AhMfyq76HFG6Yl-759Lpj03f6luOEr2c.kELArdaSHtt.WoRKerS.Dev"
+          "Host": "vpn5.rnmcnm.com"
         }
       }
     },
@@ -7259,13 +7041,7 @@
         "ARISTA #332",
         "ARISTA #333",
         "ARISTA #334",
-        "ARISTA #335",
-        "ARISTA #336",
-        "ARISTA #337",
-        "ARISTA #338",
-        "ARISTA #339",
-        "ARISTA #340",
-        "ARISTA #341"
+        "ARISTA #335"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "2m",

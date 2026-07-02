@@ -1,5 +1,5 @@
 # GITHUB - ALL - Tier 100
-# Updated: 2026-07-02 09:21:52
+# Updated: 2026-07-02 14:13:02
 # Count: 100
 
 mixed-port: 7890
@@ -373,13 +373,21 @@ proxies:
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 'T.ME: @aristapnel #22'
   type: hysteria2
+  server: 185.75.135.220
+  port: 443
+  password: 00dcd873-9211-4d61-ad35-87999906e5c8
+  sni: fta.fontanvpn.com
+  skip-cert-verify: true
+  fast-open: true
+- name: 'T.ME: @aristapnel #23'
+  type: hysteria2
   server: 202.61.205.86
   port: 4433
   password: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
   sni: de1.xiaoliyu.cyou
   skip-cert-verify: true
   fast-open: true
-- name: 'T.ME: @aristapnel #23'
+- name: 'T.ME: @aristapnel #24'
   type: hysteria2
   server: 140.245.27.220
   port: 51000
@@ -387,7 +395,7 @@ proxies:
   sni: cn.cremedelamer.com
   skip-cert-verify: true
   fast-open: true
-- name: 'T.ME: @aristapnel #24'
+- name: 'T.ME: @aristapnel #25'
   type: hysteria2
   server: 103.115.109.49
   port: 443
@@ -395,20 +403,12 @@ proxies:
   sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
   fast-open: true
-- name: 'T.ME: @aristapnel #25'
+- name: 'T.ME: @aristapnel #26'
   type: hysteria2
   server: 13.231.108.76
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 13.231.108.76
-  skip-cert-verify: true
-  fast-open: true
-- name: 'T.ME: @aristapnel #26'
-  type: hysteria2
-  server: 202.146.222.174
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #27'
@@ -437,21 +437,13 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #30'
   type: hysteria2
-  server: vpn-sg-001.fastervpn.world
-  port: 443
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
-  skip-cert-verify: true
-  fast-open: true
-- name: 'T.ME: @aristapnel #31'
-  type: hysteria2
   server: mumbai-3.nezhasu.com
   port: 443
   password: 2b195c17-5ff5-4b0d-a809-210b92212394
   sni: mumbai-3.nezhasu.com
   skip-cert-verify: true
   fast-open: true
-- name: 'T.ME: @aristapnel #32'
+- name: 'T.ME: @aristapnel #31'
   type: hysteria2
   server: lsdg1.lansecs.top
   port: 58338
@@ -459,7 +451,7 @@ proxies:
   sni: lsdg1.lansecs.top
   skip-cert-verify: true
   fast-open: true
-- name: 'T.ME: @aristapnel #33'
+- name: 'T.ME: @aristapnel #32'
   type: hysteria2
   server: 70.34.215.221
   port: 20335
@@ -469,7 +461,7 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: U1wBrYQyFm
-- name: 'T.ME: @aristapnel #34'
+- name: 'T.ME: @aristapnel #33'
   type: hysteria2
   server: dir.cybsecguru.com
   port: 35000
@@ -479,7 +471,7 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
-- name: 'T.ME: @aristapnel #35'
+- name: 'T.ME: @aristapnel #34'
   type: hysteria2
   server: falankefu1.nezhasu.com
   port: 443
@@ -487,7 +479,7 @@ proxies:
   sni: falankefu1.nezhasu.com
   skip-cert-verify: true
   fast-open: true
-- name: 'T.ME: @aristapnel #36'
+- name: 'T.ME: @aristapnel #35'
   type: hysteria2
   server: lsus3.lansecs.top
   port: 58338
@@ -495,7 +487,7 @@ proxies:
   sni: lsus3.lansecs.top
   skip-cert-verify: true
   fast-open: true
-- name: 'T.ME: @aristapnel #37'
+- name: 'T.ME: @aristapnel #36'
   type: hysteria2
   server: lundun1.nezhasu.com
   port: 443
@@ -503,7 +495,7 @@ proxies:
   sni: lundun1.nezhasu.com
   skip-cert-verify: true
   fast-open: true
-- name: 'T.ME: @aristapnel #38'
+- name: 'T.ME: @aristapnel #37'
   type: hysteria2
   server: xg.xn--mes13n8pi8x2b.shop
   port: 21072
@@ -511,7 +503,7 @@ proxies:
   sni: xg.xn--mes13n8pi8x2b.shop
   skip-cert-verify: true
   fast-open: true
-- name: 'T.ME: @aristapnel #39'
+- name: 'T.ME: @aristapnel #38'
   type: hysteria2
   server: xg.xn--mes13n8pi8x2b.shop
   port: 21494
@@ -519,10 +511,18 @@ proxies:
   sni: xg.xn--mes13n8pi8x2b.shop
   skip-cert-verify: true
   fast-open: true
-- name: 'T.ME: @aristapnel #40'
+- name: 'T.ME: @aristapnel #39'
   type: hysteria2
   server: tw.xn--mes13n8pi8x2b.shop
   port: 21828
+  password: 642dc0b9-6481-4d84-ad60-3586e870f263
+  sni: tw.xn--mes13n8pi8x2b.shop
+  skip-cert-verify: true
+  fast-open: true
+- name: 'T.ME: @aristapnel #40'
+  type: hysteria2
+  server: tw.xn--mes13n8pi8x2b.shop
+  port: 21860
   password: 642dc0b9-6481-4d84-ad60-3586e870f263
   sni: tw.xn--mes13n8pi8x2b.shop
   skip-cert-verify: true
